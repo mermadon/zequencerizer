@@ -1,0 +1,46 @@
+
+:: StoryInit {"position":"1350,1550"}
+<<set $deaths to 0>>
+<<set $crawldeath to 0>>
+<<set $introchoice to 0>>
+<<set $sandwich to 0>>
+<<set $ketchup to 0>>
+<<set $codebook to "none">>
+<<set $meettammy to 0>>
+<<set $goldthief to 0>>
+<<set $badbrother to 0>>
+<<set $baddad to 0>>
+<<set $takehergun to 0>>
+<<set $shirleytrust to 0>>
+<<set $shelter to "none">>
+<<set $annatrust to 0>>
+<<set $tape to "ACDC">>
+<<set $saveshirley to "none">>
+<<set $shirleyrelat to "none">>
+<<set $savesanna to 0>>
+<<set $clothes to "Jungle">>
+<<set $tool to "shortshorts">>
+<<set $sharptool to "machete">>
+<<set $secondtool to "rope">>
+<<set $shirt to "DMX">>
+<<set $callanswer to 0>>
+<<set $alptrust to "none">>
+<<set $seconds to 5>>
+<<set $seequeen to "false">>
+<<set $teamatoc to "false">>
+<<set $firstdeath to 0>>
+<<set $scareloc1 to "none">>
+<<set $var to "gold">>
+<<newinventory '$inventory'>>
+<<newinventory '$storybeats'>>
+
+<<cacheaudio "strawberry" media/sounds/country/strawberry.mp3>>
+<<cacheaudio "bob" media/sounds/hiphop/bob.mp3>>
+<<cacheaudio "thunder" media/sounds/rock/thunderstruck.mp3>>
+<<cacheaudio "standup" media/sounds/hiphop/standup.mp3>>
+<<cacheaudio "manofmine" media/sounds/country/manofmine.mp3>>
+<<cacheaudio "lightning" media/sounds/rock/lightning.mp3>>
+
+<<if def $SkipIntro>>
+	<<set Config.passages.start = "OPENING PERU">>
+<</if>>

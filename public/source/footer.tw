@@ -1,0 +1,18 @@
+:: PassageFooter [footer] {"position":"2875,1350"}
+<br>
+<hr>
+<br><br><br><br>
+''Achievements:''
+<<inventory '$inventory' '<br> '>>
+
+<<if $deaths > 0>>
+		''Deaths: <<print $deaths>>''
+<<else>>
+Deaths: NONE. Wow, such surviving!
+<</if>>
+<br><br><br><br>
+©Stay Gold Features, 2021 
+Based on Choose Your Own Adventure book series, ©Chooseco
+Written by Samm Hodges
+
+//Internal review only! If you share we will find out where you live, we will come to your house, and we will make you help us figure this out, because frankly, it's a lot of work. //

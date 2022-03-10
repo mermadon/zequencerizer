@@ -1,0 +1,9 @@
+sugarcube-2:
+  macros:
+    ctp:
+      name: ctp
+      container: true
+      children:
+        - ctpNext
+        - ctpHead
+        - ctpTail

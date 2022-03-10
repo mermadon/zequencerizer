@@ -1,0 +1,40 @@
+
+:: StoryInterface [storyhead] {"position":"2175,1550"}
+<div id="ui-bar">
+	<div id="ui-bar-tray">
+	</div>
+	<div id="ui-bar-body">
+		<header id="title" role="banner">
+			<div id="story-banner"></div>
+			<h1 id="story-title"></h1>
+			<div id="story-subtitle"></div>
+			<div id="story-title-separator"></div>
+			<p id="story-author"></p>
+		</header>
+		<nav id="menu" role="navigation">
+		</nav>
+	</div>
+</div>
+<div id="story" role="main">
+<div id= "ui-bar">
+<br>
+<br>
+<br>
+<br>
+<div id= "ui-bar-title"><span style="font-size: 180%;font-weight: 550;letter-spacing: 6px;">THIS IS HOW Z DIES</span> | Interactive Outline, March 2022</div>
+<br>
+<br>
+<div id="ui-bar-history">
+<span>
+	<button id="menu-item-restart"<tabindex="0">Restart |</button>
+	<button id="history-backward"<tabindex="0"> back | </button>
+	<button id="history-forward"<tabindex="0">forward </button>
+</span>
+</div>
+<br>
+<hr>
+</div>
+
+
+<br><div id="passages"></div>
+

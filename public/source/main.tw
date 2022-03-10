@@ -1,0 +1,1863 @@
+:: StoryTitle
+This Is How Z Dies
+
+:: StoryData
+{
+        "format": "SugarCube",
+        "ifid": "E57723BF-5050-4BA7-A730-9DBD57D2723D",
+        "format-version": "2.36.1",
+        "start": "INTRO"
+}
+
+:: INTRO
+
+''Oh hey. ''
+
+''Welcome to "This Is How Z Dies." '' (if you've already been here you can [[SKIP INTRO|OPENING PERU]])
+
+It's an interactive script for an interactive film...
+
+But it's not quite a script yet. 
+
+It's an outline, but bigger. A //scriptment.// But funner. With music sometimes.
+
+Our goals with this are pretty simple: we're making an interactive narrative film that's actually fun to play. And also, replay. And also makes you feel something at the end. 
+
+As you'll see, there are a lot of choices, the choices come quick and the choices actually matter. 
+
+Your decisions will drive the story, introducing you to entirely unique storylines, characters, set pieces, environments, song choices, even wardrobe decisions. 
+
+Along the way--as the title suggests--you will also make Zayne die a lot. <<linkappend "''BUT!''">> <<include "INTRO 2">> <</linkappend>> 
+::INTRO 2
+1) We learn from our mistakes! Also:
+
+2) Those deaths trigger some of the best sequences of the film. There are 25 'secret ending' //short films// that players can collect, rewatch and share. 
+
+Depending on choices, each 'playthrough' has a ''runtime of 90 to 110 minutes.'' In that time, you will only experience about 1/5 of the total scenes. So it's worth going back replaying, seeing the worlds you missed first time through. 
+
+It's a miniseries amount of content, but laid out like a playground, not a track. And like a miniseries, deeper engagement leads to deeper emotional investment and connection to the characters. Inside jokes, eastereggs, hidden scenes, fan theories, etc. It's gonna be fun. 
+
+BUT, if all that sounds complicated, it's simple to play. A choice looks like this:
+
+[[I FEELIN' PRETTY CONFIDENT|CHOICE INTRO][$introchoice to 0; $deaths to $deaths + 1]]
+
+[[Y'KNOW WHAT? I'M STILL LEARNING.|CHOICE INTRO][$introchoice to 1]]
+
+::CHOICE INTRO
+<<nobr>><<if $introchoice is 1>><<include "CHOICE 2">><<else>><<include "CHOICE 1">><</if>><</nobr>>These achievements, along with death counts and other statistics will be compiled for players at the end of the film. Maybe even cut into a fancy little 'achievements' trailer they can share on social. Think: 
+
+//Holy shit, my highschool boyfriend got to be best friends with an incredibly cute monkey and I didn't!? I better go replay this movie and share the results with all my friends!!//
+
+@@And then, we could even mint custom NFTs for each...@@ 
+
+Nope. Nope. Not NFTS. There are limits. 
+
+Anyway, That's it. That's how you progress. 
+
+Note: use the in-built "BACK" and "FORWARD" to navigate in the story if you want to back up and take a different path (this won't be an option for players). And "RESTART" will clear all your game data to give you a fresh start. 
+
+To see ALL passages in a searchable and printable form (I don't know why you would give notes on something that's already perfect, but you do you), click HERE. To see a story map click here. 
+
+Final notes:
+
+- The first act is more fleshed-out, just to get a sense of pacing and tone, and it get progressively more outline-y from there. 
+
+-This looks like garbage on mobile, so use your laptop or PC. Chrome, Safari, or Firefox, all those are good. No internet explorer.
+
+Ok, stop asking questions! 
+
+Let's [[START|OPENING PERU][$deaths to 0]]!
+
+::CHOICE 2
+Wow, you survived your first choice!
+
+Had you clicked "I GET IT" you would have died! As a reward, you even picked up a fancy  'Genius' achievement (see below). <<pickup '$inventory' 'Truly a Genius'>>
+
+::CHOICE 1 
+Oh nooooo!
+
+You made the wrong choice and you died! 
+
+It's almost like you were a little overconfident, even after we warned you! Scroll down to the footer to find the death count below (don't worry, we'll reset your deaths once you start playing), and you'll see we've also given your first //"achievement".// If you want to call it that. <<pickup '$inventory' 'Arrogant Bastard'>>
+
+:: TAMI'S PLANE
+
+EXT. AIRPORT - DAY
+
+Gina stands in front of the airplane being wheeled in. They finally upgrading the planes? 
+
+New guy on the crew too, a 
+
+INT. AIRPLANE - DAY
+
+Idea - start on the inside - just the the eyes. 
+
+Idea - the bear is FULL of stuff. It's like his suit case. Ketchup, a couple Rainier lites, his pocket knife, snacks, a pee bottle, all his clothes. He's pretty set. 
+
+Maybe the workers remark that the bear smells like corn nuts and chewing tobacco. 
+
+WORKER
+Smells like Montana... 
+
+WORKERS wheel a heavy TAXIDERMY GRIZZLY BEAR into the cargo hold. 
+
+They set it amidst a herd of bubble wrapped Elk, tape it down, sweating as the PILOT, (ROBBY, 60s, Boston) and his COPILOT/FIRST OFFICER (GINA, 30s, Cuban) look over the bear. 
+
+EDUARDO
+This bear smells like corn nuts to you? Smells like my exwife's minivan. 
+
+Gina walks over, leans in, sniffs hard. 
+
+GINA
+Smells like my friggen stepson. 
+
+INSIDE THE BEAR - Z sweats, barely breathing. As they walk away, he sniffs himself. Damn. It's rough. 
+
+Eduardo approaches closer, eyeing the STITCHING on the side of the grizzly. Z is sure he's about to get caught but then their LOADMASTER, PEDRO (25) guides a LARGE crate into the bay behind them. 
+
+PEDRO
+You think that's weird? Look at this shit.
+
+He wheels the crate next to the grizzly bear, pulls back the tarp. Inside, a HABITAT crate with an incredibly cute EMPEROR TAMARIN (imagine the cutest, squirrel sized monkey with an unbelievably large Lorax mustache... or [[Don't Imagine|http://www.tinyurl.com/2p8w5v6c]]). This is CECILIA. 
+
+As Pedro puts his hand into the cage, Cecilia tries to BITE him. 
+
+ANNA enters behind (35, peruvian accent, dressed as animal trainer but carries herself like a cop). She says Cecilia isn't tame. She's being returned to the jungle as part of a smuggled animal return program. 
+
+PEDRO
+I like her. She's seen some shit. I connect with that, yo. You bite all you want baby girl. You bite all you want. 
+
+Gina rolls her eyes. 
+
+GINA
+Jesus fuggin God.  Ain't this special... grizzly bear and a mustache rat. That thing gets out of its cage, it's gonna be stuffed too. I swear to God.
+(then)
+Robby, let's go!
+
+Robby's still looking at the Grizzly. Z sweats inside. As Robby pulls away, Z sighs with relief. 
+
+CUT TO: 
+
+ext. sky over pacific ocean - night. 
+
+The cargo plane cuts through the sky. 
+
+But above and behind it... an all-black HIGH ALTITUDE ALL BLACK AIR CRAFT EMERGES FROM THE CLOUDS.
+
+INT. Black aircraft 
+
+People put on masks and parachutes. Preparing to jump. 
+
+Int. cargo plane. 
+
+IN THE BEAR SUIT, Z reaches into his tight wranglers, pulls out a BEEF JERKY CHEW CAN (trying to quit chaw) and a bag of corn nuts. 
+
+In the cage next to him, Shirley looks up at him, sniffing. 
+
+He freezes. 
+
+She growls. 
+
+ZAYNE
+(whisper)
+Nice monkey. Nice monkey. Please be quiet. Please. 
+
+She growls LOUDER. Anna, sleeping next to her, almost wakes up. 
+
+ZAYNE
+Are you allowed to have corn nuts? What are corn nuts even made of? 
+
+Shirley narrows her eyes, climbs closer. 
+
+ZAYNE I want to give them to you. I do. But if you die... 
+
+Shirley gives him the cutest face in the world. 
+
+[[GIVE SHIRLEY CORN NUTS][$shirleyrelat to "love"]]
+[[DON'T GIVE MONKEYS CORN NUTS]]
+
+:: JUMP 
+Zayne takes Anna and the monkey.  but at the last moment, the monkey JUMPS to PEDRO. 
+
+They both JUMP
+
+Pedro gets 
+Romance starting with sharks in the water. 
+
+Zayne and Anna crash land (or parachute depending on story choices) into the OCEAN (or mountains, I'll stop) off the coast of Peru. Sharks in the water. We quickly establish a mutual dislike between them. 
+
+She hates Americans, she loves trees. Zayne has a Montana-shaped tree stump tattooed on his chest. But, to survive, they have to build a raft out of debris and fight off sharks and she sees his muscles a lot, and this only makes her hate him more. Romancing the Stone shit.
+
+On shore, Zayne tells Anna about his mission to save his brother. This scene takes place in a rural seaside market. There's only fish, and Z doesn't eat sea food. He keeps asking for hamburgers, no cheese, no pickles, just ketchup.
+
+We set up that the last record of the THE TANGLED PRAYER is from a poem fragment by JUAN DE GUELPE a 15th century monk at a monastary built on top of (desecrating) an ancient Norte Chico temple site. 
+
+That mission became a mansion. And now it's the biggest history museum in Peru. Zayne says he's going there to find the artifact. Anna points out the that he doesn't know anyone, doesn't speak the language, he's kind of dumb and very much going to die, but this doesn't stop him.
+
+[[MUSEUM HEIST]]
+
+:: LEAVE ANNA 
+Zayne tells Anna he has to leave if he's going to get them help. He can barely make it himself in drifts this deep, if took her, they would all die. 
+
+She gives him her global satellite phone, she hasn't been able to get signal, but maybe he will along the way
+
+He wraps himself in the bearskin for warmth. He piles the rest of the skins onto Anna and Shirley for warmth.
+
+That night, Zayne sneaks out. 
+
+It's brutal. The moonlight makes it so he can just BARELY see. 
+
+He checks the phone... no signal. 
+
+FAR BELOW HIM, He sees a stone cairn catch the last of the suns rays ahead of him. It's across a massive ravine and the sun is setting fast. 
+
+It might offer shelter, but also, it's so far... 
+
+[[MAKE FOR THE CAIRN]]
+
+[[DON'T RISK IT->UNSURE ANDES SHELTER]]
+
+
+
+:: TAKE ANNA WITH YOU 
+That night, Zayne wraps himself and Anna in bear skin and elk hide, sneaks out of the cave shelter. 
+
+Out in the howling dark of high-elevation Andes, you heft Anna onto your back. Shirley watches. 130 lbs is heavier than you thought it would be. 
+
+ANNA
+Are you sure I'm not too heavy?
+
+ZAYNE
+Course. 
+
+Shirley burrows into Zayne's neck, shivering. 
+
+As Anna climbs on his back, Zayne braces himself. 
+
+ZAYNE
+Welp... here we go. 
+
+He takes a step. Shit. 130 lbs is heavier than he thought. 
+
+ANNA
+You sure you're ok?
+
+ZAYNE
+Oh yeah, all good. It's not heavy it's just... an awkward size. 
+
+ANNA
+I'm an awkard size?
+
+ZAYNE
+No no, just need to get the weight... the small weight... off my shoulders and onto my... hips. 
+
+He takes another step, tries to adjust the Anna's position and SLIPS.... falling off the ridge down into a crevasse. 
+
+Their screams echo in the darkness.
+
+FADE TO <<linkappend "BLACK">><<include "UFO ENDING ANDES">><</linkappend>><<pickup '$inventory' 'Alien Archeology'>><<set $deaths to $deaths + 1>>
+
+:: DEBATE 
+Tap this passage, then the pencil icon to edit it.
+
+:: BREAK INTO 2 
+Tap this passage, then the pencil icon to edit it.
+
+:: INCITING INCIDENT SECTION 
+Tap this passage, then the pencil icon to edit it.
+
+:: FUN AND GAMES 
+Tap this passage, then the pencil icon to edit it.
+
+:: MUSEUM HEIST 
+FUN AND GAMES - MUSEUM TEMPLE HEIST
+
+There's a black tie event for the opening of a new exhibit at the museum. Z tries to pose as a philanthropist, but he's hilariously bad at it. Trying to relax his nerves, he goes to the bar. 
+
+Choose a drink: 
+
+[[GO WITH WHAT YOU KNOW->ORDER NATTY LITE]] 
+
+[[TRY TO BLEND->ORDER MARTINI]] 
+
+[[DRINKING IS STUPID DURING A HEIST->ORDER SODA]] 
+
+
+:: ENTER ICE SHELTER 
+Zayne survives the night in the cave...when he wakes up he sees in the morning light, an incredibly well preserved mummy: the Maiden of Llullailaco - holding the Tangled Prayer and wearing a gold-plated mask with a map of constellations on it. 
+
+This is an incredibly valuable find. 
+
+[[TAKE THE GOLD][$goldthief to 1]]
+[[TAKE A PICTURE|TAKE THE GOLD]]
+
+
+
+:: UNSURE ANDES SHELTER 
+ext. glacier - night
+
+Zayne takes the easier path down the mountain. <<set $meettammy to 0>><<set $scareloc1 to "on the side of a mountain">>
+
+But as he goes on, the sun sets and temperature drops. 
+
+The wind cuts through his bear skins and his face is numbing. 
+
+For the first time Zayne realizes he's in trouble and he doens't know what to do.
+
+He crouches in the lee of a rock ledge and feels a strange warmth begin to suffuse him. It feels so nice to rest. 
+
+He wakes himself. This is bad, this is very, very bad. He pulls out Anna's phone.
+
+[[CALL HARPER]]
+
+[[CALL 911->DON'T CALL HARPER]]
+
+:: CALL HARPER 
+Zayne lifts his phone, dials his daughters number by heart. <<include "HARPER I'M SCARED">>
+
+Call Harper. Tell her you're on a glacier and you're just going to take a little nap. 
+
+Harper starts shouting at you to stay awake. Is there shelter somewhere? 
+
+[[ENTER ICE SHELTER]]
+
+:: DON'T CALL HARPER 
+Zayne dials 911. <<pickup '$inventory' 'Made a Monster'>><<set $deaths to $deaths + 1>>
+
+He waits, shivering as it rings. 
+
+The operator answers, in Spanish. (Note, dialing 911 in any nation now redirects you to the appropriate PSAP! Progress!)
+
+ZAYNE
+Hello? I'm sorry, I don't speak spanish... I'm on a mountain... I'm very cold?
+
+OPERATOR
+Hablas EspaÃ±ol? 
+
+ZAYNE
+It's a very big mountain. I'm very very cold. 
+
+The opererator tries, but this is hopeless. 
+
+The phone dies. 
+
+Zayne sinks into the drift. 
+
+It's getting really, really warm. The glacier isn't so bad. It's kind of nice how dark it is, actually. Slow, Zayne closes his <<linkappend "eyes.">><<include "DEATH OF THE AMAZON">><</linkappend>>
+
+
+
+:: VARIOUS SURVIVAL 
+Tension comes from between Anna and Zayne
+
+Other crew member who actually works for Atoc-tries to sabotage them. 
+
+Trying to care for the Ape, but the Ape drives them together. 
+
+It's like a strange baby. 
+
+If he finds the thing. 
+
+Bad guy launches an avalanche. 
+
+Who do you trust. 
+
+Alliances. 
+His lie is that sacrifice is the only right path. 
+
+Why was he there. 
+
+Protects his brother to a fault. 
+
+If he tells his Anna the truth it launches a new storyline where he is trying to convince his brother to do the right thing. 
+
+Anna's trying to find Malachi. Selling shit on the black market. "He's a bad guy, some things are bigger than family."
+
+Zayne can't accept that. 
+
+Zayne: you're wrong. That's true for some people, but not for me. 
+
+But he can still help her. I'm not gonna betray my brother, but I trust you more than I trust him.. once we're out of here, it's may the best man win. 
+
+Or he can trust the other guy. His name is worm worm. 
+
+He can choose to give the bad guy THE TANGLED PRAYER or keep it a secret. 
+
+He can show anna the Tangled prayer or keep it a secret. 
+
+If he doesn't trust her/trusts the other guy, he and the monkey have to make it to "save Malachi" alone in the mountains and jungle. 
+
+And then this will fall apart in some way. 
+
+If he doesn't trust anyone, 
+
+If he trusts Anna -- he talks to his daughter. Maybe Anna has the global satellite phone. 
+
+Harper says she knows what the code means. 
+
+He and Anna go to the place...
+
+But it's the wrong place. 
+
+and MIDPOINT he finds out that his brother didn't want to be rescued. 
+
+He trusts the bad guy. And the bad guy takes the quipu to his brother. 
+
+And Anna is hurt really badly. Anna has to drink the water. 
+
+She becomes the immortal. 
+
+The only way to save the world is to become immortal himself. 
+
+Anna has Edwin's unpublished document. 
+
+He's been destroying sites and sellling things to Atoc/Malachi. It's a smuggling ring she thinks. 
+
+
+
+The bad guy sees it. 
+
+And that's why they stay alive. 
+
+:: MID POINT 
+Get what you think you want. 
+
+And it goes horrible wrong. 
+
+After museum, you get to brother and it backfires. 
+
+You get to star map location and it's not right. 
+
+Is there a version where you choose Anna instead. 
+
+Zayne sacrifices himself for Anna and it goes horribly wrong. 
+
+And he still doubles down. 
+
+The Immortal make him a trap for his brother. 
+
+He has a chance to escape and save them both but doesn't take it - family is more important than everything. 
+
+Daughter tells him how much it will cost her if he doesn't make it. 
+
+She wants him to come home. 
+
+Bring him to verge of right choice and then get interrupted. 
+
+
+
+
+
+
+
+:: ALL IS LOST 
+All is Lost
+
+:: DARK NIGHT OF THE SOUL 
+Tap this passage, then the pencil icon to edit it.
+
+:: BREAK INTO THREE 
+Tap this passage, then the pencil icon to edit it.
+
+:: YOU'RE WITH MALACHI {"position":"200,75"}
+Anna is hurt/unconscious. 
+
+You went to Malachi WITHOUT Anna. 
+
+Anna tries to stop you and gets hurt. 
+
+:: YOU'RE WITH ANNA 
+Trying to Save Malachi from getting killed Immortals/Atoc WITH ANNA. 
+
+You went to him, found out he didn't want to be rescued. MIDPOINT. 
+
+You escaped his clutches/Atoc. You refused to give him the object. BAD GUYS CLOSE IN. 
+
+You tried to reason with him again. He didn't listen. 
+
+You refuse to give up. 
+
+
+:: ORDER NATTY LITE 
+ZAYNE
+(tentative)
+Hola muchacho, tengoâ€¦unaâ€¦natty lite?]
+
+The bartender stares at Z uncomprehendingly. Just as he's about to try again, but louder, there's a voice at his elbow. 
+
+SECURITY
+Are you supposed to be here, sir?]
+
+The next thing Z knows, he's outside the servers entrance, two men in white waiter jackets smoke a cigarette beside him. 
+
+ZAYNE
+Which way to town?]
+
+The man grunts and points down a trail. Zayne sets off.
+
+Just then, it starts to rain. Behind him there's laughter, and the last words he hears from a human before he succumbs to hypothermia 15 miles deep in the jungle are in a language he doesn't understand. 
+
+
+:: ORDER MARTINI 
+ZAYNE
+Une martini, por favor.
+
+The bartender responds with a string of questions in spanish Z can't even begin to translate. 
+
+ZAYNE
+Uh. Yes.
+
+A dirty AF martini is set down in front of him. He takes a sip and spits it out. 
+
+ZAYNE
+Holy shit that's disgustingâ€“
+
+Beside him, a security guard appears. 
+
+SECURITY
+Vamanos. 
+
+[[RESIST]]
+
+[[GO QUIETLY]]
+
+:: ORDER SODA 
+Z steps up to the bar. 
+
+Z
+Y'all got Dr. Pibb?
+
+PHILANTHROPIST
+(sarcastically)
+I think the soft drinks are at the kid's bar.
+
+Z turns to see a PHILANTHROPIST is eyeing him. 
+
+Z
+Oh, great. Thank you, ma'am.
+
+Z moves to leave, but the Philanthropist catches his arm. 
+
+PHILANTHROPIST
+I'm joking. What's a thicc American like you doing at a boring affair like this?
+
+ZAYNE
+(nervous)
+I'm a philanthropist.
+
+PHILANTHROPIST
+Oh? What a coincidence. What's your foundation?
+
+ZAYNE
+Bill Gates. Oooh one sec, fella--
+
+A server passes. Z grabs a cracker, tries to take a bite. Almost throws up. 
+
+ZAYNE
+What the hell is on that??
+
+ZAYNE spits. 
+
+PHILANTHROPIST 
+Peruvian builder ants. Baked, I believe. I didn't realize the Gates' were interested in  Moche pottery. How charming.
+
+ANNA
+(O.S.)
+Once you get used to the accent the charm lessens considerably.
+
+Anna sweeps into frame, cleaned up and looking stunning. 
+
+ANNA
+Hi, Honey. I've been looking all over for you.
+
+ZAYNE
+You have?
+
+She smiles and kisses his cheek. 
+
+(set: $ROMANCE to 1)
+
+ZAYNE
+(whispering)
+What are you doing?
+
+ANNA
+We've got a map to steal.
+
+ZAYNE
+You said I was stupid. And that I was gonna die.
+
+ANNA
+Without my help. Let's go.
+
+ZAYNE
+Can we eat first? Not ants?
+
+Over his shoulder, Anna sees two IMMORTALS in ill fitting tuxes who look almost as out of place as Z. 
+
+ANNA
+No.
+
+They head across the banquet hall. A security guard, looking bored, mans a velvet rope blocking their way. 
+
+Choose where to begin the search:
+
+[[CHARM THE GUARD->CHARM]] 
+
+[[WALK PAST CONFIDENTLY->CONFIDENCE]]
+
+:: RESIST 
+Zayne glances around. What would Tom Cruise do. 
+
+ZAYNE
+Alright, alright. I'll go quietly. 
+
+He places his hand behind his head.
+
+SECURITY
+No neccisito Senior. 
+
+ZAYNE
+Neccisito //this//--
+
+Zayne ducks and tries to execute a spin kick...but he misses the security guard's legs, and topples sideways...feeling something slip in his lower back. 
+
+He tries to get up but he can't...
+
+He's slipped a disk. 
+
+10 YEARS LATER
+
+Zayne, 200 lbs heavier, pushes his electric wheel chair to the max as he rockets down a Wal-Mart aisle towards the chips. Since he slipped a disk, he lost his company, and his only joy now comes from salted and deep fried foods he can barely afford on Disability. 
+
+
+
+:: GO QUIETLY 
+The next thing Z knows, he's outside the servers entrance, two men in white waiter jackets smoke a cigarette beside him watching idly as security dusts off their jackets and heads back inside. 
+
+ZAYNE
+Which way to town?
+
+The man grunts and points down a trail. Z sets off.
+
+Just then, it starts to rain. Behind him there's laughter, and the last words he hears  from a human before he succumbs to hypothermia 15 miles deep in the jungle are in a language he doesn't understand. 
+
+
+:: CHARM 
+ANNA
+What's someone as handsome as you doing guarding a bunch of old pottery?]
+
+SECURITY GUARD
+Que?
+
+Z panics. 
+
+ZAYNE
+//Shit.// He's onto us. RUN!
+
+[[RUN PAST SECURITY GUARD]]
+
+:: CONFIDENCE 
+Z hustles Anna towards the guard. 
+
+ZAYNE
+Just act confidently. 
+(beat)
+You sir! Open the gate. 
+
+ANNA
+What the hell are you doing...
+
+Z tries to sweep past and trips over the red velvet rope. 
+
+SECURITY GUARD
+Hey. Hey. //HEY!//
+
+[[RUN PAST SECURITY GUARD]]
+
+
+
+:: RUN PAST SECURITY GUARD 
+Z and Anna break into a sprint. An Alarm goes off as they run down the hallway into the main exhibit of the museum, guard in pursuit. 
+
+There's three doors in front of them: one is filled with glass shelves holding pottery, the second is dim, but whistling sound comes from the doorway, and the third doorway has a ancient Moche warrior mask hanging over it. 
+
+Choose where to hide: 
+
+[[CHOOSE POTTERY ROOM->POTTERY]]
+
+[[CHOOSE MUSIC AND WEAPONS ROOM->MUSIC]] 
+
+[[CHOOSE THE WARRIOR ROOM->WARRIOR]]
+
+:: POTTERY 
+They run into the glass shelved pottery room displaying thousands of ancient Mochico fertility pottery. They duck quickloy beind a helf and Z looks back through the gap in the pottery to see if they were followed. We hear the security guard enter. 
+
+From his POV, we slowly focus on the pottery he's inadventerantly placed his hand onâ€¦and realize it's a giant dick impregnating the world. Basically. 
+
+ZAYNE
+What the fuck!
+
+The security guard hears and moves towards them. There's some cat and mouse amid the ferticility pottery that ends with Z crashing into one of the shelves and bringing an end to the pursuit in a rain of erotic pottery.
+
+Someone's going to Peruvian jail for a long, long time. Better luck next time!
+
+
+
+
+:: MUSIC 
+Inside the music room, there's hollow gourds lined up in front of a giant wind tunnel covered with a grate. The wind blowing through the gourds makes a high whistling sound that's quite beautiful and oddly hypnotic. They're shaken out of it by footsteps behind them. 
+
+ANNA
+Shit! It's locked. 
+
+Z looks at it closely. He runs his finger along the edges of the grate. With click, he opens it. 
+
+ANNA
+How did you do that?
+
+Z shrugs. 
+
+ZAYNE
+I know how things work. 
+
+ANNA
+Wow, you go from helpless to smug really quickly. 
+
+(set: $romance to 2)
+
+Behind them, two IMMORTALS dash into the room. 
+
+Z and Anna dash into the tunnel, having no idea where they'll end up, Z closing the grate behind them. The immortals start throwing their bodies at the cover of the grate. It's not gonna hold. 
+
+[[GO THROUGH THE WIND TUNNEL->WIND TUNNEL]]
+
+[[PANIC]]
+
+
+:: WARRIOR 
+Z and Anna skitter into a room holding fifty or so arrangements of Ceremonial Moche warriors armor. From the walls scour the face of the Fanged God. 
+
+Only a few moments later, Security guards enter. 
+
+There's a tense moment as they search the roomâ€¦and we notice that, in two of the suits of armorâ€¦there's eyes moving. 
+
+The security leaves, but as they do, they leave one guard outside the door. 
+
+Z and Anna are stuck. They whisper frantically. 
+
+ZAYNE
+Should we make a break for it?
+
+ANNA
+And go where, exactly?
+
+ZAYNE
+I dunno. But we can't leave without finding the Tangled Prayer. And my brother. And some //food.//
+
+ANNA
+Look. A server left some hors d'oeuvres. 
+
+ZAYNE
+What the hell are they?
+
+ANNA
+Squid in squid ink.]
+
+Z sniffs the plate. 
+
+ZAYNE
+They look lil alien babies.
+
+He reachesâ€¦he's so hungry. 
+
+Takes one. Chews. 
+
+ZAYNE
+Holy shit. It'sâ€¦good.
+
+
+
+
+:: WIND TUNNEL 
+They grope their way through the dark tunnel. Up ahead, there's a light. 
+
+Behind them, the grate breaks with a wrenching sound. 
+
+They runâ€¦only to reach the end of the tunnel and realize they're only exit is on the side of a building. They can face the immortals, or jump. 
+
+[[JUMP OFF THE EDGE]]
+
+[[FACE THEM]]
+
+:: FACE THEM 
+ANNA
+Fuck this. 
+
+Anna pulls a pistol from somewhere in her dress. 
+
+ZAYNE
+Uh...
+
+The first Immortal is through the grate. 
+
+Anna empties her 12 round clip into his brain. 
+
+He falls. 
+
+But his body keeps moving forward.
+
+ANNA
+Jesus...Christ...
+
+The second of the Immortals climbs through the grate and runs at Z, in a dead sprint. 
+
+Z sidesteps and the immortal goes flying off the edge of the building. 
+
+The third reaches them. Z panicks and swings, hitting him right in the solar plexus. The immortal looks shocked. He gasps for air. Anna slips her leg behind his and pushes...he trips and falls backwards in front of the ledge. 
+
+They're not robots, after all. 
+
+ZAYNE
+Tell me where my brother is. Malachi.
+
+IMMORTAL
+(struggling for breath)
+...who...
+
+ANNA
+The Tangled Prayer, then. Is it in this building?
+
+IMMORTAL
+It's.... every...where.
+
+He staggers to his feet. Z and Anna tense themselves. 
+
+The Immortal smiles, and takes a step backward into thin air. 
+
+ZAYNE
+Where did you learn to shoot like that? And where did you get that gun?
+
+ANNA
+We don't have time for exposition, okay?
+
+ZAYNE 
+For what?
+
+
+:: JUMP OFF THE EDGE 
+ZAYNE gulps, looking into the darkness below. From behind, the two immortals rush. 
+
+He jumps. 
+
+He shouldn't have. There's a bamboo forest beneath him, and those bamboo trees act a lot like spears from that height. 
+
+Next time, don't jump off a building like you're in some stupid action movie. 
+
+
+:: PANIC 
+The banging grows louder. The Immortals aren't smart, but they don't seem to care about the physical destruction they're doing to their bodies: one, banging on the grate, breaks his arm, a glint of bone showing through, but doesn't stop, beating his own hands in bloody stumps against the metal. 
+
+ZAYNE
+Oh shit ohshitohshit...
+
+ANNA
+Hold on, we have to--somebody--my hands are--
+
+Z
+They're so scary, so so so--
+
+ANNA
+It's okay--it'll be--it'll be--
+
+ZAYNE
+My kids. Harper. Ford. Oh my god...
+
+ANNA
+It's okay, here...here...I'm here...
+
+The grate shudders. 
+
+Anna and Z cling together. 
+
+<<set $romance to 10>>
+
+The grate bends. The wind howls louder in the tunnel. It grows and grows until it's impossibly to think or hear anything else. 
+
+The grate brakes. 
+
+//Sorry, people. Panic attacks aren't really evolutionarily beneficial, unless you're trying to get out of going to the mall with your girlfriend, so try to bring some Xanax next time.// 
+
+
+:: GO THROUGH HER BAGS 
+Zayne looks through her bags, finds out that Anna is a member of the PERUVIAN FBI. She was trying to arrest him. <<set $alptrust to "Pedro">>
+
+HIs heart sinks.
+
+Pedro looks over at him. 
+
+PEDRO
+See, I told you dude. She's shady as fuck.
+
+Gina looks pissed. 
+
+He lifts a can of pickles from the boxes. 
+
+PEDRO
+Dude, we got kimchi, we got //siracha,// we got HELLA pickles! 
+
+Zayne slumps. 
+
+GINA
+You know, if it comes down to it, I don't wanna be the one to say it, but we can always eat the little mustache monkey. I mean he's hella small but... my stepson, he reads a lot? And he says...
+
+ANNA
+She's a girl. 
+
+Anna is awake, but shivering. 
+
+ZAYNE
+I'm gonna get the furs from the plane. 
+
+[[Pedro, come with?->Fur Pedro]]
+
+:: TALK TO ANNA 1 ON 1 
+Zayne gets a moment alone with Anna.<<set $saveshirley to 1>> 
+
+He asks her directly what's happening. Who is she? Why does she have a gun?
+
+She comes clean. She's trying to stop Malachi. She wanted him to lead her to him. She tells him his brother is working with a smuggler. She says she wasn't going to hurt him, or Zayne, but she was hoping she could convince him to help her find him. 
+
+ANNA
+Z... your brother... I don't know his story, but he's working with very bad men. They're sellling our culture out from under us, they're stealing our history. Z, I know you love your brother... but he's on the wrong side of this. 
+
+[[Trust Her][$annatrust to $annatrust + 1]]
+	<<if $saveshirley is 1>>\
+		[[She's lying|Shirley Wins]]
+	<<else>>\
+		[[She's lying|Pedro Wins]]
+<</if>>
+
+
+
+:: TRUST HER 
+Zayne says that sounds about right. But he tells her his loyalty to his brother is unrelenting. 
+
+ANNA
+Some things are bigger than family. 
+
+Zayne stiffens. 
+
+ZAYNE
+That might be true for some people... but not for me. 
+
+Anna looks down. This is a dead end streat. But then, Zayne looks at her. 
+
+ZAYNE
+Look, I'm not gonna betray my brother. That's just... case closed, ok?
+
+ANNA
+(sensing an opening)
+Ok...
+
+ZAYNE
+But he's... well let's just say he's had a complicated relationship with the truth his whole life. I know that. I'll help you get out of here. I'll do what I can to make sure you're ok. But once we're out of this shit? End of the day, he's still my brother. You still try to arrest him...
+
+ANNA
+I will. 
+
+ZAYNE
+Well, if you do... It's gonna be every man for himself. 
+
+ANNA
+Ok. I respect that. Thank you. But we cannot trust that man. If we're going to survive, you have to go get help. Tonight. 
+
+ZAYNE
+I can't leave you here. 
+
+[[Leave Anna]]
+[[Take Anna With You]]
+
+:: SHOOT OUT THE WINDOW 
+The rush of air PUTS OUT the flames. 
+
+But now, the mountains rise before you. 
+
+Zayne manages to CRASH LAND in a glacier. It's crazy and terrifying. 
+
+Zayne is THROWN from the plane, lands in a snow drift. 
+
+CUT TO WHITE
+
+Zayne crawls out of the snow. 
+
+On the glacier below, the belly of the plane smolders. 
+
+[[Try to save them->Go to the Plane]]
+[[They're Beyond Hope->Be a Dick]]
+
+:: FIRE EXTINGUISHER 
+The fire Extinguisher fails. 
+
+You have to Jump. 
+
+Zayne looks at Anna, looks at her gun. 
+
+ZAYNE
+Who are you?
+
+ANNA
+I'm an animal trainer!
+
+ZAYNE
+With a gun!? And... really strong punches and stuff?
+
+ANNA
+I take animal safety really seriously. 
+
+ZAYNE
+I kinda think you're lying. 
+
+Anna looks down. Obviously she's lying. 
+
+ANNA
+I think you wanna do the right thing. 
+
+ZAYNE
+And what's that?
+
+ANNA
+Trust me.
+
+Pedro pulls on one of the parachutes, makes his way toward the door. 
+
+There's only one parachute left. 
+
+[[Take Anna->Jump]]
+[[Leave Anna->Freefall]]
+
+:: FREEFALL 
+Zayne freefalls, finally pulls his parachute. 
+
+It SNAPS when he's just 100 feet off the
+
+[[Ground->Atacama]]
+
+:: NO BAG SEARCH 
+ZAYNE
+You know what man... that's a dick move. The lady is hurt. Do I trust her? Not a chance in hell, but If we're gonna survive, we're gonna need eachother. 
+
+PEDRO
+Sorry for trying to help. But you're a big American man, right? You don't need any help. Let's see how that plays out. 
+
+Zayne ignores him. Gina smiles at him. He's definitely gained her trust. He starts opening boxes, realizes the only food they have is pickles, siracha and kimchi. <<set $alptrust to "Gina">>
+
+ZAYNE
+Goddamn. 
+
+GINA
+You know, if it comes down to it, I don't wanna be the one to say it, but we can always eat the little mustache monkey. I mean he's hella small but... my stepson, he reads a lot? And he says...
+
+ANNA
+She's a girl. 
+
+Anna is awake, barely, but shivering. 
+
+ZAYNE
+I'm gonna get the furs from the plane. 
+
+[[Invite Gina to join->Fur Gina]]
+
+:: MAKE A SHELTER 
+ZAYNE
+No way we're starting a fire in this wind. We need shelter!
+
+Gina points to a FROZEN OVER ICE CAVE. We could make shelter in there. 
+
+Z checks his bag, sees the $tool. 
+
+[[ICE CAVE|Bag Choice][$shelter to "icecave"]]
+[[PLANE|Bag Choice][$shelter to "plane"; $annatrust to $annatrust + 1]].
+
+:: MAKE A FIRE 
+<<set $deaths to $deaths + 1>>There's no way to make a fire in this wind. 
+
+As Zayne tries to get his bic lighter to keep a flame, the gusts keep blowing it out. 
+
+The world starts to dim. His thumb's going numb with pain.
+
+There's no time to make a big enough shelter now 
+
+Cut to:
+
+[[Next Morning]]
+
+:: BAG CHOICE 
+This scene sets up the heart of this storyline. It's survivor -- all about alliances and trust. Who's lying to you, who do you lie to?
+
+Zayne and Gina help Anna (barely conscious) and Pedro (broken arm and ribs but talking) into the $shelter.  
+
+As Gina starts a FIRE, Zayne looks at the GUN strapped to Anna's waist
+
+Pedro notices you notice.
+
+He points to a BLACK BAG behind the pilot seat. 
+
+PEDRO
+You see that too? She's not a pilot, cabron. She's //la placa.// I swear to God. Look in her bag. 
+
+Gina tells you that's fucked up. I don't like monkey lady either but she's hurt. 
+
+Pedro says we gotta see what she has, what if she has matches, or power bars and shit. That's just survival. 
+
+[[Go Through Her Bags]]
+[[Tell Him No Way->No Bag Search]]
+
+:: NEXT MORNING 
+Shirley crawls out of the snow, wipes the snow from Zayne's frozen face. 
+
+Possible ending - she takes the bag of corn nuts from his pocket. 
+
+She returns to the jungle.
+
+Cut to: thousands of years later,
+
+a MUCH BIGGER version of mustached monkeys chisel the word CORN NUTS into stone. 
+
+Maybe they've forsaken fire as a species, they instead make more an more elaborate [[SHELTERS->Make a Shelter]]
+
+:: GIVE SHIRLEY CORN NUTS 
+ZAYNE
+Ok, ok, hold on. 
+
+Zayne pushes corn nuts out of the bears mouth, Shirley gobbles them up, seems not to die. <<set $shirleytrust to $shirleytrust + 1>>
+
+Immediately, she looks back at him, demanding more. 
+
+Just then:
+
+EXPAND
+
+The plane is attacked mid-flight by The Immortal, who board mid flight (think Dark Knight Rises opening scene). Zayne has to fight get out of the bear and fight for his life.  
+
+Z is strong, but not exactly a great fighter. We meet their LEADER - a masked woman named YARA. 
+
+In the fight he grabs her arm, rubbing away a DUST COVERING that reveals a TATTOO: an ancient God. This is THE FANGED DEITY. The same face that Malachi saw in the jungle. 
+
+She didn't want him to see this.
+
+He's getting his ass kicked. He intentionally stalls the plane (always good at breaking things), causing a free fall. Yara tells him she's sorry, but he never should have sought The Maze, then FIRES into the planes gas tank. 
+
+The plane ERUPTS in fire. The fire spreads through the ELK herd, approaching SHIRLEY'S CAGE. She shrieks. 
+
+Zayne moves toward her but then he sees ANNA, struggling with YARA, Yara's knife poised just over her neck. 
+
+[[Save Shirley][$saveshirley to "1"]]
+[[Save Anna][$saveshirley to "0"]]
+
+:: DON'T GIVE MONKEYS CORN NUTS 
+Shirley gets angry, SHRIEKS. <<set $saveanna to "0">>
+
+Anna wakes up, pulls a GUN on the bear. 
+
+GINA
+Is that a goddman GUN on plane? Lady... I don't care what kind of animal trainer you think--
+
+But Anna swing the gun to her, tells her to back off: //you don't know what you're getting into//.
+
+It gives Z just a BEAT to make move. 
+
+[[Try to escape->Bear on the Run]]
+[[Don't get Shot by the Nice Lady->Scaredy Bear]]
+
+:: SAVE SHIRLEY 
+Zayne grabs the monkey just as Anna PULLS A GUN and empties the clip into YARA. <<set $annatrust to $annatrust +1>>
+
+Yara stumbles back, smiling.
+
+As we watch, her bullet wounds HEAL. Shirley shivers, crawls into Zayne's shirt.
+
+She walks through the FLAMES towards ZAYNE, burning and healing, burning and healing all at once. 
+
+She smiles at Zayne, going in for the kill but then Anna PULLS HER PARACHUTE, ripping Yara out of the plane. 
+
+The plane TUMBLES, the fire grows. Zayne has no time to be shocked. 
+
+There are two parachutes. Gina is passed out at the controls. Robby is dead. Pedro grabs one of the parachutes, hands shaking. 
+
+He throws the other to Zayne. Tells him they have to jump. 
+
+ZAYNE looks at the fire, looks back at the controls. The cockpit isn't burning. 
+
+ZAYNE
+I think we can put this out!
+
+PEDRO
+If we don't jump, everyone dies!
+
+[[Jump]]
+[[Put out Fire]]
+
+:: SAVE ANNA 
+Zayne tries to save Anna, but she doesn't need it. Before he gets to her, Anna PULLS A GUN and empties the clip into YARA. 
+
+ANNA
+Save the monkey, psycho!
+
+As Zayne dives for the MONKEY, Yara stumbles back, smiling. 
+
+As we watch, her bullet wounds HEAL. 
+
+She walks through the FLAMES towards ZAYNE, burning and healing, burning and healing all at once. 
+
+The plane TUMBLES, the fire grows. Zayne has no time to be shocked. 
+
+As she move in for the KILL, Anna PULLS Yara parachute, RIPPING her out of the plane. 
+
+Zayne looks impressed, but there's no time to think. 
+
+The plane LURCHES. 
+
+They look at the cockpit. Robby lies dead across the controls. Gina is passed out next to him. Pedro looks terrified. The fire is raging. Zayne has to put this out. 
+
+He looks at Anna's gun, looks at a FIRE EXTINGUISHER at his feet. 
+
+[[Shoot out the window]]
+[[Fire Extinguisher]]
+
+:: PUT OUT FIRE 
+He looks at Anna's gun, looks at a FIRE EXTINGUISHER at his feet. 
+
+[[Shoot out the window]]
+[[Fire Extinguisher]]
+
+:: GO TO THE PLANE 
+The wind is howling. Zayne makes sure everyone is safe and stabilized for the moment. 
+
+What do you do first?
+
+[[Make a Fire]]
+
+[[Make a Shelter]]
+
+:: BE A DICK 
+Zayne tries to walk away, but then stops. <<pickup '$inventory' 'You Might Just Be a Psychopath'>>
+
+Zayne turns to camera, breaking the 4th wall. 
+
+ZAYNE
+What the hell is wrong with you? What kinda...
+
+He shakes his head, walks down toward [[The Plane|Go to the Plane]]
+
+:: FUR PEDRO 
+As they walk to the plane, Pedro looks down awkwardly. 
+
+PEDRO
+So uh... not to be personal or whatever, but why were you tied up in that friggen bear?
+
+Zayne laughs, explains his situation. Brother's in trouble. I gotta help. 
+
+PEDRO
+Damn, yeah man. That's intense. 
+
+Pedro tries to convince him that Anna is trouble. We gotta take away her gun. 
+
+Int. ice cave - minutes later
+
+[[Take Anna's Gun]]
+[[Talk to Anna Directly->Talk to Anna 1 on 1]]
+
+:: FUR GINA 
+As they walk to the plane, Gina. 
+
+GINA
+So. Why the hell did you sneak onto my plane? You come kinda drug mule or some shit? Got cocaine up your friggen culo n shit?
+
+Long beat. 
+
+ZAYNE
+My brother's in trouble, had to get down here, bear was just the easiest way, it's... 
+(feeling like she's not going to get it)
+It's... it's family. 
+
+GINA
+Yup. I hear that. My stepson?
+
+She keep talking as Zayne carries the bear toward the shelter. Then, she stops him. 
+
+She tells him she doens't trust either Pedro or Anna, but at least Anna's simple. She's a cop. If you're trying to get down here for some shady shit, she's probably here to arrest you or something. Either way, have to choose between them? I say choose the enemy you know. 
+
+[[Trust Gina->Talk to Anna 1 on 1]]
+[[Don't Trust Gina->Take Anna's Gun]]
+
+:: TAKE ANNA'S GUN 
+In this section:
+
+You try to take Anna's gun. You fail. 
+
+Anna unmasks Pedro's identity as a member of what she calls a terrorist group, he calls freedom fighters. 
+
+She and gina tie up Pedro and Zayne. 
+
+There's a desperation in Pedro's eyes. He says something like... "she knows too much" starts talking to himself in spanish about sacrifice. 
+
+<<if $saveshirley is 1>>\
+		[[Later that Night|Shirley Wins]]
+<<else>>\
+		[[Later that Night|Pedro Wins]]
+<</if>>
+
+:: SHIRLEY SAVE 
+This gives you a chance to realize you were wrong. 
+
+You apologize to Anna. 
+
+You came here to save your brother. 
+
+But now you realize that to save him, you're going to need her help. 
+
+Gina survives in this plot. 
+
+But then, the sound of a HELICOPTER. 
+
+Pedro called in reinforcements. 
+
+You have to escape down an ice crevasse. 
+
+Where you find an ARTIFACT detailing the collapse of civilizations. 
+
+:: SHIRLEY WINS 
+Int. ice cave - night
+
+Around the coals of a the dying fire, Shirley curls into Zayne's neck, sad that he's tied up. . 
+
+She blinks, licks her mustache, happily grooming in the cozy cave. 
+
+But then, she sees something. 
+
+Pedro is sneaking behind the fire. She looks at him and growls. He tries to shush her, pawing at Zayne's face. 
+
+He snores, snuggles deeper into sleep. 
+
+Shirley looks back at Pedro. He's not waking up. 
+
+Pedro presses a BUTTON, RUNS out of the ice cave. 
+
+Shirley SCREAMS. 
+
+Zayne and Anna wake up, see the BOMB
+
+INSERT TIMER
+
+[[Throws the bomb]]
+[[Diffuses the Bomb]]
+
+:: PEDRO WINS 
+INT. ICE CAVE - NIGHT
+
+While Zayne snores, Pedro gets Shirley to gnaw through his ropes. 
+
+Freed, he crawls over to his bag, arms a BOMB. 
+
+Shirley looks at Zayne, GROWLS. 
+
+Pedro looks sad, whispers he's sorry. But this will be quick. 
+
+The Bomb [[EXPLODES]]
+
+:: THROWS THE BOMB 
+The bomb explodes in the ENTRANCE, snowing them in. 
+
+The heat from their fire melts enough ice so they see the CAVE PAINTINGS showing extinction events.
+
+Zayne can:
+
+[[Admit he was wrong]]
+
+[[Still Don't Trust Her|No Admission]]
+
+
+
+:: DIFFUSES THE BOMB 
+The FIRE melts enough of the ice to see CAVE PAINTINGS showing extinction events. 
+
+:: EXPLODES 
+For a beat, total silence. You think you died. 
+
+But then Zayne crawls out of the snow. <<set $scarloc1 to "in an ice cave">>
+
+He's missing a boot. He calls for Anna and Gina but can't find them. 
+
+As he digs through the snow, he finds his FIRE STARTER<<if $takehergun is 0>> and Anna's satellite phone <</if>>. 
+
+He doesn't know what to do. He calls HARPER. She asks if he's ok. He said he's made some mistakes. He'll be fine. Is she safe?
+
+We see that there are NEWS CREWS at Tammy's house. Tammy is telling htem that whoever they were, they now have a fresh understanding of the power of first ammendment feminism. 
+
+Harper laughs and says... we're totally safe. But then she asks. Dad... are you sure you're ok. 
+
+[[Admit you're in trouble]]
+[[Be strong for her]] 
+
+:: DIG OUT NOW 
+Ext. Andes mountains
+
+WIth only one boot, Zayne stumbles through the cold. 
+
+The sharp rocks cut through his sock. He tries to bandage it, but he can barely feel anything. 
+
+He tries pushing forward, but without sensation in his leg, he TRIPS. 
+
+He tumbles down the mountain, sliding toward a RAVINE. 
+
+CUT TO:
+
+A HELICOPTER OVERHEAD
+
+Zayne, unconscious is strapped to a gurney. 
+
+INT. hospital - lima - weeks later
+
+Harper and Tammy are there. He says he never found his brother, but that's ok. Somethings aren't meant to be. 
+
+Then, through the window they see a MASSIVE TSUNAMI approaching. 
+
+[[The Stakes are Higher than you think, better find your boot!->Find Your Other Boot]]
+
+:: FIND YOUR OTHER BOOT 
+He starts a FIRE, and after a long time digging, finds his boot. 
+
+But as he LOOKS UP, he sees, revealed by the melting ice,  CAVE PAINTINGS showing extinction events. A crude prehistoric drawing of The Fanged Deity eating a village. 
+
+Then, a NORTE CHICO carved relief of a more ABSTRACTED fanged deity swallowing the sea. 
+
+Then, a GOLD PLATED HUGE DISC, showing an ELABORATE FANGED DEITY slicing a mountain in two. 
+
+Alongside, there's little graffiti showing that people have come here over the centuries to survive these recurrant disaster events. 
+
+Zayne recognizes the fanged deity from YARA's tattoo.  Have these people been wiping out civilizations for thousands of years?
+
+The GROUND shifts under him. He has to climb out now. 
+
+Has to climb down mountain alone. 
+
+
+
+AVALANCHE sends him tumbling to the bottom. 
+
+Calls his daughter. 
+
+Realization: Maybe I don't rust anyone but myself. Then, backtracks. but end of hte day, I gotta trust my gut. 
+
+
+So you and Malachi end up on Atoc's bad side. 
+
+You need to be rescued by Tammy. 
+
+:: ADMIT YOU'RE IN TROUBLE 
+Zayne swallows. This is hard. 
+
+ZAYNE
+I mean, I wouldn't say I'm quote unquote "in trouble" but... you know...
+
+Zayne looks out at the <nobr><<if $scareloc1 is "on the side of a mountain">>raging snowstorm around him<<elseif $scareloc1 is "in an ice cave">>frozen ice trapping him deep underground<</if>></nobr>. He swallows. 
+
+ZAYNE
+(choking up //just// a little)
+It is... it is definitely nice to hear your voice.  
+
+It's not the confession of vulnerability that we were maybe hoping for, but  Harper knows how to interepret. Her dad's in trouble. 
+
+HARPER
+Remember that time I gut shot that big ol cow elk and lost her trail and it was gettin' dark and I felt so bad and started bawlin' like a little baby? Well, and remember how you just told me to take a breath, get my bearings, take it one step at a time and never ever ever give up?
+
+ZAYNE
+(clears his throat)
+Yeah...
+
+HARPER
+Well I thought that was maybe pretty good advice. 
+
+And just then, the phone GOES DEAD. 
+
+ZAYNE shakes it, wiling it back to life. No dice. 
+
+He sighs, defeated for a moment. He crosses himself against the cold. He's so alone. He's more scared than he wants to admit. He misses his kids. 
+
+But then, through newly misty eyes, he looks <nobr><<if $scareloc1 is "on the side of a mountain">>out at the blinding snowstorm. He can't see anything. But then, a GUST reveals a SNOW BRIDGE over the chasm between him and the CAIRN.<<elseif $scareloc1 is "in an ice cave">>up. Just barely visible in the snowpack above him...a thin line of LIGHT. <</if>></nobr>. He swallows. Is this a way out? He stands. Then he remembers, he's missing his BOOT. 
+
+[[Dig Out Now]]
+[[Find Your Other Boot]]
+
+:: BE STRONG FOR HER 
+Or if he isn't vulnerable, he just cries himself to sleep. 
+
+CUT TO:
+
+Int. ICE CAVE
+
+50 years later. He's a skeleton in the same cave. No one ever found him. 
+
+CUT TO:
+
+FUTURE AWARD CEREMONY: Harper, a sucessful actress recieves a lifetime achievement award. 
+
+But onstage, it's clear she's a little tipsy. 
+
+HARPER
+The thing about all of us in this room, we're all just... desperate. For attention. For love. We all have a hole in our hearts that no award, or paycheck or...
+
+Music starts playing her off. 
+
+HARPER
+If my dad had ever shown me even an INCH of vulnerability, a single moment of human connection, you think I would have chosen a life of so much vanity and rejection?
+
+[[Dad's matter. Maybe try to be VULNERABLE for once->Admit you're in trouble]]
+
+:: TAKE THE GOLD 
+Zayne heads back to the plane. He wakes Anna up. 
+<<if $goldthief is 1>><<include "LIKE YOUR BROTHER">>
+<<else>><<include "NOT LIKE YOUR BROTHER">><</if>>
+
+But then, from outside the cave, the sound of HELICOPTERS. 
+
+Pedro smiles. 
+
+He tells Zayne he made a mistake trusting Anna, but he understands. It's for his brother. It's family. He'll forgive it. He's a member of the GUERILLA group who's //actually// been fighting to free Peru from colonialism. He can take Zayne to Malachi right now. He knows where he is. 
+
+Zayne looks at Anna. She looks scared now. 
+
+Outside the shelter, [[A dozen guerrilla fighters approach|ATOC COMPOUND]]
+
+
+
+
+:: ATOC COMPOUND 
+MID POINT
+
+Cut to Zayne being drug to a tent, bound and gagged. 
+
+Through the walls, he talks to Malachi, who is also captured. 
+
+Malachi asks you what you found. 
+
+:: LIKE YOUR BROTHER 
+ZAYNE
+Look at all this //gold//. I could buy a new logging truck. Send the kids to college. 
+
+There's a click. He looks up. Anna's pointing her gun at him. 
+
+ANNA
+You're just like your brother, aren't you? A grave robber. 
+
+ZAYNE
+You're not gonna kill me. 
+
+ANNA
+I'm arresting you. 
+
+:: NOT LIKE YOUR BROTHER 
+Zayne shows Anna the picture of the MAIDEN, her gold necklace, the constellations. 
+
+Anna tells him this could be huge... those constellations... something in them seems shifted.
+
+As they whisper, Pedro STANDS, smiling. It's unnerving. 
+
+:: NO ADMISSION 
+Zayne gets arrested. 
+
+While on trial, he gets word that his brother was killed by Anna in a firefight.
+
+He's convicted.
+
+Spends the rest of his life in Peruvian prison. 
+
+Gets face tattoos. 
+
+Starts a criminal organization. 
+
+One day, decades later in a prison fight, he's seriously hurt. 
+
+One of the men leans over him, gives him a DRINK. 
+
+ZAYNE's EYES CHANGE. 
+
+He's buried in an unmarked grave. 
+
+Claws up out of the ground. 
+
+The last show we see is him standing on the walls of THE IMMORTAL CITY
+
+<<pickup '$inventory' 'The Immortal Z'>>
+
+:: ADMIT HE WAS WRONG 
+Anna and Zayne decide on a plan - he's going to find his brother. But the only way he can save him is to decieve him. 
+
+Anna convinces him to join her. 
+
+but first he has to [[Get Arrested|ATOC COMPOUND][$badbrother to 1]]
+
+:: BEAR ON THE RUN 
+Z RUNS, still in the bear suit, heading for the PARACHUTE. 
+
+Anna swings the gun at him, but Zayne HEADBUTTS a domino row of ELK toward her. She dodges, gets a clear shot, but doesn't shoot. //Damnit!//
+
+Instead, she TACKLES him. 
+
+She's strong but he's big, and he's got bear claws. 
+
+As he BREAKS FREE,  Anna tries to stop him, but Zayne RIPS the emergency escape door open. 
+
+ANNA
+Wait. Wait! Just listen to me! Your brother... Malachi...
+
+At Malachi's name, Zayne turns. Stunned. 
+
+But the force of the wind grabs the BEAR HEAD, RIPPING HIM out of the plane, tumbling end over end. 
+
+As he freefalls, Zayne fights with the parachute. Corn nuts, combos and pork rinds come STREAMING out of the suit. 
+
+It rips ENTIRELY OFF HIS BODY, floating next to him. He has to use the BEAR SKIN to slow himself down enough to grab the pack, sling it over one shoulder
+
+It SNAPS open, just 100 feet off the[[Ground->Atacama]]
+
+:: SCAREDY BEAR 
+Tap this passage, then the pencil icon to edit it.
+
+:: DEATH OF THE AMAZON 
+Fade to:
+
+BLACK
+
+HARPER (VO)
+When I lost my dad, I felt my whole world collapse around me. 
+
+INt. school - later that week. 
+
+Angle on HARPER'S FACE, crying as (MOS) she's told the news. 
+
+HARPER (VO)
+It was like a black hole, swallowing everything good and beautiful I knew existed in the world. 
+
+Ext. graveyard - at the funeral - days later. 
+
+Harper stands stone faced, wearing black. 
+
+Int. harper's bedroom - later
+
+Harper DESTROYS HER ROOM.
+
+HARPER (VO)
+But now... I'm able to see... it was the darkness that made me. Through that pain, I was able to see the power I had inside me. 
+
+EXT. college - montage.
+
+Harper studies, Harper runs, Harper studies, Harper runs. Behind her, all the other kids party, flirt, become more socially adapted humans. Not Harper. Harper studies, Harper runs.
+
+HARPER (V.O.)
+It allowed me to embrace parts of myself that others are afraid to. It allowed me to make decisions others are too weak to. 
+
+INT. corporate offices - night
+
+Harper works late. Others leave. Harper stays. Harper runs. 
+
+Ext. amazon 
+
+Harper lands at an OPEN PIT mine, oversees the removal of PROTESTORS.
+
+Harpers shakes hands with an oily-looking politician. 
+
+HARPER (VO)
+I now look back on the tragedy of my father's loss as the single motivating factor of my life. It made me. It formed me. 
+
+int. AUDITORIUM
+
+Harper (60 now) speaks at a mic. Behind her, a huge CORPORATE LOGO. 
+
+HARPER
+Without that pain, I would never have become the the woman I am now. 
+
+Ext. Amazon
+
+Harper  watches one of the LAST TREES fall in the AMAZON. HUGE MACHINES MOVE IN. 
+
+She lifts her whiskey glass, lights a <<linkappend "cigar.">><br><br>If you don't want to destroy the world, maybe you should have just [[Called your daughter|Call Harper]]<br><br>Text on screen: You earned the badge "Made a Monster"<</linkappend>>
+
+:: HARPER I'M SCARED 
+<<nobr>><<if $meettammy is 0>><<include "LATER TAMMY 1">><</if>><</nobr>>
+
+Int. Tammy's house. Upstairs bedroom. 
+
+Harper is bent over the CODEBOOK. FORD sleeps on the bunk bed.
+
+Harper's phone RINGS.  As she answers, she can barely hear him <<if $scarloc1 is "on the side of a mountain">>over the howling wind<</if>>
+<<if $scarloc1 is "in an ice cave">>through the terrible reception<</if>>
+
+HARPER
+Dad is that you? 
+
+Zayne sighs relief at hearing her voice. 
+
+ZAYNE
+Babygirl Oh my God I was... are you... are you ok? 
+
+<<if $meettammy is 0>><<include "LATER TAMMY 2">><</if>>
+
+She laughs. 
+
+HARPER 
+I'm fine. I promise. Ford's asleep. 
+(then)
+Where are you?
+
+Z swallows. He tells her he's <nobr><<if $scareloc1 is "on the side of a mountain">>out for a little hike<<elseif $scareloc1 is "in an ice cave">>hanging out at camp<</if>></nobr>. But he's ok. She knows he's lying. She presses him. 
+
+HARPER
+Dad, seriously, are you being an idiot? 
+
+[[ADMIT YOU'RE IN TROUBLE]]
+[[BE STRONG FOR HER]]
+
+
+:: LATER TAMMY 1 
+ext. tammy's house - montana - night
+
+police lights illuminate the premises. 
+
+A huge RANCH HOUSE with a shooting range out back. 
+
+A sign reads: Tammy's Self Defense: By Women, For Women. "The Best Restraining Order is Well Trained Woman and a .45"
+
+Behind the sign, the twisted, smoking remains of several SUVS. News vans and emergency vehicles crowd the scene. 
+
+:: LATER TAMMY 2 
+Harper looks out the window at the crime scene below.
+
+HARPER
+Those people who were chasing us? They tried to break into Momma Tammy's last night...
+(Zayne swallows)
+And I hate to tell you, but that went just about exactly as you'd expect...
+
+Ext. Tammy's house 
+
+A reporter talks to TAMMY on her front porch<<if $meetTammy is 0>> (think a heavily armed Melissa Mccarthy)<</if>>. 
+
+TAMMY
+Well Steph, it's like I always say. If you come here lookin' to have a little fun while building self-confidence and taking your personal safety into your own hands? You're gonna have a blast, and be safe while doin' it t'boot. 
+(dramatic pause)
+But. If you come here lookin' to take advantage of vulnerable women and or children? You're going to have a real bad time. 
+
+The reporter looks back at the smoking remains. 
+
+TAMMY
+We have robust safety protocols and those protocols, in this case, gave us the desired outcome.
+
+int. Tammy's house - bedroom
+
+:: MAKE FOR THE CAIRN 
+As Z stumbles toward the Cairn, he TRIPS, falling END OVER END through the snow. <<set $scareloc1 to "on the side of a mountain">>
+
+His right boot FLIES OFF, leaving him stranded, in the middle of the night, on a rocky ledge in the middle of nowhere. 
+
+But as he goes on, the sun sets and temperature drops. 
+
+The wind cuts through his bear skins and his face is numbing. 
+
+For the first time Zayne realizes he's in trouble and he doens't know what to do.
+
+He crouches in the lee of a rock ledge and feels a strange warmth begin to suffuse him. It feels so nice to rest. 
+
+He wakes himself. This is bad, this is very, very bad. He pulls out Anna's phone.
+
+[[CALL HARPER]]
+
+[[CALL 911->DON'T CALL HARPER]]
+
+:: UFO ENDING ANDES 
+ext. andes - 20,000 years in the future
+
+A UFO whirs over the frozen Andean landscape. They are mere islands now... the only land masses on an earth whose oceans cover all the other continents.
+
+ext. andes - crevasse
+
+ALIEN ARCHEOLOGISTS carefully whisk snow away from the frozen bodies of Zayne, Shirley, and Anna, curled around each other.
+
+ext. deep space
+
+The UFO approaches their HOME PLANET.
+
+int. UFO
+
+The PERFECTLY EXTRACTED frozen block of ice that contains all three of them is wheeled into a CRYOGENIC chamber. 
+
+ALIEN SCIENTISTS (robots with disgusting fleshy bits inside a domed helmet) look on in absolute wonder. 
+
+ALIEN 1 
+Behold, they are such a beautysense in my softest parts. Love like this hath surely never been seesmelled in the history of the big milk. A society whom doth not kill their males at birth, yet whom also holdeth tiny fureethings to their breasts? It is wonder. We must bless them with relife so they can teach us. 
+
+One of ther other aliens recoils. 
+
+ALIEN 2
+This is heresy, sister! Relife can only be given to the sisterhood. No male, nor furreething can partake!
+
+The first alien looks down, doesn't respond, but from her posture, it's clear this isn't settled. 
+
+int. alien courtroom
+
+An ALIEN JUDGE stands, reads a proclamation. 
+
+ALIEN JUDGE
+It has been ordered that any being who doth not harvest a male of their //onlypurpose// upon birth hath violated the deepest feelsense of the greater milk, and must be destroyed. Therefore, all icefrozen ones shall be melted into their atomic principles, purifying them of the shameful //malelove// and //furcomfort// we hath witnessed here. 
+
+OUTSIDE THE COURT - chants rise. This isn't going well. 
+
+CUT TO:
+
+Ext. ALIEN BATTLE FIELD - the iceblock at the center. 
+
+Alien troops DESTROY EACHOTHER with lazers and nukes. Weeping, nashing of teeth. 
+
+Some of the troops carry a FLAG emblazoned with a man, woman and monkey locked in an infinite embrace. 
+
+INT. cryogenic chamber. 
+
+In the ice block, Z's frozen face looks uncomfortable. 
+
+Overhead lights stutter to life. 
+
+A SINGLE (Alien 1 from before, it's a big part) pulls herself into the chamber. She's bloody, tattered, barely alive. She wires up a MACHINE, and with her LAST BREATH, hits a BUTTON. 
+
+Weird robots rise up, start to work on reassembling Zayne, Anna and Shirley. 
+
+CUT TO:
+
+ext. battlefield
+
+HEAVY DOORS SLIDE OPEN to reveal: THE AFTERMATH of the battle. 
+
+Zayne, Anna and Shirley look out onto this weird alien world. full of death and destruction. Three moons hang in the sky above them. 
+
+ZAYNE
+Howdy.
+
+But then, his nose itches. He tries to stifle it he can't. 
+
+He SNEEZES. Loud. A dad sneeze. 
+
+For a beat, nothing. 
+
+Then, one of the aliens sneezes. 
+
+Another one sneezes. Then another. 
+
+The first alien collapses. 
+
+ANNA
+Dammit, Z...
+
+Like dominoes, the remaining Aliens die around them. 
+
+Z looks up at the strange sky. The three moons, regretting everything. 
+
+Maybe if he hadn't tried to be a hero... Maybe if he could have just admitted than Anna was too heavy for him to carry, [[HE WOULDN'T HAVE WIPED OUT AN ENTIRE ALIEN CIVILIZATION->LEAVE ANNA]]

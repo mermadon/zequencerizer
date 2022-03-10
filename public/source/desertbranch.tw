@@ -1,0 +1,747 @@
+:: PACK MINIMAL 
+Zayne looks at the mess in his closet. All the unused camping gear and fishing poles--things he's never had time to use anyway. 
+
+He grabs a pair of jeans, a toothbrush, logging boots, pulls on his tattered $shirt shirt. <<audio ":playing" fadeout>>
+
+ZAYNE
+Still fits!
+
+It really doesn't. 
+
+HARPER
+That's all you're bringing...
+
+ZAYNE
+Keep it simple. Less things to go wrong. 
+
+HARPER
+I'm not sure that applies to //preparation//...
+
+Z grabs his lunch box.
+
+ZAYNE
+Ford, let's go!
+
+EXT. GRAVEL ROAD - NEARBY
+
+A LINE OF ARMORED SUVS hurtles down the iced over gravel road. An ARMORED CARRIER rides at the center. 
+
+INT. ARMORED CARRIER
+
+The carrier is dark, the only illumination coming from the plexiglass HATCH overhead. In the shadows of the carrier, something BREATHES. A man. Two men? A beast? Something huge and heavy, something //merged.//
+
+EXT. GRAVEL ROAD
+
+The vehicles churn around a SNOWY CORNER, approaching (a half mile away) ZAYNE'S TRAILER.
+
+EXT. HOUSE 
+
+Zayne hustles the kids toward the a lifted PINTO that he somehow fit a 1980s Big Cam Cummins into (with the help of a hand-torched hole in the hood). 33s and snow chains. It's like something out of Mad Max if the post apocalyptic future had amateur welders. 
+
+HARPER
+Do you speak //any// Spanish? Have you ever even left Montana?
+
+ZAYNE
+Donday es-ta el ba-no. Yo soy mu-ee guapo. And yes, actually. Senior trip, 98. Broke down in Cour'd'Alene, thank you very much. 
+(then)
+Family's family. And if my idiot brother needs help, I'm the idiot that's gonna help him, every damn time. 
+
+INT. CAR - MOMENTS LATER
+
+Z turns the ignition. <<audio ":all" pause>> 
+
+As he PEELS out--
+
+INT. HOUSE - CONTINUOUS
+
+The PHONE RINGS, un-answered. We'll never know what that was. 
+
+THROUGH THE BEDROOM WINDOW - THE PHALANX of black SUVS approach
+
+INT. PINTO - MOMENTS LATER
+
+Zayne drives, jaw clenched. Working over his brother's bullshit in his mind. 
+
+Harper watches him, not sure how to break through his anger. 
+
+HARPER
+Well, at least it's warm in Peru. That'll be a nice break. 
+
+ZAYNE
+Hot I bet. Hot and humid... mosquitos and spiders and diarrhea water.
+(then sotto)
+Like he's //allergic// to responsibility I swear to--
+
+Z hits the accelerator.
+
+HARPER
+Father... I get that you are annoyed... but can we maybe not drive--
+
+He SKIDS around an icy corner, back tire chains SLAPPING the rusty undercarriage. Harper grabs the //oh shit// bar. It falls off in her hand. 
+
+HARPER
+//Quite...// so stupidly?
+
+Ford leans forward, big grin. 
+
+FORD
+Floor it, floor it, floor it!
+
+[[DRIVE CAREFUL]]
+
+[[FLOOR IT]]
+
+:: DRIVE CAREFUL [death] 
+Zayne looks over at HARPER and laughs. She crosses her arms at him, faux annoyed. <<set $deaths to $deaths + 1>>
+
+HE SLAMS on the brakes, skidding to a CRAWL. He leans over the wheel like a grandma. 
+
+ZAYNE
+(old lady voice)
+Does this make you feel more comfortable? I'd hate for you to be uncomfortable... 
+
+Ford cracks up. Harper laughs too, but then, she sees something in the rear-view mirror: in the far distance, a line of CARS approaches.
+
+ZAYNE
+(old lady voice)
+Do you want me to get you a //diaper// just in case? I always bring some in me bonnet...
+
+HARPER
+Funny. 
+(looking back at the cars)
+Dad do you see those care? They're driving really, really fast....
+
+ZAYNE 
+(old lady voice)
+Well that's no good... me personally... I won't want to take any //risks//, it might scare my //daughter.// That's why I never drive too fa--
+
+But the cars come around the corner now. POPPING SOUNDS. 
+
+HARPER
+No, seriously DAD!
+
+Now BULLETS hit the glass. 
+
+Zayne swivels. The car SKIDS. Hits tries to correct...
+
+But it's too late
+
+SLOW MOTION: THEY SCREAM...
+
+As an RPG spirals out of the SUV.
+
+As it EXPLODES, text on screen:
+
+Maybe not the best time to make fun of your daughter. Next time [[Drive Faster->FLOOR IT]]
+
+:: FLOOR IT 
+
+INT. SUPER-CHARGED PINTO
+
+Zayne high-fives Ford. <<audio ":all" stop>> 
+
+ZAYNE 
+Finally someone's thinking!
+
+Harper rolls her eyes as Z shoves a cassette in the old deck, hits the <<linkappend "gas hard.">><<include "FLOOR IT 2">><</linkappend>>
+
+:: FLOOR IT 2 
+<<silently>>
+    <<if $tape is "ACDC">><<audio "lightning" play>><<elseif $tape is "OutKast">><<audio "standup" play>><<elseif $tape is "Deanna">><<audio "manofmine" play>><</if>>
+<</silently>>
+<<silently>>
+    <<if $tape is "ACDC">><<pickup '$inventory' Ride the Lightning!>><</if>>
+<</silently>>
+
+<<if $tape is "ACDC">>Metallica's RIDE THE LIGHTNING<<elseif $tape is "OutKast">>Ludacris' //Stand Up//<<elseif $tape is "Deanna">>Shania's ANY MAN OF MINE<</if>> comes BLASTS from the stereo. The engine ROARS, exposed carburetor spiting fire. Snow, gravel and ice ROOSTER-TAIL behind them. <<set $seconds to 5>>
+
+HARPER
+(flat, but kinda loving it)
+Cool. Cool, cool, cool. Why mom granted you joint custody I'll never--
+
+Z JAMS smiles at her, <<if $tape is "ACDC">>starts headbanging, playing air guitar, not even touching the wheel<<elseif $tape is "OutKast">>leans his seat way back, a single hand slack over the wheel<<elseif $tape is "Deanna">>starts clap his hands to the beat, not even touching the wheel<</if>>.  
+
+They skid towards a <<linkappend "SNOW BANK.">><<include "SNOW BANK CHOICE">><</linkappend>>
+
+:: SNOW BANK CHOICE 
+
+Harper braces herself, closing her eyes. 
+
+HARPER
+Dad!
+
+Zayne smiles. He's got this. 
+
+<<include "SNOW BANK TIMER">>
+
+[[BRAKE]]
+
+[[ACCELERATE]]
+
+:: SNOW BANK TIMER 
+<span id="countdown">Choose in ''$seconds!''</span>
+<<silently>>
+    <<repeat 1s>>
+        <<set $seconds to $seconds - 1>>
+        <<if $seconds gt 0>>
+            <<replace "#countdown">>Choose in ''$seconds!''<</replace>>
+        <<else>>
+            <<replace "#countdown">><</replace>>
+            <<goto "No Choice Call">>
+			<<set $indecision to $indecision + 1>>
+            <<pickup '$inventory' Freeze Up>>
+            <<stop>>
+        <</if>>
+    <</repeat>>
+<</silently>>
+
+:: FREEZE UP [death] 
+
+Zayne can't decide what to do, WRAPS the pinto around a [[PINE TREE|ACCELERATE]]
+
+<<set $deaths to $deaths + 1>>
+
+:: BRAKE [death] 
+
+<<set $deaths to $deaths + 1>>(XXX insert cool death scene) Never break hard in the [[SNOW|ACCELERATE]]
+
+:: ACCELERATE 
+
+Zayne laughs, punches the gas, the wheels gaining purchase.
+
+ZAYNE
+(singing along)
+<<if $tape is "ACDC">>Burning in my brain! I can feel the flames!<<elseif $tape is "OutKast">>When I move you move! Just like that... <<elseif $tape is "Deanna">>It's what a woman wants!<</if>>
+
+At the last minute, Z swerves onto a barely-visible SHORT CUT. As the little car with huge tires SLALOMS through the snow, they're almost completely blinding them. It's insane, they're all laughing now. 
+
+But through the back window, Ford sees something big approaching. 
+
+The black SUVS are trying to catch up. 
+
+A MAN LEANS OUT A WINDOW, tries to fire his gun, but ZAYNE, just showing off for his kids, CORNERs again, SPRAYING SNOW. 
+
+INT. PINTO 
+
+Blissfully unaware he's almost being murdered, Z whoops like an idiot, sliding down an impossible steep hill. Trees WHIP by the window. The kids are AIRBORNE in their seats. 
+
+FORD
+OH MY GOD THIS IS REALLY CRAZY!
+
+One of the SUVs (far behind them now) SMASHES into a tree, EXPLODING (very James Bond winter chase scene here) but the one behind makes it.
+
+A man leans out the window with a ROCKET LAUNCHER, trying to get an BEAD on the car. 
+
+THROUGH THE GUN'S SITE, the Pinto approaches the hwy.
+
+EXT. HWY - MOMENTS LATER
+
+Z sits at the entrance to the hwy. The exact opposite of their wild four-wheeling moments ago. Now, it's quiet in the car, just the tick tick tick of the turn signal.
+
+He looks left. Looks right. Looks left again. 
+
+The music is so loud, they don't see the vehicle rolling down the hill behind them, end over end.
+
+As it crunches to a stop, a HORRIBLY HUGE MAN tears his way out of the wreckage. Despite a missing leg, he runs on all fours like a dog, approaching quickly. 
+
+[[JUST GO]]
+[[WAIT FOR A GAP]]
+
+ZAYNE
+Every damn time. You can't get a gap. 
+
+The truck blows past. Maybe a HALF MILE away, another car approaches. 
+
+ZAYNE
+See? It's like they //planned it//. Can't get... a <<linkappend "gap.">><<include "TRUCK GAP">><</linkappend>>
+
+:: JUST GO [death] 
+
+They get DESTROYED by the trucks. 
+
+<<set $deaths to $deaths + 1>>
+
+:: TRUCK GAP 
+
+He PULLS OUT, turning the song back up just as the MISSILE sails behind him. 
+
+A line of trucks comes through. 
+
+Countdown timer section here. if you make it through, it's like nothing ever [[happened|TAMMY GUN RANGE]]
+
+<<audio "playing" fadeout>>
+ 
+
+:: TAMMY GUN RANGE 
+<<set $meettammy to 1>>
+
+TAMMY
+She's out with the horses. 
+
+ZAYNE
+That bad huh?
+
+TAMMY
+Another day in paradise.  
+
+ZAYNE
+Well, you get what you pay for--listen, you think she's ok with me dropping the kids off a little early? Something... came up... and uh... I'm going to PERU. 
+
+ext. tammy's gun range. 
+
+Ext. TAMMY'S HOUSE DAY
+
+Zayne drops off the kid at TAMMY's GUN RANGE. 
+
+Zayne flirts with the ladies a bit, but Tammy gives him shit. It's clear they're good friends. He tells her he's off to see save 
+
+TAMMY
+That in Mexico?
+
+ZAYNE
+See that's what I thought? But apparently, no. Southern America.
+
+Tammy shrugs: //huh.// Behind them, Nancy (tiny, late 50s) UNLOADS A CLIP into a target with her ex-husband's (asshole) face on it. 
+
+NANCY
+I AM NOT AFRAID OF YOU SPENCER!
+
+TAMMY
+That's right Nancy! You tell em!
+(then to Z, teary)
+Gal-//dang//, I'm proud of that gal. Know what she named her 12 guage?
+(beat)
+Restraining order. Hah! Can't make this shit up...
+
+She laughs, slapping her chewing tobacco. 
+
+TAMMY
+Chaw?
+
+ZAYNE
+On the wagon... 
+
+TAMMY
+(like he's an idiot)
+Suit yourself. 
+
+Take care of my kids and ex-wife, Tammy. I'm off to drain my kids college funds on my stupidass brother again. 
+
+Tammy laughs, too hard. 
+
+TAMMY
+Your kids ain't got no college fund, Z! Gah-lee! That's good. 
+
+ZAYNE looks at the storm. 
+
+Tammy says he should stay. 
+
+ZAYNE
+Gotta get to Malachi. Fore he digs himself an even more expensive hole. 
+
+They wave goodbye to him just as the STORM HITS. 
+
+A HELICOPTER trying to follow him gets lost in the storm. 
+
+[[TELL TAMMY WHAT'S HAPPENING|ASK TAMMY FOR HELP]]
+
+[[STICK TO THE CODE|BOZEMAN AIRPORT]]
+
+
+:: ASK TAMMY FOR HELP 
+
+Tammy has a shipment of taxidermy going out on a flight. 
+
+You end up on Tammy's plane. 
+
+:: BOZEMAN AIRPORT 
+
+Maybe when he first enters. 
+
+
+<<nobr>>
+<<if $machete is 1>>
+    <<include "TSA ADVENTURE">>
+<<else>>
+    <<include "BORING AIRPORT">>
+<</if>>
+<</nobr>>
+
+:: BORING AIRPORT 
+
+INT. BOZEMAN AIRPORT - NIGHT
+
+There's a WOMAN following him - ANNA. Maybe she kills one of the men following him. He keeps being saved by her and has no idea how. 
+
+Does she have some kind of weapon capable of taking them out?
+
+As he makes it through the detectors. 
+
+It's funny if he's close to being killed but your choices are for very inane things.
+
+Z is FOLLOWED into the airport, but he's too distracted by the ESCALATOR to notice someone get ARRESTED behind him. 
+
+Maybe he goes up to the front desk - I'd like to buy a flight for Peru. 
+
+You don't have a ticket?
+
+Nope. 
+
+The creature following him DROPS. We don't see how. 
+
+INT. AIRPORT - KIOSK
+
+He browses sandwiches, is shocked by the prices. The woman behind the counter looks at him.
+
+CANDACE
+Where you headed, honey?
+
+Z isn't sure if he should answer. 
+
+ZAYNE
+Long ways from here. 
+
+CANDACE
+As in... overseas?
+
+Z has to think a long time.
+
+ZAYNE
+I'm not sure... technically. 
+
+She shakes her head. 
+
+CANDACE
+And you didn't bring pack your own snacks?
+
+She tsk under her breath, motions him closer. 
+
+CANDACE
+Lemme tell you somethin... //overseas? //
+(sotto, like it's a confessional)
+They eat //snails.// They make cheese out of //heads.// They put blood? In their goddamn //oatmeal.//
+
+Candace is //amazing// at sales. Zayne swallows. 
+
+ZAYNE
+No kiddin?
+(then)
+You got jerky? 
+
+CANDACE
+We got hella jerky. We got ranch. Ketchup. Huckleberry motherf*ck'n bear claws. We got you.
+
+
+[[BUY A $14 SANDWICH]] or JERKY, CORN POPS or RANCH DRESSING - HEINZ KETCHUP - bag full of single serving ketchup and mayo â€“ he's afraid of foreign food. 
+[[DON'T WASTE YOUR MONEY]]
+
+:: TSA ADVENTURE 
+
+INT. BOZEMEN AIRPORT - NIGHT 
+
+Zayne tries to walk into the airport, followed close behind by a CRAZED LOOKING, HEAVILY BREATHING MAN. He's about to get nabbed by them when he sets off the METAL DETECTORS. 
+
+A woman bumps into you.
+
+He's pulled into a BACK ROOM, doesn't even notice as the man who was following him is TACKLED by security. 
+
+INT. SECURITY OFFICE 
+
+Z get SCANNED in a back room. He has knives, fireworks, chainsaw fuel in his bag. It's a mess.
+
+She puts on gloves, asks him to disrobe. Zayne swallows. 
+
+[[TRY TO BRIBE HER|BRIBE HER]]
+
+[[IT'S JUST A FINGER|JUST A FINGER]]
+
+:: BRIBE HER 
+
+Zayne finds himself in prison. 
+
+ON SCREEN:
+
+TERROR PLOT THWARTED BY BRAVE TSA AGENT
+
+They show the gasoline. Name him unibomber: lite. More like unibomber //stupid//
+
+OR, this leads DIRECTLY to the ATACAMA
+
+You get a phone call. You find a number in your jacket. We can break you out. 
+
+<<pickup '$inventory' 'Domestic Terrorist'>>
+
+:: JUST A FINGER 
+
+Z says he feels sorrier for her than he does for himself, drops his pants. 
+
+DARCY
+Don't talk so soon buddy. 
+
+LATER
+
+He walks, a little crooked, toward his gate. 
+
+The gate agent tells him he's just in time. He says he got searched. She smiles. 
+
+:: OVER THE OCEAN 
+
+Then, an announcement for his flight. 
+
+Z RUNS through the airport. 
+
+A WOMAN in BLACK follows him. The flight's almost closed. 
+
+He gets on the flight, then realizes something. He gets off for some reason. He knows the pilot. 
+
+Maybe a NEEDLE is waiting for him in his seat. but he never sits down on it. Maybe somebody else does - a guy who's an asshole, passes out. 
+
+Gets drunk with one of the crew. 
+
+INT. PLANE - OVER THE OCEAN 
+
+On the flight, she gives him a DRINK TICKET. 
+
+Maybe he sleeps in the secret bunks over the cab.   
+
+He passes out, misses a FIGHT on the plane. The man is restrained. 
+
+:: LIMA AIRPORT
+
+INT. AIRPLANE - MORNING
+
+Z stretches casually, climbs down from his flight cabin. 
+
+People all seem preoccupied. 
+
+INT. LIMA AIRPORT
+
+He waltzes out. 
+
+ZAYNE
+Hola, my name es "Z." Where do, Donde do I rent a car. 
+
+No one responds. 
+
+ZAYNE
+Spreckenzie english?
+
+A man smiles across the airport, starts to approach. 
+
+MAN
+You looking for a ride?
+
+Zayne smiles, big. 
+
+ZAYNE
+Yeah, hey, I need a little help. I need a truck, a map... probably some sort of weapons... you know of any saw shops...
+
+But then, another man RUNS up. 
+
+OTHER MAN
+Hello! Hello. Hola, señor! Señor Zayne Abel. 
+
+Z turns to him. 
+
+ZAYNE
+How do you know my--
+
+But as the two men argue, Z looks increasingly lost. 
+
+He has to make a choice. 
+
+[[FIRST DRIVER]]
+
+[[SECOND DRIVER]]
+
+:: SECOND DRIVER
+
+:: FIRST DRIVER
+
+As ZAYNE gets into the car, two BURLY MEN slide in on either side. 
+
+DRIVER
+Rideshare. Very cheap. You save money. 
+
+Then, a banging from the trunk. 
+
+DRIVER
+My wife's cat. Doesn't like to be left home alone. 
+
+EXT. STREETS - PERU
+
+Z looks out the window, increasingly sure that he's going to be killed.
+
+Zayne asks for a pee break. They pass him a bottle. 
+
+He looks at the little hole, tells them it's not gonna be a pretty site. 
+
+They pull over. 
+
+[[RUN INTO THE MOUNTAINS|GO ALONE]]
+[[RESCUE THE MAN IN THE TRUNK|MAN IN TRUNK]]
+
+Z walks toward the trunk, but one of the goons stops him. 
+
+GOON
+Leave cat alone. Ok? Cat's fine. 
+
+ZAYNE
+Cat might need some air. 
+
+GOON
+Cat deserves what he gets. 
+
+INT. car - continuous
+
+The road is rougher and rough, but as they BREAK through the jungle, they enter a vast, empty desert. 
+
+
+
+
+
+Inca ROPE BRIDGE CHASE
+
+Along an old Incan road. 
+
+FUN AND GAMES
+
+B STORY
+
+You go with EDWIN
+
+He starts destroying artifacts. 
+
+Burning everything but not good at it. 
+
+You find out about the EXTINCTION EVENTS
+
+This is literally save the world. 
+
+You can believe him or not. 
+
+If you think he's crazy
+
+Leads to a midpoint - in the jungle. You use Edwin - bring me my brother, I'll bring you Edwin. 
+
+If you believe Edwin. You have to convince Anna to work with a notorious artifact hunter. 
+
+
+Meets Anna at FANCY restaurant. 
+
+If he puts the ketchup on the ceviche she sides with him. If he tries to be smooth, she betrays him. 
+
+
+Malachi told them you have a secret code - that's why he's there. 
+
+Tell them you have a thing. 
+
+
+He quickly realizes that Atoc is fucked up and has to escape. 
+
+Overhears -- if this is discovered, "they" will wipe out civilization, once again. They've done it every time in history that someone tried to bring the maze to the world. 
+
+[[RESCUE EDWIN->JOIN EDWIN]]
+
+[[GO ALONE]]
+
+
+
+:: JOIN EDWIN 
+Zayne decides to save Edwin from his 
+
+:: GO ALONE 
+"Last Man on Earth" Ending. <<set $deaths to $deaths + 1>><<pickup '$inventory' 'Last Man on Earth'>>
+
+ext. jungle - 60 years later.
+
+Zayne leaves the jungle after having lived for 60 years in the Amazon. 
+
+There is nothing left of civilization. 
+
+He walks down overgrown hwys. 
+
+Finally, he finds a group of children playing, starting fire with flint and steel .
+
+In the distance, a CAMP where a few very primitive humans try to build back toward civilization. Their camp is decorated with a giant mural of a recognizable creature:
+
+THE FANGED DIETY
+
+[[THIS TIME MAKE FRIENDS->JOIN EDWIN]]
+
+:: YOU'RE WITH EDWIN {"position":"100,175"}
+You're trying to save Malachi from destroying the world. 
+
+Anna is your enemy. The least romantic version. 
+
+The midpoint has to be that you doubted Edwin, chose your brother and were wrong and fought to get back to Edwin. 
+
+You can choose to save Anna from the Immortal or your brother. 
+
+You believed Edwin about the end of the world, but you won't let anyone hurt Malachi. 
+
+Edwin has bad knees. Terrible at hiking. 
+
+The plan is to convince the immortal not to kill the world. By offering to destroy all the evidence.. no one will believe him. 
+
+Edwin realizes you're putting your family over the families of the rest of the wolrd, draws that illogic into the light. 
+
+Trolly problem. Maybe in one version he does the right thing but is sad the rest of his life. 
+
+
+
+
+:: ATACAMA
+CUT TO: 
+
+ext. peruvian desert - day. 
+
+In an endless desert, a TRUCK cuts through the dunes, speeding past huge Nazca GEOGLPYPHS. This is the driest place on earth: THE ATACAMA.
+
+
+INT. TRUCK/EXT. DESERT
+
+In the back of hte truck, Zayne sits BLINDFOLDED, gaurded by two heavily armed guerilla TEENAGERS: JESUS and OMAR. They rifle through his bags. <<if $saveanna is "0">><<include "WHAT HAPPENED">><</if>>
+
+There's a MAN in the back of the truck with you. Also in a sack. 
+
+.<<if $clothes is "Jungle">><<include "JESUS JUNGLE">><</if>>
+
+OMAR (SPANISH)
+I mean, I know Americans are stupid but this pundejo just //came.// On his own! We didn't even have to go get him. 
+
+Zayne tries to lift his blindfold, gets slapped. 
+
+As they laugh, Zayne doesn't have to speak Spanish to know he's pretty much fucked. 
+
+Ext. ancient desert temple site - later
+
+As the truck pulls into a REMOTE DESERT TEMPLE SITE (think Chan Chan but less excavated), Zayne is drug from the truck and drug to someone's feet. 
+
+He looks up to see ATOC. 
+
+Zayne demands to see his brother, to know that he's safe, but ATOC just smiles. 
+
+ATOC (IN SPANISH)
+So your Malachi sends for his brother. As like... a back up plan? And so I'm thinking. Holy shit, his brother, he must be this badass, maybe military, maybe cop? But damn. Look at this. 
+
+His men laugh. 
+
+ATOC (IN SPANISH)
+Some washed up redneck? Damn. 
+(then, in english)
+Do you understand that you are stupid? Do you understand that?
+
+:: WHAT HAPPENED 
+Zayne rubs his head. 
+
+ZAYNE
+What happened?
+
+:: JESUS JUNGLE 
+Jesus lifts the MACHETE out of Z's bag.
+
+JESUS
+Â¡A Su! SeÃ±or //Indiana Jones!//
+
+He waves the machete like he's slashing vines, making Omar cackle. Zayne grimaces. Shit. Omar starts throwing Zayne's clothes overboard. But then, he comes across the $shirt shirt.

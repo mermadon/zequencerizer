@@ -1,0 +1,14 @@
+sugarcube-2:
+  macros:
+    pickup:
+      name: pickup
+    volume:
+      name: volume
+    fadein:
+      name: fadein
+      container: true
+    inventory:
+      name: inventory
+    newinventory:
+      name: newinventory
+

@@ -1,0 +1,549 @@
+
+:: UserStylesheet [stylesheet] {"position":"2175,1350"}
+
+#ui-bar button {
+	float: none;
+}
+
+#story {
+  	color:black;
+	background-color: #FFFFFF;
+  	
+}
+
+#ui-dialogue.open {
+	border: 100px;
+	color: pink;
+}
+
+.link-internal, .link-external {
+  	font-family: courier;
+  	font-weight: bold;
+  	color: lightsalmon;
+  	font-size: 14px;
+  	text-transform: uppercase;
+  	
+}
+
+a.link-internal: hover {
+  	color: orange;
+	line-height: 1 !important;
+	font-weight: bold;
+  	-webkit-transform: none !important;
+	-webkit-text-transform: none !important;
+	-webkit-text-size-adjust: none !important;
+}
+
+a {
+  	font-family: courier;
+  	font-weight: bold !important;
+  	color: lightsalmon !important;
+  	font-size: 14px; !important;
+  	text-transform: uppercase; !important;
+  	background: transparent; !important;
+  	background-color: transparent; !important;
+  	text-decoration: none;
+  	border: none;
+  
+}
+
+
+a.linkinternal:hover {
+	color: pink;
+
+}
+a:hover {
+  	color: lightblue !important;
+	line-height: 1 !important;
+	font: 14px courier;
+	font-family: courier;
+	font-weight: bold !important;
+  	-webkit-text-size-adjust: none !important;
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-o-transition: none !important;
+	transition: none !important;
+	background-color: transparent;
+	padding-top: 0;
+	text-decoration: none;
+	border: none;
+}
+
+
+body {
+	background-color: white;
+  	font-family: courier new;
+  	font-size: 14pt;
+  	width: 100%;
+  	float: auto;
+  	padding-top: 0;
+	border: 0px solid #ffffff;
+}
+
+.body h1
+	color: pink;
+	background-color: pink;
+	font-size: 2px;
+	font-family: times;
+}
+
+#passages {
+	font-family: courier new;
+	background-color: white;
+	font-size: 14pt;
+	width: 100%;
+	font-weight: normal;
+	padding-top: 20px;
+	z-index: 200;
+}
+
+.passage {
+  	line-height: 1;
+ 	width: 512px ;
+  	padding: 0% 25%;
+  	color: black;
+  	float: center;
+	z-indext: 200;
+  	font-size: 14px/14px Courier:fixed;
+  	-webkit-text-size-adjust: none !important;
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-o-transition: none !important;
+	transition: none !important;
+}
+
+.passage h1, h2, h3, h4, h5, h6 {
+  	font-weight: normal;
+  	font-size: inherit;
+  	float: center;
+}
+
+p {
+  	font-size: 14px; 
+  	font-weight: normal;
+  	margin: 1em 0;
+  	color: black;
+  	float: center;
+  
+}
+
+span.marked {
+	color: black;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: line-through;
+}
+
+.passage a:hover {
+  	font-size: 14px; 
+  	font-weight: normal;
+  	color: pink;
+  	background-color: transparent;
+	-webkit-text-size-adjust: none !important;
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-o-transition: none !important;
+  
+}
+
+
+.centered { 
+  	margin: 5px 200px;
+  	text-align: center;
+  	text-decoration: underline;
+ 
+}
+
+.passage h2 { 
+  	text-align: right;
+}
+
+.passage h2.left-aligned { 
+  	text-align: left
+}
+
+.passage h3 { 
+  	position: relative;
+  	color: black;
+  	text-transform: uppercase;
+  	font-size: 14px;
+  	font-weight: bold;
+  	margin-top: 2em;
+  	margin-bottom: 0;
+  
+}
+
+div.dialogue  {
+  	margin-top: 1em;
+  	margin-bottom: 1em;
+  	margin-left: 17%;
+  	margin-right: 17%;
+  	color:black;
+}
+
+div.dialogue h4 { 
+  	margin-bottom: 0; 
+  	margin-left: 23%;
+  	font-size: 14px;
+  	color: black;
+}
+
+div.dialogue p.parenthetical { 
+  	margin-bottom: 0; 
+  	margin-top: 0; 
+  	margin-left: 11%;
+  	color: black;
+}
+
+div.dialogue p { 
+  	margin-bottom: 0; 
+  	margin-top: 0; 
+  	width: 95%;
+  	color: black;
+}
+
+div.dual-dialogue { 
+	margin: 2em 0 .9em 2%; auto; 
+	width: 95%; 
+
+}
+div.dual-dialogue div.dialogue { 
+	display: inline-block; 
+	margin: 0; 
+	width: 45%; 
+	
+}
+
+div.dual-dialogue div.dialogue h4 { 
+	margin-top: 0;
+	
+}
+
+div.dual-dialogue div.dialogue.right { 
+	float: right;
+}
+
+button {
+	color: lightsalmon;
+	background-color: #ffffff;
+	border-color: transparent;
+  	font-weight: bold;
+  	text-transform: uppercase;
+  	float: right;
+  	padding: 2px;
+}
+button:hover {
+  	color: lightblue;
+	background-color: transparent !important;
+	border-color: transparent;
+  	font-style: none;
+}
+button:disabled {
+	color: #D3D3D3;
+	border-color: transparent;
+  	background-color: transparent;
+}
+
+#ui-bar {
+  	font-family: courier new;
+    line-height: 18px;
+  	color: black;
+	width: 100%;
+  	font-size: 14px;
+  	position: -webkit-sticky;
+		position: sticky;
+		top: 0%;
+	background-color: #FFFFFF;
+	z-index: 1000;
+}
+
+#ui-bar-tray {
+	background-color: #FFFFFF;
+}
+
+#ui-bar-title {
+	text-align: center;
+	margin-right: 20%;
+	padding-right: 20px;
+	color: black;
+	background-color: #FFFFFF;
+}
+
+#ui-bar a: {
+  	font-family: courier new;
+    line-height: 18px;
+  	color: lightsalmon;
+  	margin: auto;
+  	font-size: 14px;
+	float: none;
+  	font-style: none;
+  	background-color: #FFFFFF;
+  	
+}
+
+#ui-bar a:hover {
+  	color: lightblue;
+  	font-size: 14px;
+  	font-style: none;
+  	background-color: #FFFFFF;
+  	
+}
+#ui-bar-history {
+	float: right;
+	margin-right: 20%;
+}
+
+#ui-bar-history [id|=history] {
+    font-family: courier new;
+    font-size: 14px;
+  	text-transform: uppercase;
+    font-weight: bold;
+	float: none;
+    speak: none;
+  	color: lightsalmon;
+  	background-color: transparent;
+  	border-color: transparent;
+  	padding: 2px;
+  
+}
+
+#story-banner {
+}
+
+#ui-bar-body {
+	background-color: transparent;
+	width: 100%;
+	position: fixed;
+
+}
+  
+#ui-bar-history [id|=history]:hover {
+  	color:lightblue;
+}
+#ui-bar-history [id|=history]:disabled {
+    color: #D3D3D3;
+    background-color: transparent;
+    border-color: #fff;
+}
+
+input[type=range] {
+  width: 60%;
+  margin: 0px 0px;
+  border-color: #fff;
+  border: none;
+  background-color: white;
+  -webkit-appearance: none;
+  
+}
+input[type=range]:focus {
+  outline: none;
+  background-color: white;
+  border: none;
+  border-color: #fff;
+}
+input[type=range]:active {
+  outline: none;
+  border: none;
+  background-color: white;
+}
+
+input[type=range]:hover {
+  outline: none;
+  border: none;
+  border-color: #fff;
+  background-color: white;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  background: lightgray;
+  border: none;
+  width: 100%;
+  height: 4px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+input[type=range]::-webkit-slider-thumb {
+  width: 14px;
+  height: 14px;
+  margin-top: -5px;
+  background: lightsalmon;
+  border-color: lightsalmon;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #545a5a;
+}
+input[type=range]::-moz-range-track {
+ background: #484d4d;
+  border: none;
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+}
+input[type=range]::-moz-range-thumb {
+  width: 18px;
+  height: 27px;
+  background: rgba(255, 67, 95, 0.93);
+  border: 0;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  border-width: 0px 0;
+  color: transparent;
+  width: 100%;
+  height: 25.6px;
+  cursor: pointer;
+}
+input[type=range]::-ms-fill-lower {
+  background: #3c4040;
+  border: 0;
+}
+input[type=range]::-ms-fill-upper {
+  background: #484d4d;
+  border: 0;
+}
+input[type=range]::-ms-thumb {
+  width: 18px;
+  height: 27px;
+  background: rgba(255, 67, 95, 0.93);
+  border: 0;
+  cursor: pointer;
+  margin-top: 0px;
+  /*Needed to keep the Edge thumb centred*/
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #484d4d;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #545a5a;
+}
+/*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
+how to remove the virtical space around the range input in IE*/
+@supports (-ms-ime-align:auto) {
+  /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+  input[type=range] {
+    margin: 0;
+    /*Edge starts the margin from the thumb, not the track as other browsers do*/
+  }
+}
+
+
+
+/*click to proceed stuff */
+
+.macro-ctp-entry {
+	display: inline-block;
+}
+
+.macro-ctp-entry-t8n {
+	animation: macro-ctp-fade-in 0.4s ease;
+}
+
+@keyframes macro-ctp-fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+/* Styling and Colours of the Right UI Bar. */
+#right-ui-bar {
+	background-color: #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	text-align: center;
+}
+#right-ui-bar-toggle {
+	font-size: 1.2em;
+	line-height: inherit;
+	color: lightsalmon;
+	background-color: transparent;
+	border: 1px solid #FFFFFF;
+}
+#right-ui-bar-toggle:before {
+	font-family: tme-fa-icons;
+	font-style: normal;
+	font-weight: 400;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	speak: none;
+}
+
+/* Layout and Positioning of the Right UI Bar. */
+#right-ui-bar {
+	position: fixed;
+	font-family: courier new;
+	font-style: none;
+	font-size: 11;
+	z-index: 20;
+	top: 8em;
+	right: 0;
+	text-align: left;
+	width: 17.5em;
+	height: 200%;
+	margin: 0;
+	padding: 0;
+	-webkit-transition: right .4s ease-in;
+	-o-transition: right .4s ease-in;
+	transition: right .4s ease-in;
+}
+#right-ui-bar-tray {
+	position: absolute;
+	top: 2em;
+	left: 0;
+	right: 0;
+}
+#right-ui-bar-toggle {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-left: none;
+	padding: .3em .45em .25em;
+	-webkit-user-select: none;
+}
+#right-ui-bar-toggle:before {
+	content: "\e81e";
+}
+#right-ui-bar-body {
+	height: 90%;
+	height: calc(100% - 2.5em);
+	margin: 2.5em 0;
+	padding: 0 1.5em;
+}
+#right-ui-bar-body {
+	line-height: 1;
+	overflow: auto;
+}
+
+#story {
+	margin-right: 6em;
+}
+
+/* Stowing of the Right UI Bar. */
+#right-ui-bar.stowed {
+	right: -15.5em;
+}
+#right-ui-bar.stowed #right-ui-bar-toggle {
+	padding: .3em .55em .25em .35em;
+}
+#right-ui-bar.stowed #right-ui-bar-toggle:before {
+	content: "\e81d";
+}
+#right-ui-bar.stowed #right-ui-bar-body {
+	visibility: hidden;
+	-webkit-transition: visibility .4s step-end;
+	-o-transition: visibility .4s step-end;
+	transition: visibility .4s step-end;
+}
+
+#right-ui-bar.stowed~#story {
+	margin-right: 4.5em;
+}

@@ -1,0 +1,13 @@
+:: StoryRightSidebar [nobr]
+<<nobr>>
+@@line-height: 1;
+''Audio Controls:''  <<click "PAUSE">><<audio ":playing" pause>><</click>> | <<click "PLAY">><<audio ":paused" play>><</click>>
+''^^Vol:^^'' <<volume>>@@
+<hr>Send <<link 'FEEDBACK'>>\
+    <<dialog 'Feedback for Current Passage' >>\
+        I think you can insert an HTML you want to right here!
+     <</dialog>>
+<</link>>
+<hr>''Build Your Own Story Beats:'' 
+<<inventory '$storybeats' '<br><br>'>>
+<</nobr>>

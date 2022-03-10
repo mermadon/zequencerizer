@@ -1,0 +1,316 @@
+:: TAKE THE TRUCK 
+Zayne picks up Ford, shouts at Harper: 
+
+ZAYNE
+COME ON!
+
+Zayne heads toward the truck. Harper looks at him, stunned. 
+
+HARPER
+Hey dad? Shouldn't we just take the helicopter and kinda... fly away?
+
+ZAYNE
+Helicopters are aluminum bubbles full of hot metal and gasoline... not exactly my favorite place to get shot. Trust me. On three, ok? One... 
+
+BULLETS SPRAY the logs near them. 
+
+ZAYNE
+NOW!
+
+Zayne holds Ford in one arm, drags Harper with the other as they SPRINT through LOG DECKS and ROWS OF OLD cars. 
+
+Bullets ricochet around them. Ford giggles. 
+
+INT. TRUCK 
+
+Inside Zane turns the ignition the engine. Ford giggles beside him--he thinks this is a game. Harper jumps into the cab. 
+
+Zayne hits the gas. The tape deck turns on.
+
+<<silently>>
+    <<if $tape is "ACDC">><<audio "lightning" play>><<elseif $tape is "OutKast">><<audio "standup" play>><<elseif $tape is "Deanna">><<audio "manofmine" play>><</if>>
+<</silently>>
+<<silently>>
+    <<if $tape is "ACDC">><<pickup '$inventory' Ride the Lightning!>><</if>>
+<</silently>>
+
+(if:(history: where its name contains "Dolly Parton")'s length >= 1)["9 To 5" starts playing on the stereo. Zayne smiles. Just what he needed.](if:(history: where its name contains "OutKast")'s length >= 1)["Bombs over Baghdad" starts playing on the stereo. Zayne smiles. Just what he needed.](if:(history: where its name contains "AC/DC")'s length >= 1)["T.N.T." starts playing on the stereo. Zayne smiles. Harper and Ford groan. 
+
+Zayne's smile gets even bigger. 
+
+ZAYNE
+Here we go.
+
+The logging truck roars into gear, taking off down the tiny narrow, rutted logging road. Harper goes white - it's terrifying - but Ford is surprisingly relaxed. He was basically born in a logging truck. They head straight towards the approaching vehicles...getting closer, closer...
+
+There's suddenly some distant popping sounds, and a hole appears in the windshield. 
+
+ZAYNE
+Hold on!!
+
+Then, seconds before they should collide--
+
+Zayne SWINGS THE WHEEL, hard, angling the truck left along a hidden turn off, along a cliff. The truck skids down a TERRIFYINGLY STEEP road, almost a vertical drop. Harper screams as G forces shove them back. Behind them, the larger vehicles miss the turn, and have to back up--only the dirt bikes remain in close pursuit. 
+
+One of the logs from the trailer tumbles out, smashing through the crowd of dirt bikes that've followed them. 
+
+Zayne grins. He knows these roads like no one else. He looks in the mirror - but the bike still follow, and behind them he sees the smaller more agile trucks gaining ground. 
+
+HARPER
+Uh, Dad? What's the plan?
+
+ZAYNE
+Well. They're bottlenecked now, so they can't--
+
+HARPER
+Can't WHAT???
+
+Three dirt bikes leap onto the bank, pass the truck, and swerve in front, onto the road. On one, the passenger rises to his feet, on the back seat, precarious, trying to jump onto the truck. 
+
+Whoever this is, they're insane. 
+
+Zayne gulps.
+
+[[HIT HIM]] 
+
+[[DODGE HIM]]
+
+[[AXE HIM]]
+
+[[IF MORE THAN HALF OF AUDIENCE TAKES MORE THAN 7 SECONDS TO RESPOND]]
+
+:: HIT HIM
+
+Zayne ACCELERATES FORWARD INTO THE MOTORCYCLE. Harper screams. Ford screams, in joy. They almost, almost harmonize. 
+
+Silence in the cab as they hear the horrible THUD, THUDTHUD, THUDTHUD of the bodies rolling under all eight axles. The truck rumbles to a stop. All we can hear are the hoarse breaths of people close to panick attacks. 
+
+HARPER
+Dad...?
+
+ZAYNE
+Well...honey...he was trying to kill us... so...
+
+HARPER
+No, I mean--
+
+Harpers gestures in the mirror. 
+
+And now Zayne sees. On the road behind them lay the crumpled bodies of the men. As he watches...they stand, bodies still bent, and bloody. Then something happens...legs straighten, spinal columns snap back together...and the men begin to run, straight towards the truck. 
+
+ZAYNE
+What in the walking dead...
+
+But there's no time to contemplate this unnatural resurrection...another group of motorcycles is already roaring towards them. Something needs to be done. Now. 
+
+[[ASK HARPER TO DRIVE]]
+[[IF YOU WANT SOMETHING DONE RIGHT...->TRY TO OUTRUN THEM]]
+
+
+:: DODGE HIM 
+The passenger crouches, then leaps toward the truck, eyes fierce and wild. His face looks ancient but also virile. Strong. Sinewy. Zayne dodges hard but not hard enough. 
+
+The leaping man SMASHES into the rear view mirror, cutting his arm on the sharp metal nearly to the bone. 
+
+But no blood comes out. Inside, he's white. Almost... dry. 
+
+And then, the wound heals, knitting over in mere seconds (the SCAR remains, though. In fact, they're kind of //covered// in scars).
+
+Harper's jaw drops, but Zayne doesn't have time to process. He DOORS the guy, sending him FLYING into a tree. 
+
+Zayne's hands start trembling: 
+
+ZAYNE
+What the fuck is this shit?? 
+
+But there's no time waste - another group of motorcycles is already on them.  
+
+Harper is holding strong, but there are tears in her eyes. 
+
+Zayne turns to her. He has to make a choice. 
+
+[[ASK HARPER TO DRIVE]]
+[[IF YOU WANT SOMETHING DONE RIGHT...->TRY TO OUTRUN THEM]]
+
+:: AXE HIM 
+The passenger LEAPS toward them, eyes fierce and wild. His face looks ancient but also virile. Strong. Sinewy. He lands on the hood hard, hard enough to kill someone, but it seems like he doesn't even feel it. Without pausing, he claws his way across the hood, starts bashing his fist and head against the WINDSHIELD, trying to break through, with no apparent regard for his survival. 
+
+ZAYNE
+HARPER!!
+
+HARPER
+WHAT??
+
+ZAYNE
+GET HIM! WITH THE THING! 
+
+HARPER
+WHAT THING??
+
+Zayne gestures frantically at a SCRENCH (that's a real chainsaw tool! Scredriver+Wrench=Scrench, who said loggers aren't creative). Harper picks it up.. and looks at the windshield. The //thing's// head is starting to push through the glass. Harper pokes it. Nothing
+
+ZAYNE
+HARDER
+
+Harper takes a step back, and tries to swing--the end of the wrench slips off the bony top of the things head, and slides right through the corner of his eye...into the skull. The man thing sighs and his grip loosens on the hood.  
+
+Zayne swerves hard, sending the guy flying into a ravine below. As he falls, Ford sees him smile, totally relaxed. 
+
+Now Zayne's hands start trembling a little: //What the HELL?//
+
+But there's no time waste - another group of motorcycles is already on them. 
+
+Harper is holding strong, but there are tears in her eyes. Zayne turns to her. He has to make a choice. 
+
+[[ASK HARPER TO DRIVE]]
+[[IF YOU WANT SOMETHING DONE RIGHT...->TRY TO OUTRUN THEM]]
+
+:: TRY TO OUTRUN THEM [death]
+Zayne looks over at Harper. She's still a kid. 
+
+He has to do this himself. 
+
+He FLOORS the gas, but when he looks in the mirror, he sees something terrifying... a HUGE OGRE OF MAN, totally pale, covered in scars, is climbing along the trailer's logs. Rapid. Like an animal. 
+
+Zayne tries to go faster, but the truck is giving it all she can. 
+
+And then, the huge man is at the door. He RIPS the door off the hinges. He grabs Zayne by the throat, THROWS him off the edge of the ravine. 
+
+The last thing Zayne thinks as he tumbles through the air is...
+
+[[I SHOULD REALLY TRUST MY DAUGHTER MORE->ASK HARPER TO DRIVE]]
+
+<<set $deaths to $deaths + 1>>
+
+:: ASK Harper TO DRIVE 
+Zayne looks over to Harper. 
+
+ZAYNE
+Ready to put all those driving lessons to work?
+
+HARPER
+What lessons? You let me drive once for about five seconds before you started screaming at me!
+
+ZAYNE
+You were always a tactile learner. You're gonna have to drive. 
+
+Zayne opens the door. Harper slides over. Her right hand reaches for the clutch--it's just short. 
+
+HARPER
+Ford. You have to shift. 
+
+FORD
+I can totally shift, I shift my trucks all the time and I can build them and shift. 
+
+HARPER
+Okay. Let's go. FIRST!
+
+She hits the pedals. Ford yanks the clutch into first gear. 
+
+Zayne allows himself a brief smile of pride as the truck chugs forward. 
+
+Zayne climbs back along the outside of the truck, branches slapping his face. The trucks are close behind. Another motorcycle revs up alongside, aims their gun. He looks around. He has no weapon. 
+
+Zayne clutches the railing as a BIKER zooms alongside the truck, barely fitiing in the two foot gap. Zayne tries kick the bike, but the passenger grabs his foot...and Zayne tries wrestle free. The gunman fires - near miss. Zayne KICKS his other leg, sending the motorcycle tumbling end over end. 
+
+Great. But then, Zayne looks down. The driver took his boot with him. Now he's half barefoot on the back of a speeding logging truck. 
+
+IN THE TRUCK:
+
+HARPER
+SHIFT!
+
+FORD
+AYE AYE! 
+
+They're actually a great team. 
+
+ON THE BACK OF THE TRUCK, Zayne makes his way to the tongue, wrestles with the safety chains tethering the trailer (full of logs) to the cab of the truck.
+
+ZAYNE
+TELL ME WHEN!
+
+HARPER
+OKAY!
+
+He unlatches both safety chains, sets to work prying at the hitch. It's rusty, takes a lot of effort to unlatch in the best conditions, let alone when speeding down a rutted road. He's nearly JOSTLED off the back as she hits a bump.
+
+ZAYNE
+EASY!
+
+HARPER
+IT'S A GRAVEL ROAD I CAN DRIVE SLOW OR WE CAN LIVE--
+
+ZAYNE
+WHAT? 
+
+A shadow crosses Zayne's face. He looks up. A HUGE OGRE of a man climbs toward him on top of the trailer, clawing his way along the shifting logs. Zayne looks around for a weapon. Nothing. He grabs the tow chain, still attached to bed at one end, a heavy metal hook dangling from the other. He swings it over his head, building momentum. 
+
+ZAYNE
+Harper??
+
+IN THE TRUCK - Harper sees a BOX CANYON approaching - 1/4 mile ahead. 
+
+[[NOW]]
+
+[[WAIT]]
+
+:: NOW 
+
+HARPER
+NOT YET!
+
+Zayne looks at the chain -- it's not gonna do shit. 
+
+ZAYNE
+I GOTTA MOVE! 
+
+He kicks the tongue of the hitch. It kicks loose - the trailer full of logs drifts back from the truck's cab, but without the box canyon walls, it doesn't flip. The HUGE MAN jumps down from logs onto the cab of the truck easily. Harper looks back and screams, she swerves, but he doesn't fall.   
+
+The huge man grabs Zayne's head, and as he squeezes, lifts him into the air. 
+
+FREEZE FRAME on Zayne'S FACE.
+
+TEXT ON SCREEN: YOU'RE DEAD BECAUSE YOU DIDN'T LISTEN
+
+[[REAL MEAN LISTEN TO THEIR DAUGHTERS->WAIT]] 
+
+(set: $deaths to it + 1)\
+Total Deaths: (print:$deaths)
+
+:: WAIT 
+
+HARPER
+NOT YET! 
+
+ON THE BACK OF THE TRUCK, Zayne swears under his breath, SWINGS THE CHAIN HARD at the ogreous man above him. The hook LODGES in the man's head. He doesn't even flinch. He just smiles. 
+
+ZAYNE
+HONEY???
+
+IN THE TRUCK - almost there. 
+
+HARPER
+ALMOST! 
+
+ON THE BACK OF THE TRUCK, the BEAST OF A MAN pulls the hook out of his head. His head stitches itself back together. He points the hook at Zayne, smiling through horribly broken teeth. 
+
+Zayne swallows. This is it. Then...
+
+HARPER
+NOW!
+
+Zayne KICKS the LATCH connecting the log trailer to the truck. IT BREAKS FREE. The trailer full of logs drifts back from the cab, untethered, creaking. For a moment, it's calm. The beast-man`looks down, putting two and two together. Then, the trailer lurches to the side and TUMBLES. 
+
+AS Zayne WATCHES, a hundred thousand-pounds of logs EXPLODE out behind him, tumbling end over end, FILLING THE CANYON with shrapnel. Chains whip, TIRES FLY 500 FEET IN THE AIR. The logs DEMOLISH the first five trucks chasing them and completely block the narrow canyon road behind them. 
+
+Zayne whoops with joy.
+
+ZAYNE
+THAT'S MY GIRL!
+
+Harper smiles. 
+
+On the back of the truck, Zayne looks down. His boot is still missing. Shit.
+
+[[Go to Tami's->TAMI HOUSE]]

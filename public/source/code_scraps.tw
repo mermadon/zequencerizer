@@ -1,0 +1,122 @@
+:: Code Fragments {"position":"1350,1350"}
+
+
+Open and close side bar automatically:
+
+<<removeclass "#right-ui-bar" "stowed">>
+<<addclass "#right-ui-bar" "stowed">>
+
+ctp stuff
+
+<<ctp "testID">>
+  This is the first string.
+<<ctpNext clear>>
+  Second! It cleared the first one out!
+<<ctpNext nobr>>
+  Third, but with nobr...
+<<ctpNext 2s>>
+  The fourth shows up 2 seconds late.
+<<ctpNext t8n>>
+  And the final one. With a transition!
+<</ctp>>
+
+<<link "Next">>
+  <<ctpAdvance "testID">>
+<</link>>
+
+<<link "Back">>
+  <<ctpBack "testID">>
+<</link>>
+
+Audio controls
+
+Put in player controls 
+
+<<nobr>>
+@@line-height: 1;
+''Audio Controls:''  <<click "PAUSE">><<audio ":playing" pause>><</click>> | <<click "PLAY">><<audio ":paused" play>><</click>>
+''^^Vol:^^'' <<volume>>
+@@
+<</nobr>>
+
+play a track 
+
+<<audio "strawberry" play>>
+
+pause all
+
+<<audio ":playing" pause>> 
+
+fade out all
+
+Set a variable to a word:
+
+<<set $variable to "dingdong">>
+
+Add one to a variable:
+
+<<set $variable to $ variable + 1>>
+
+Add a variable in a click link:
+
+[[Fake Passage Name|Real Passage Name][$variable to "working variable"]]
+
+Add multiple variables in a click link:
+
+[[Fake Passage Name|Real Passage Name][$variable to "working variable"; $dingdong to $dingdong + 1]]
+
+Include another passage:
+
+<<include "Fake Passage Name">>
+
+Add a Badge:
+
+<<pickup '$inventory' 'Badge Name'>>
+
+Add passage links based on variables
+
+<<if $variable is 1>>\
+		[[Fake Passage Name|Real Passage Name]]
+<<else>>\
+		[[Fake Passage Name 2|Real Passage Name 2]]
+<</if>>
+
+Click to reveal more: 
+
+<<linkappend "Heart">>broken<</linkappend>>
+
+Click Replace to make choices within passage:
+
+<<nobr>><span id="choosename"><<link "Choice 1">>
+    <<replace "#choosename">>
+        <<include "Fake Passage 1">>
+    <</replace>>
+<</link>><br><br><<link "Choice 2">>
+    <<replace "#choosename">>
+       <<include "Fake Passage 2">>
+    <</replace>>
+<</link>><br><br><<link "Choice 3">>
+    <<replace "#choosename">>
+       <<include "Fake Passage 3">>
+    <</replace>>
+<</link>></span><</nobr>>
+
+Timer: Make a NEW TIMER PASSAGE and use the <<include macro>> to nest it into the choice passage: use <<set $seconds -- in previous passage to determine seconds you want for timer. 
+
+<span id="countdown">Choice timer:'' $seconds seconds.''</span>
+<<silently>>
+    <<repeat 1s>>
+    <<set $seconds to #seconds -1>>
+        <<if $seconds gt 0>>
+            <<replace "#countdown">>Choice time ''$seconds seconds''<</replace>>
+        <<else>>
+             <<replace "countdown">><</replace>>
+             <<goto "Fake Passage 1">>
+             <<set $indecision to $indecision + 1>>
+             <<pickup '$inventory' Badge Name>>
+            <<stop>>
+        <</if>>
+    <</repeat>>
+<</silently>>
+
+silently is dumb 

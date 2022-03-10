@@ -1,0 +1,209 @@
+:: Shoot out the window 
+
+Zayne stares down the body of the plane. Shooting out the window sucked all the oxygen out, killing the fire...but lack of oxygen also happens to kill humans. Anna stares back. 
+
+Also, the plane is going down. 
+
+ZAYNE   
+Look. I don't know who you are, but if you don't let me try to land this plane, we're all dead. 
+
+ANNA 
+You can fly?
+
+ZAYNE 
+--yes. 
+
+ANNA
+Why did you pause?
+
+ZAYNE
+I haven't seen the controls yet--
+
+The planes engines cough. Zayne looks at Anna. 
+
+She gestures with the gun. 
+
+ANNA
+GO!
+
+In the cockpit, Gina and Pedro are just coming too. But they can't fly in this condition. 
+
+Zayne sits down and stares at the bank of controls. It's a lot different than a helicopter. Duh. 
+
+ANNA
+Well??
+
+ZAYNE
+You know what the first rule of flying my dad taught me was?
+
+ANNA
+What?
+
+ZAYNE
+Don't touch anything. 
+
+Zayne smiles. Anna doesn't. 
+
+(set: $ANNAHATE to 1)
+
+ZAYNE
+Relax. It's on autopilot--
+
+The plane nose dives. Z looks at the controls. There's the two handed wheel common on small planes, with a red trigger on it that reads: AP. 
+
+:: DON'T PUSH THE RED BUTTON
+
+Zayne slaps the controls, doing everything he can--but nothing works. Because the auto pilot is still on. 
+
+ZAYNE
+MAYDAY! MAYDAY! 
+
+The clouds open up and reveal choppy waters. 
+
+The screams of the plane engines mingle with the screams of Gina and Pedro as the plane slams into the water, disintegrating immediately. 
+
+A few weeks later, an old Peruvian fishing boat manned by two ancient fisherman floats by. In the water, they see a giant shape--
+
+and panic. Open up their motor, and streak back to land. For the rest of their lives, they'll tell the story of how they saw an ancient creature of the deep...that was in reality the moldy fur of a stuffed grizzly bear, bobbing gentle in the waves. 
+
+<<set $deaths to $deaths + 1>>
+
+:: PUSH THE RED BUTTON
+
+This turns the auto pilot off, giving Zayne control. He pulls up on the wheel, and the altometer levels...but up ahead, through the clouds...is water. 
+
+ANNA
+Everyone get your lifejackets on! 
+
+Everyone struggles into life jackets. Anna helps Gina and Pedro. 
+
+Engines gone, Zayne is forced to Sully Sullenburger it, and glide down onto the water. It's actually impressive--but water immediately begins to fill the plane. 
+
+ANNA
+Okay everyone, let's go. 
+
+She opens the side hatch, where an inflated ramp leads to a life raft. 
+
+There's a popping sound. She turns. Everyone else has inflated their life vests. Water is filling the plane..and these idiots can't get out the door because they're inflated their life vests.  
+
+Zayne's trying to force his way out the door when suddenly ANNA stabs him--
+
+His life vest, that is, but there's a moment when Zayne and the audience doesn't know that. 
+
+ZAYNE 
+What the hell--
+
+He realizes he can now fit through the door, and slides down into the raft. But the people left behind aren't so lucky. They don't trust Anna and back away from the apparition of her //screaming// GET OVER HERE while she's holding a knife. 
+
+Pedro and Gina go down with the ship. 
+
+A few minutes later, Anna and Zayne are floating alone in a boat, as the bear stuffed bear rocks gently beside him. 
+
+Anna is staring out into the water. She's clearly battling her feelings around just being the reason two people drowned. 
+
+Zayne looks at her...
+
+:: SAY SOMETHING
+
+ZAYNE
+You've got to work on your communication skills. 
+
+ANNA
+What did you just say to me? 
+
+(set: $ANNAHATE to 2)
+
+:: KEEP QUIET 
+
+Anna starts to sob quietly. SHe  resents Zayne for not saying anything. 
+
+(set: $ANNAHATE to 2)
+
+//Yeah// you can't win. 
+
+In the warm, sunny waters off Peru, it all seems fine. At first. They're off the plane, and they didn't get wet. 
+
+Almost immediately, a swarm of biting insects attacks. 
+
+:: CLOSE THE CANOPY 
+
+They close the Canopy...which quickly turns their life raft into a hot house. Temperatures rise...and, dehydrated, Zayne and Anna pass out. 
+
+They wake up to the sound of lapping waves against a sandy beach...open the canopy--and are greeted with a hail of long, thin arrows. 
+
+For a hundred years, the descendants of the islanders will tell stories of the great orange beast they killed. 
+
+<<set $deaths to $deaths + 1>>
+
+:: RUB YOURSELF WITH SUN SCREEN WIPES
+
+The wipes are zinc based...which covers you both with a thin white film, but seems to dissuade the insects. Next up: how the hell do you get out of here?
+
+:: ACTIVATE THE LOCATION BEACON-->Atacama
+
+If you activate the beacon, you're picked up by Atoc's guerrillas, who've been searching for them. 
+
+:: PADDLE FOR ... SHORE?
+
+Zayne and Anna are oil and water--but like...if water made oil more flammable. 
+
+Zayne tries to paddle for shore: Anna, on the other side of the boat, paddles too, but they paddle in opposite directions. 
+
+Morale quickly plummets. Now the life raft has water in the bottom, and only one opening that has to be used for...//everything.// 
+
+Zayne has eaten all the food, and quickly gets the shits. 
+
+Zayne takes off his shirt, revealing a tree stump tattoo; Anna is disgusted. 
+
+Anna writes in the ships log: //Zayne is a complete idiot//
+
+They play war to pass the time, Zayne is way to competitive. 
+
+But they realize...hypthermia is setting in from the water (this happens. Even in tropical water. Often within hours. You mostly only hear about the people who //survive// on life rafts. Blame the life raft lobbying industry). 
+
+As night falls, and temperature drops, things go from funny-bad to bad-bad. 
+
+:: SPOON FOR WARMTH 
+
+Zayne and Anna huddle together at one end of the raft. Contrary to popular belief, there is literally nothing less sexy than hypthermic shivers combined with hallucinatory dreams and cold salt water. 
+
+In the morning, Zayne and Anna are both deep in a coma. 
+
+Later that day,  they are rescued by a Coast guard ship. After they're treated at the ER on land, and still don't recover, they're taken to a long term home care facility, where the staff regularly plays dominos across their slumbering bodies. 
+
+Forty years later...they both wake up. Their feeble minds have no memory of who they were, only a dim recollection that makes the other's face the only familiar one in the world. As they learn to speak again (Zayne is learning spanish for the first time, but he doesn't know that) , they slowly fall in love. When they're released, they start a postage shop in Lima. 
+
+The last we see of them, they're sitting on their favorite bench, overlooking the water. Zayne sighs. 
+
+ZAYNE
+Do you ever wish we'd had kids?
+
+ANNA 
+No. They'd have gotten in the way. 
+
+ZAYNE
+You're right. 
+
+They snuggle. The sun sets. 
+
+ROLL CREDITS 
+
+<<set $deaths to $deaths + 1>>
+
+:: SKIN THE BEAR
+
+Zayne uses the emergency knife to skin the bear, and puts it underneath them, protecting them from the cold water. 
+
+Two days later, their raft drifts ashore south of Lima. They stagger out...starving. At the sea food market, Zayne refuses to eat anything if it's not a hamburger, and ANNA reaches her ANNA ANGER LIMIT. 
+
+(set: $ANNAHATE to 10)
+
+She screams at Zayne, and runs out of market. 
+
+Zayne's left alone, trying to figure out a way to get to Lima. 
+
+With his waterlogged american currency, he gets a bus ticket. 
+
+The first billboard he sees as he drives into town advertises a MUSEUM GALA 
+
+:: Museum Heist
