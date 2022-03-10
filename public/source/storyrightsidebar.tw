@@ -1,13 +1,61 @@
-:: StoryRightSidebar [nobr]
-<<nobr>>
-@@line-height: 1;
-''Audio Controls:''  <<click "PAUSE">><<audio ":playing" pause>><</click>> | <<click "PLAY">><<audio ":paused" play>><</click>>
+:: StoryRightSidebar [nobr] {"position":"1725,775"}
+<<include "AUDIO CONTROLS">><hr><<include "STATS HIDE">><hr><<include "BEATS HIDE">><hr> <<include "GENRE BUTTON HIDE">> <hr><<include "NAV HIDE">><hr><<include "FEEDBACK HIDE">>
+<br><br><br><br><br><br>
+
+:: AUDIO CONTROLS [nobr]
+@@line-height: 1; float: none;<<click "PAUSE">><<audio ":playing" pause>><</click>> | <<click "PLAY">><<audio ":paused" play>><</click>>
 ''^^Vol:^^'' <<volume>>@@
-<hr>Send <<link 'FEEDBACK'>>\
+
+:: SEND FEEDBACK
+Send <<link 'FEEDBACK'>>\
     <<dialog 'Feedback for Current Passage' >>\
         I think you can insert an HTML you want to right here!
      <</dialog>>
 <</link>>
-<hr>''Build Your Own Story Beats:'' 
+
+:: STORY BEATS {"position":"2125,25"}
+''Build Your Own Story Beats:'' <br>
 <<inventory '$storybeats' '<br><br>'>>
-<</nobr>>
+
+:: LIVE GENRE [nobr]
+
+Change music variable to: <div id = "music">
+<<button "Hip-Hop | ">><<set $genre to '90s hip-hop', $band2 to "Ludacris", $tape to 'OutKast', $shirt to 'DMX'>><<update>><</button>><<button "Classic Rock | ">><<set $genre to 'classic rock', $tape to 'ACDC', $shirt to 'Meatloaf'>><<update>><</button>><<button "Country">><<set $genre to '90s country', $shirt to 'Reba', $tape to 'Deanna'>><<update>><</button>></div>
+
+First Song: ''<<live $tape>>''
+Genre: @@text-transform: capitalize;''<<live $genre>> ''@@
+Shirt: ''<<live $shirt>>''
+
+:: STATS PASSAGE {"position":"1600,25"}
+''Achievements:''
+<<inventory '$inventory' '<br> '>>
+
+<<if $deaths > 0>>''Deaths: <<print $deaths>>''<<else>>Deaths: NONE. Wow, such surviving!<</if>><br>
+
+:: GENRE BUTTON HIDE [nobr]
+<div id = "rightHider"><<message 'VARIABLE SHIFT' btn>><<include 'LIVE GENRE'>><</message>></div>
+
+:: BEATS HIDE
+<div id = "rightHider"><<message 'STORY BEATS' btn>><<include 'STORY BEATS'>><</message>></div>
+
+:: AUDIO HIDE
+<br><div id = "rightHider">
+<<message 'Audio Controls' btn>><<include 'AUDIO CONTROLS'>><</message>></div>
+
+:: FEEDBACK HIDE [nobr]
+<div id = "rightHider"><<message 'FEEDBACK' btn>><<include 'SEND FEEDBACK'>><</message>></div>
+
+:: STATS HIDE {"position":"2175,625"}
+<div id = "rightHider"><<message 'STATS' btn>><<include 'STATS PASSAGE'>><</message>></div>
+
+:: NAV HIDE
+<div id = "rightHider"><<message 'QUICK NAVIGATION' btn>><<include 'NAV PASSAGE'>><</message>></div>
+
+:: NAV PASSAGE
+@@ font-size: 11px; Danger! Useful for quickly trying out alternate paths but will mess up page count, build-your-own story beats, and possibly other things. @@
+
+[[START|OPENING PERU][$totalLines to 0]]
+[[LOGGING SITE][$totalLines to 251]]
+[[HOME|AFTER GOT HIM][$totalLines to 360]]
+[[VIDEO/BUTTERFLY|VIDEO PLAY][$totalLines to 450]]
+[[PINTO CHASE|BREAK Z DOOR][$totalLines to 645]]

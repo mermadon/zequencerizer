@@ -1,4 +1,4 @@
-:: StoryTitle
+:: StoryTitle {"position":"2175,375"}
 This Is How Z Dies
 
 :: StoryData
@@ -9,11 +9,13 @@ This Is How Z Dies
         "start": "INTRO"
 }
 
-:: INTRO
+:: FAKE
+One single fake line
+:: INTRO [fake]
 
-''Oh hey. ''
+''Oh hey.''
 
-''Welcome to "This Is How Z Dies." '' (if you've already been here you can [[SKIP INTRO|OPENING PERU]])
+''Welcome to "This Is How Z Dies." '' (if you've already been here you can [[SKIP INTRO|OPENING PERU][$totalLines to 0]])
 
 It's an interactive script for an interactive film...
 
@@ -27,8 +29,8 @@ As you'll see, there are a lot of choices, the choices come quick and the choice
 
 Your decisions will drive the story, introducing you to entirely unique storylines, characters, set pieces, environments, song choices, even wardrobe decisions. 
 
-Along the way--as the title suggests--you will also make Zayne die a lot. <<linkappend "''BUT!''">> <<include "INTRO 2">> <</linkappend>> 
-::INTRO 2
+Along the way--as the title suggests--you will also make Zayne die a lot. <<linkappend "''BUT!''">><<update>><<include "INTRO 2">> <</linkappend>> 
+::INTRO 2 [fake]
 1) We learn from our mistakes! Also:
 
 2) Those deaths trigger some of the best sequences of the film. There are 25 'secret ending' //short films// that players can collect, rewatch and share. 
@@ -43,7 +45,7 @@ BUT, if all that sounds complicated, it's simple to play. A choice looks like th
 
 [[Y'KNOW WHAT? I'M STILL LEARNING.|CHOICE INTRO][$introchoice to 1]]
 
-::CHOICE INTRO
+::CHOICE INTRO [fake]
 <<nobr>><<if $introchoice is 1>><<include "CHOICE 2">><<else>><<include "CHOICE 1">><</if>><</nobr>>These achievements, along with death counts and other statistics will be compiled for players at the end of the film. Maybe even cut into a fancy little 'achievements' trailer they can share on social. Think: 
 
 //Holy shit, my highschool boyfriend got to be best friends with an incredibly cute monkey and I didn't!? I better go replay this movie and share the results with all my friends!!//
@@ -66,21 +68,21 @@ Final notes:
 
 Ok, stop asking questions! 
 
-Let's [[START|OPENING PERU][$deaths to 0]]!
+Let's [[START|OPENING PERU][$deaths to 0; $totalLines to 0]]!
 
-::CHOICE 2
+::CHOICE 2 [fake]
 Wow, you survived your first choice!
 
 Had you clicked "I GET IT" you would have died! As a reward, you even picked up a fancy  'Genius' achievement (see below). <<pickup '$inventory' 'Truly a Genius'>>
 
-::CHOICE 1 
+::CHOICE 1 [fake]
 Oh nooooo!
 
 You made the wrong choice and you died! 
 
 It's almost like you were a little overconfident, even after we warned you! Scroll down to the footer to find the death count below (don't worry, we'll reset your deaths once you start playing), and you'll see we've also given your first //"achievement".// If you want to call it that. <<pickup '$inventory' 'Arrogant Bastard'>>
 
-:: TAMI'S PLANE
+:: KIM'S PLANE
 
 EXT. AIRPORT - DAY
 
@@ -219,7 +221,7 @@ It might offer shelter, but also, it's so far...
 
 
 
-:: TAKE ANNA WITH YOU 
+:: TAKE ANNA WITH YOU {"position":"1925,750"}
 That night, Zayne wraps himself and Anna in bear skin and elk hide, sneaks out of the cave shelter. 
 
 Out in the howling dark of high-elevation Andes, you heft Anna onto your back. Shirley watches. 130 lbs is heavier than you thought it would be. 
@@ -293,7 +295,7 @@ This is an incredibly valuable find.
 
 
 
-:: UNSURE ANDES SHELTER 
+:: UNSURE ANDES SHELTER {"position":"1175,2375"}
 ext. glacier - night
 
 Zayne takes the easier path down the mountain. <<set $meettammy to 0>><<set $scareloc1 to "on the side of a mountain">>
@@ -347,7 +349,7 @@ It's getting really, really warm. The glacier isn't so bad. It's kind of nice ho
 
 
 
-:: VARIOUS SURVIVAL 
+:: VARIOUS SURVIVAL {"position":"1525,2250"}
 Tension comes from between Anna and Zayne
 
 Other crew member who actually works for Atoc-tries to sabotage them. 
@@ -466,7 +468,7 @@ You went to Malachi WITHOUT Anna.
 
 Anna tries to stop you and gets hurt. 
 
-:: YOU'RE WITH ANNA 
+:: YOU'RE WITH ANNA {"position":"50,325"}
 Trying to Save Malachi from getting killed Immortals/Atoc WITH ANNA. 
 
 You went to him, found out he didn't want to be rescued. MIDPOINT. 
@@ -735,7 +737,7 @@ Z and Anna dash into the tunnel, having no idea where they'll end up, Z closing 
 [[PANIC]]
 
 
-:: WARRIOR 
+:: WARRIOR {"position":"825,1625"}
 Z and Anna skitter into a room holding fifty or so arrangements of Ceremonial Moche warriors armor. From the walls scour the face of the Fanged God. 
 
 Only a few moments later, Security guards enter. 
@@ -779,7 +781,7 @@ Holy shit. It'sâ€¦good.
 
 
 
-:: WIND TUNNEL 
+:: WIND TUNNEL {"position":"600,1275"}
 They grope their way through the dark tunnel. Up ahead, there's a light. 
 
 Behind them, the grate breaks with a wrenching sound. 
@@ -921,7 +923,7 @@ I'm gonna get the furs from the plane.
 
 [[Pedro, come with?->Fur Pedro]]
 
-:: TALK TO ANNA 1 ON 1 
+:: TALK TO ANNA 1 ON 1 {"position":"1475,1500"}
 Zayne gets a moment alone with Anna.<<set $saveshirley to 1>> 
 
 He asks her directly what's happening. Who is she? Why does she have a gun?
@@ -940,7 +942,7 @@ Z... your brother... I don't know his story, but he's working with very bad men.
 
 
 
-:: TRUST HER 
+:: TRUST HER {"position":"1050,2375"}
 Zayne says that sounds about right. But he tells her his loyalty to his brother is unrelenting. 
 
 ANNA
@@ -978,7 +980,7 @@ I can't leave you here.
 [[Leave Anna]]
 [[Take Anna With You]]
 
-:: SHOOT OUT THE WINDOW 
+:: SHOOT OUT THE WINDOW {"position":"2375,950"}
 The rush of air PUTS OUT the flames. 
 
 But now, the mountains rise before you. 
@@ -1291,7 +1293,7 @@ She tells him she doens't trust either Pedro or Anna, but at least Anna's simple
 [[Trust Gina->Talk to Anna 1 on 1]]
 [[Don't Trust Gina->Take Anna's Gun]]
 
-:: TAKE ANNA'S GUN 
+:: TAKE ANNA'S GUN {"position":"1925,400"}
 In this section:
 
 You try to take Anna's gun. You fail. 
@@ -1366,7 +1368,7 @@ Pedro looks sad, whispers he's sorry. But this will be quick.
 
 The Bomb [[EXPLODES]]
 
-:: THROWS THE BOMB 
+:: THROWS THE BOMB {"position":"1450,2050"}
 The bomb explodes in the ENTRANCE, snowing them in. 
 
 The heat from their fire melts enough ice so they see the CAVE PAINTINGS showing extinction events.
@@ -1515,7 +1517,7 @@ If my dad had ever shown me even an INCH of vulnerability, a single moment of hu
 
 [[Dad's matter. Maybe try to be VULNERABLE for once->Admit you're in trouble]]
 
-:: TAKE THE GOLD 
+:: TAKE THE GOLD {"position":"1050,1250"}
 Zayne heads back to the plane. He wakes Anna up. 
 <<if $goldthief is 1>><<include "LIKE YOUR BROTHER">>
 <<else>><<include "NOT LIKE YOUR BROTHER">><</if>>
@@ -1774,7 +1776,7 @@ He wakes himself. This is bad, this is very, very bad. He pulls out Anna's phone
 
 [[CALL 911->DON'T CALL HARPER]]
 
-:: UFO ENDING ANDES 
+:: UFO ENDING ANDES {"position":"1475,2425"}
 ext. andes - 20,000 years in the future
 
 A UFO whirs over the frozen Andean landscape. They are mere islands now... the only land masses on an earth whose oceans cover all the other continents.

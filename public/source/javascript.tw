@@ -21,8 +21,8 @@ jQuery(document)
 			};
 		})(jQuery('#history-backward'), jQuery('#history-forward'))
 	);
-
 /* Set up a handler for the selection of the history-backward button. */
+
 jQuery('#history-backward')
 	.prop('disabled', State.length < 2)
 	.ariaClick({
@@ -916,7 +916,7 @@ window.isPlaying = function (trackID) {
 
     // options object
     var options = {
-        current  : 100,
+        current  : 70,
         rangeMax : 100,
         step     : 1,
         setting  : true
@@ -1527,3 +1527,127 @@ Macro.add('dialogclose', {
         Dialog.close();
     } 
 });
+
+(function () {
+	"use strict";
+
+	$(document).on(":liveupdate", function () {
+		$(".macro-live").trigger(":liveupdateinternal");
+	});
+
+	Macro.add(['update', 'upd'], {
+		handler: function handler() {
+			$(document).trigger(":liveupdate");
+		}
+	});
+
+	Macro.add(['live', 'l', 'lh'], {
+		skipArgs: true,
+		handler: function handler() {
+			if (this.args.full.length === 0) {
+				return this.error('no expression specified');
+			}
+			try {
+				var statement = this.args.full;
+				var result = toStringOrDefault(Scripting.evalJavaScript(statement), null);
+				if (result !== null) {
+					var lh = this.name === "lh";
+					var $el = $("<span></span>").addClass("macro-live").wiki(lh ? Util.escape(result) : result).appendTo(this.output);
+					$el.on(":liveupdateinternal", this.createShadowWrapper(function (ev) {
+						var out = toStringOrDefault(Scripting.evalJavaScript(statement), null);
+						$el.empty().wiki(lh ? Util.escape(out) : out);
+					}));
+				}
+			} catch (ex) {
+				return this.error("bad evaluation: " + (_typeof(ex) === 'object' ? ex.message : ex));
+			}
+		}
+	});
+
+	Macro.add(['liveblock', 'lb'], {
+		tags: null,
+		handler: function handler() {
+			try {
+				var content = this.payload[0].contents.trim();
+				if (content) {
+					var $el = $("<span></span>").addClass("macro-live macro-live-block").wiki(content).appendTo(this.output);
+					$el.on(":liveupdateinternal", this.createShadowWrapper(function (ev) {
+						$el.empty().wiki(content);
+					}));
+				}
+			} catch (ex) {
+				return this.error("bad evaluation: " + (_typeof(ex) === 'object' ? ex.message : ex));
+			}
+		}
+	});
+})();
+
+$(document).trigger(":liveupdate");
+
+
+/*live line count functions */
+
+if (!window.SH){
+  window.SH = {};
+}
+setup.countLines = () => {
+  let el = document.getElementById('passages');
+  let divHeight = el.offsetHeight;
+  let lineHeight = parseInt(document.defaultView.getComputedStyle(el,null).getPropertyValue("line-height"));
+  return Math.floor(divHeight / lineHeight) - 11;
+};
+
+// message macro, by chapel (with help from T.M. Edwards); for sugarcube 2
+// version 1.0.1
+// see the documentation: https://github.com/ChapelR/custom-macros-for-sugarcube-2#message-macro
+
+//intialize namespace
+setup.messageMacro = {};
+
+// default text option:
+setup.messageMacro.default = 'Help';
+
+// <<message>> macro
+Macro.add('message', {
+    tags    : null,
+    handler : function () {
+        var message  = this.payload[0].contents;
+        var $wrapper = $(document.createElement('span'));
+        var $link    = $(document.createElement(this.args.includes('btn') ? 'button' : 'a'));
+        var $content = $(document.createElement('span'));
+
+        $link
+            .wiki(this.args.length > 0 && this.args[0] !== 'btn' ? this.args[0] : setup.messageMacro.default)
+            .ariaClick( this.createShadowWrapper( function () {
+                if ($wrapper.hasClass('open')) {
+                    $content
+                        .css('display', 'none')
+                        .empty();
+                }
+                else {
+                    $content
+                        .css('display', 'block')
+                        .wiki(message);
+                }
+
+                $wrapper.toggleClass('open');
+            }));
+
+        $wrapper
+            .attr('id', 'macro-' + this.name + '-' + this.args.join('').replace(/[^A-Za-z0-9]/g, ''))
+            .addClass('message-text')
+            .append($link)
+            .append($content)
+            .appendTo(this.output);
+    }
+});
+
+/*attempt at mash */
+
+document.getElementById("history-backward").addEventListener("click", myFunction);
+
+function myFunction() {
+  SimpleAudio.select(":playing").pause();
+}
+
+/*attempt over*/

@@ -1,43 +1,40 @@
 
 :: OPENING PERU 
-<<addclass "#right-ui-bar" "stowed">>
+<<audio ":all" volume 0.5>><<removeclass "#right-ui-bar" "stowed">>
 ''Over BLACK.''
 
-Music up and over.  <<newinventory '$storybeats'>>
+Music up and over: Queen's //Who Wants to Live Forever// drifting from over an old stereo. <<newinventory '$storybeats'>> <<timed 500ms>><<audio "queenforever" time 6 volume 0 fadeoverto 20 0.7>><</timed>> 
 
 NARRATOR 
 (Think Sam Elliot)
 This is Zayne. Zayne Abel. Friends call him Z. 
 
-<<linkappend "''FADE UP ON:''">> <<include "REDNECK BEDROOM">> <</linkappend>>   
+<<linkappend "''FADE UP ON:''">><<include "REDNECK BEDROOM">><<update>><</linkappend>>   
 :: REDNECK BEDROOM
-
 INT. REDNECK BEDROOM - MORNING
 
 OVERHEAD: ''ZAYNE ABEL 38--"Z"--shirtless.'' Asleep on a much-patched water bed.
 
-He's a modern country boy. Tribal tattoos, big mustache, diesel-stained Supersonics hat (RIP). <<pickup '$storybeats' 'ACT 1:<br>01. (a) OPENING IMAGE: Sleeping Z Has to Die. Cues up both gameplay and central immortality question'>>
+He's a modern country boy. Tribal tattoos, big mustache, diesel-stained Supersonics hat (RIP). <<pickup '$storybeats' '<strong>ACT ONE</strong>'>><<pickup '$storybeats' '01. (a) OPENING IMAGE: Sleeping Z Has to Die. Cues up both gameplay and central immortality question (same for all paths).'>>
 
 NARRATOR
 He married his highschool sweetheart, had kids, got divorced, got to be good buds with his ex-wife's new wife //Kim...// Did that whole deal. 
 
-Shots around the room: Photos of Z with his kids, dusty 4h trophies, a broken truck axle serving as coat rack, chainsaw tools and chains hung against the faux wood panelling. 
+Shots around the room: Photos of Z with his kids, dusty 4h trophies, a broken truck axle serving as coat rack.
 
 NARRATOR
-He drinks a little, works hard, he's a good dad, and though that bar may be low, he loves his family... huckleberry pie, corn nuts and the WNBA.  
+Z's a good dad, as it goes, he drinks a little, works hard... loves huckleberry pie, corn nuts and the WNBA...  
 
 ZAYNE
 (in his sleep)
 ...so much more... //finesssse//
 
 NARRATOR
-He hates spicy food, vegan sausage and Tom Brady...  
-
-Zayne turns in his sleep, scowling...
+Hates kombucha, Tom Brady and IPAs...  
 
 ZAYNE
 (mumble)
-...balls're too tight, there Tommy...
+...don't //taste// good...
 
 NARRATOR
 ...But the thing is...
@@ -58,71 +55,54 @@ And the person who's gonna kill him?
 Well that's you.
 
 Dramatic cut to [[BLACK|INTRO YOU]]
-
 ::INTRO YOU
+<<addclass "#right-ui-bar" "stowed">><<audio ":playing" fadeoverto 15 0>>
 
 NARRATOR
-How he goes, what he learns... what he sees... who he helps or hurts along the way? That's on you too. 
-(then)
-But careful out there... things aren't always quite as they seem...
+How he goes, where he goes, what he learns... what he sees... who he helps or hurts along the way? That's on you too. 
 
-ON SCREEN: INSTRUCTIONS TO MAKE SURE YOUR DEVICE IS CONNECTED, ETC. 
+ON SCREEN: INSTRUCTIONS TO MAKE SURE YOUR DEVICE IS CONNECTED, ETC. THEN:
 
-THEN,
-
-GO TO [[PERU.|MEET MALACHI]] 
-
+NARRATOR
+But our story doesn't start here. No... our story starts 4 and half thousand miles [[AWAY.|MEET MALACHI]] 
 ::MEET MALACHI
 
-EXT. JUNGLE - PERU 
+EXT. THICK, MUDDY JUNGLE - DAY
 
-''MALACHI ABEL'' (33, Zayne's younger brother and relative opposite--Think a less successful Adrien Brody in Succession) SPRINTS through the jungle. His glasses are fogged and muddy, his shirt is torn, but his face is set. Determined. 
+''MALACHI ABEL'' (33, the bookish, wiry version of Z) SPRINTS past camera. His glasses are fogged, his shirt is torn and muddy, but his face is set. Determined. 
 
-As he CHARGES through the vines and cobwebs, he pulls a CELLPHONE and GLOBAL REPEATER from his backpack. Plugs the repeater to the phone, then:
+As he CHARGES through the vines and cobwebs, he pulls a CELLPHONE and GLOBAL REPEATER from his backpack. Plugs the repeater to the phone, then: TRIPS. 
 
-TRIPS. 
-
-An ARROW hums past his ear. If he hadn't fallen...
+An ARROW hums past his ear. If he hadn't tripped, he'd be...
 
 MALACHI
 //Shit.// SHIT!
 
-He claws back to his feet, still running, smacking the repeater until a GREEN LIGHT blinks. 
+He claws back to his feet, sprinting even faster as he smacking THE REPEATER with his palm. THROUGH THE TANGLE, GLIMPSES of the AMAZONIAN WARRIORS chasing him. They're faster. They're better at this. They're going to win. 
 
 MALACHI
-Ok, ok, ok. C'mon. C'mon baby. Work. Workworkworkworkworkwork... 
+Ok, ok, ok. C'mon. C'mon baby. Work. 
 
-Panting, sweating, he turns the phone's CAMERA to himself. THROUGH THE TANGLE, GLIMPSES of the AMAZONIAN WARRIORS chasing him. They're faster. They're better at this. They're going to win. 
-
-He hits record. 
+Finally, green light blinks on. YES.
 
 MALACHI
+(into his phone)
 Z, I know what you're going to say, and I'm sorry, but you're the only one I can trust. Listen... I'm sending you something. I found... 
-
-Even as he's almost dying, he's almost choking up with pride. 
-
-MALACHI
-I found proof. 
-
-Another ARROW narrowly misses him. 
+    (almost choking up)
+I found ''proof.'' 
 
 EXT. JUNGLE - CLEARING - MOMENTS LATER. 
 
 MALACHI breaks into a clearing, but sees, at the other end of the meadow, another band of Amazonians. 
 
 He's been flanked. 
-
 He looks behind him. They're closing in. SHIT.
 
 To his left, there's a CLIFF. 
-
 Only two options now (this is the TUTORIAL CHOICE).
 
-[[JUMP->RUN]] 
-
-[[TRY TO REASON WITH THEM->TALK TO THEM]]
-
-:: TALK TO THEM [DEATH] 
+[[JUMP->RUN]] | [[TRY TO REASON WITH THEM->TALK TO THEM]]
+:: TALK TO THEM [DEATH] {"position":"1250,1300"}
 <<set $deaths to $deaths + 1>><<set $firstdeath to 1>>Malachi turns back, raises his hands in the air.
 
 MALACHI
@@ -130,71 +110,45 @@ Ok! Ok, you got me... I'm sorry, I just--
 
 A SPEAR lands in his chest. 
 
-He looks down, confused. 
+He looks down, confused. He looks back up at the warriors. There's sadness in their faces, but no regret. 
 
-Looks back up at the warriors. There's sadness in their faces, but no regret. They took no pleasure in this killing, but it had to be done. 
+His knees shake. His mind reels. He's going... //to die.//
 
-His knees shake. 
+But then, on the other side of the clearing a DEEP SOUND.  He looks. From far within the jungle, the trees SHAKE. 
 
-His mind reels.
-
-He's going... he's going to die.
-
-But then, on the other side of the clearing a DEEP SOUND.  
-
-He looks. DEEP WITHIN the jungle, the trees SHAKE. 
-
-Something is coming. Something big...<<nobr>><span id="choosename"><br><br><<link "CRAWL AWAY">>
-    <<replace "#choosename">>\
-        <<include "CRAWL AWAY">>
-    <</replace>>
-<</link>><br><br><<link "LOOK">>
-    <<replace "#choosename">>
-       <<include "LOOK">>
-    <</replace>>
-<</link>></span><</nobr>>
+Something is coming. Something big...<<nobr>><span id="choosename"><br><br><<link "CRAWL AWAY | " >><<replace "#choosename">><<include "CRAWL AWAY">><<update>> <</replace>><</link>><<link "LOOK">><<replace "#choosename">><<include "LOOK">><<update>><</replace>><</link>></span><</nobr>>
 
 ::CRAWL AWAY [nobr]
 Malachi turns, tries to crawl. <<set $crawldeath to 1>>
 
 But he collapses. 
 
-Dragging himself toward the CLIFF.
+Dragging himself toward the CLIFF. He's so close. 
+He's almost there. 
 
-He's so close. He's almost there. 
+As the world dims, he sees below, the world he'll never get to explore: A VAST BASIN, hidden in the Amazonian mists. 
 
-As the world dims, he sees below, the world he'll never get to explore. A VAST BASIN, hidden in the Amazonian mists. 
+And then behind a DISTANT waterfall, the light SHIFTS. ''A PERFECT DIAMOND OF LIGHT'' shines through somehow... from the other side?
+
+It's a clue. A way in? To where?
 
 And then everything goes [[BLACK|MALACHI DIES YOUNG]]
-
 ::LOOK [nobr]
 ''He turns to look.'' The earth trembles, the trees WHIP. Whatever is coming, it's huge. 
 
-Malachi falls to his knees, awed. 
-
-His face goes slack. 
-
-For a moment, he almost forgets that he's skewered by a spear. 
-
-Because, as he watches...
+And then.... he sees it. Malachi falls to his knees, awed. His face goes slack. Finally, reveal what he sees: 
 
 ''A MASTODON EMERGES FROM THE JUNGLE.''
 
-An... actual... ice age... pleistocene... woolly ass MASTODON.
+An... actual... ice age... pleistocene-ass MASTODON. She's huge, pale, long fur almost almost golden in this light. Her 15-foot tusks glint, cracked with battle and age. 
 
-She's huge, pale, long fur almost almost golden in this light. Her 15-foot tusks glint, cracked with battle and age. 
+And on her back... is that... a WOMAN? It is. 
 
-And on her back... is that... a WOMAN? 
+The woman's face is almost entirely obscured by paper thin golden plates. A HAMMERED GOLD NOSE DISC mirrors an even larger gold HALO behind her head (some real historic MOCHE QUEEN [[REFERENCE|https://bit.ly/3C282A9]]) 
 
-It is. 
+The Amazonian men bow, trembling, whispering a name as if their lips are unworthy to speak it.
 
-The woman's face is almost entirely obscured by paper thin golden plates. A HAMMERED GOLD NOSE DISC two feet wide mirrors and even larger gold HALO behind her head (some real historic MOCHE QUEEN [[REFERENCE|https://bit.ly/3C282A9]]) Curtains of shimmering gold mail cover her entire body. 
-
-The Amazonian men tremble, then bow. 
-
-The whisper a name, quietly, trembling, like their lips are unworthy to utter the sound. 
-
-MEN (IN QUECHUA)
+AMAZONIAN MEN (IN QUECHUA)
 (whisper)
 //Quri Qoya
 Quri Qoya
@@ -202,62 +156,49 @@ Quri Qoya//
 
 ''//THE GOLDEN QUEEN//''
 
-Malachi gapes.
+Malachi gapes. The queen looks at him. Her eyes are pale. 
 
-The queen looks at him. Her eyes are pale. 
-
-ECU. They're flecked with actual [[GOLD|QUEEN ACHIEVE]]
-
+ECU. They're flecked with actual [[GOLD|QUEEN ACHIEVE][$totalLines to $totalLines - 25]]
 ::QUEEN ACHIEVE
 
-Achievement unlocked: SEE THE QUEEN
+Achievement unlocked: SEE THE QUEEN<<set $seequeen to 1>>
 
-[img[media/images/seequeen.jpg]]<<pickup '$inventory' 'See the Queen'>>
+[img[media/images/seequeen.png]]<<pickup '$inventory' 'See the Queen'>>
 
 Malachi falls. And then everything goes [[BLACK|MALACHI DIES YOUNG]]
-
 :: MALACHI DIES YOUNG
 
 ''OVER BLACK'''
 
-''Recording studio ambience:'' like we're listening in on a hot mic between takes at the narration recording session. The narrator is chatting, joking with producers. Then, a little hush.
+''Recording studio ambience:'' like we're listening in on a hot mic between takes at the narration recording session. People talking, joking. Then, a little hush.
 
 NARRATOR (FAR OFF MIC)
 Oh, already? 
 (indeterminate mumbling)
-Yeah yeah, no I'm good. Shoot. lets do it. Uh-huh. No worries. Whatever you need.
+Yeah yeah, no I'm good. Shoot. Let's do it. Uh-huh. No worries. 
 
-Audio of the narrator approaching mic... sipping water... arranging pages...
-
-STILL OVER BLACK. AT THE MIC NOW, he clears his throat. 
+Audio of the narrator approaching mic... sipping water... arranging pages... STILL OVER BLACK.
 
 NARRATOR (VO)
-Let's see here...   
-(serious voice)
-This... this is how...
-
-He clears his throat, tries a lower register. 
-
-NARRATOR (VO)
-This... yeah, yeah, just gotta get back into that baritone... tone... tone...
+Let's see here... This... this is how... how Z...
 (then)
-Didn't the guys chasing him have like arrows and spears and...
-(mumbling off mic)
-Yeah, no, I hear ya. Seems obvious to me, but... there's always someone right? Kinda goes back to what we were sayin, about schools? Yeah, exactly.  
+Wasn't he being chased by guys with like... arrows and spears? Yeah, sorta I thought that one was a lay up. 
+(then, laughing)
+Always someone right? Kinda goes back to what we were sayin, about schools? 
 (lower now, more serious)
-This. This. This... uh-huh, yeah ok. We rolling? Yup. Ok. Here we go. 
+Ok, We rolling? Yup. Ok. Here we go. 
 
 Now, the SCORE. 
 
-<<linkappend "FADE UP:">> <<include "FIRST DEATH JOKE">> <</linkappend>>
+<<linkappend "FADE UP:">> <<include "FIRST DEATH JOKE">><<update>><</linkappend>>
 
 :: FIRST DEATH JOKE
 INT. ZAYNE'S TRAILER
 
-Zayne sleeps in the back room. Not knowing what's about to happen. 
+Zayne sleeps peacefully in the back room. 
 
 NARRATOR (VO)
-This is how Z dies. 
+So. This... this is how Z dies. 
 
 Focus on the dusty 00's wireless phone on the wall.
 
@@ -265,28 +206,23 @@ NARRATOR (VO)
 From a phone call... 
 From a broken heart... 
 From the pain of wishing he could've saved his brother... 
-From the pain of knowing he never had a chance to try.
+And knowing he never had a chance to try.
 
 CLOSER NOW - the phone's not ringing yet, but we know that it will.
 
-NARRATOR (VO)
-This is how Z dies... 
-Sooner than anyone could possibly expected...
-Before the story...
-...had even...
-...begun. 
+NARRATOR (VO) 
+This is how Z dies. Too soon.
+Before the story...had even...begun. 
 
-ECU on the PHONE.<<nobr>>
-<<if $crawldeath is 1>>
-The phone [[RINGS|QUICKEST DEATH]]
-<<else>><<include "QUICKER DEATH">>
+ECU on the PHONE.<<nobr>><<if $crawldeath is 1>> The phone [[RINGS|QUICKEST DEATH][$totalLines to $totalLines - 25]]
+<<else>><<include "QUICKER DEATH">><<update>>
 <</if>><</nobr>>
 
 :: QUICKER DEATH
-The phone RINGS.
+it RINGS.
 
 NARRATOR (VO)
-Next time you find yourself outnumbered by armed men with murderous intent? It might be wise to [[RUN]]
+Next time you find yourself outnumbered by armed men with clear and murderous intent? It might be wise to [[RUN]]
 
 :: QUICKEST DEATH
 Text on screen:
@@ -308,48 +244,30 @@ Malachi swallows. There's only one way out of this alive. HE SPRINTS for the cli
 
 ECU on the phone. A button: UPLOAD TO SERVER. 
 
-An ARROW PIERCES Malachi's SHOULDER, spraying blood.  
+And then:
 
-He YELPS, stumbles, almost falls, but then RECOVERS. 
+''AN ARROW PIERCES Malachi's SHOULDER,'' misting blood.  
 
-He MASHES the UPLOAD BUTTON. 
+He YELPS, stumbles, almost falls, but then RECOVERS. He MASHES the UPLOAD BUTTON. 
 
-He LEAPS...
+He LEAPS... arrow still protruding. 
 
 And he falls. 
 
-<br>
+Wheeling... through seemingly endless space. It's not a 20 foot cliff. ''It's an 800 foot cliff. ''
 
-Wheeling... 
+For a moment, the world is beautiful. Time slows. It's golden hour. A HIDDEN AMAZONIAN BASIN glows below. 
 
-<br>
+Mist rises from the glinting thread of a WATERFALL. Egrets lift themselves from the humid swamp. It's primal. Gorgeous. An atavistic Garden of Eden. 
 
-Through seemingly endless space. 
-
-It's not a 20 foot cliff. ''It's an 800 foot cliff. ''
-
-For a moment, the world is beautiful. 
-
-Time slows. It's golden hour. A HIDDEN AMAZONIAN BASIN glows below. 
-
-Mist rises from the glinting thread of a WATERFALL. 
-
-Far below, egrets lift themselves from the humid swamp. Simian howls echo through the ancient trees.
-
-It's primal. Gorgeous. An atavistic, untamed Garden of Eden. 
-
-But then, the trees are getting closer, and the horror returns.
-
-He's gonna die.<<nobr>><<if $firstdeath is 1>><<include "TUCK AND ROLL">><<else>><<include "TUCK CHOICE">><</if>><</nobr>>
-
-:: TUCK CHOICE [nobr]
-<<nobr>><span id="choosename"><<link "TUCK AND ROLL">><<replace "#choosename">><<include "TUCK AND ROLL">><</replace>><</link>><br><br><<link "USE YOUR SHIRT AS A PARACHUTE">> <<replace "#choosename">><<include "SHIRT FORWARD">> <</replace>><</link>></span><</nobr>>
-
+But those trees are getting closer now. The horror returns.'' He's gonna die.''<<nobr>><<if $firstdeath is 1>><<include "TUCK AND ROLL">><<update>><<else>><<include "TUCK CHOICE">><<update>><</if>><</nobr>>
+:: TUCK CHOICE [nobr] {"position":"725,2300"}
+<<nobr>><span id="choosename"><<link "TUCK AND ROLL | ">><<replace "#choosename">><<update>><<include "TUCK AND ROLL">><</replace>><</link>><<link "USE YOUR SHIRT AS A PARACHUTE">> <<replace "#choosename">><<update>><<include "SHIRT FORWARD">> <</replace>><</link>></span><</nobr>>
 ::SHIRT FORWARD
 <<goto "SHIRT PARACHUTE">>
 
-:: SHIRT PARACHUTE 
-<<set $deaths to $deaths + 1>><<pickup '$inventory' 'Dumbtuck'>>
+:: SHIRT PARACHUTE [death] {"position":"2650,750"}
+<<set $deaths to $deaths + 1>><<pickup '$inventory' 'Paw Patrol'>>
 ''CUT TO BLACK.'' 
 
 Music CUTS OUT. 
@@ -364,18 +282,24 @@ My god.
 Another long beat. 
 
 NARRATOR (VO)
-A shirt cannot be used as a parachute. This isn't isn't goddamn... [[PAW PATROL|DUMB TUCK]]
+A shirt cannot be used as a parachute. This ain't goddamn... [[PAW PATROL]], partner. 
 
-:: DUMB TUCK
+:: PAW PATROL
+<<set $totalLines to $totalLines - 30>>
+ACHIEVEMENT UNLOCKED: ''Paw Patrol''
 
-ACHIEVEMENT UNLOCKED: ''DUMBTUCK''
+[img[media/images/pawpatrol.png]]
 
-[img[media/images/dumbtuck_color.jpg]]
+Slow fade up on: 
+
+Ext. jungle - clearing
+
+A RESET Malachi sprints for the cliffs, jumps... and as he falls:
 
 NARRATOR (VO)
 You might survive more if you try and [[THINK A LITTLE|TUCK AND ROLL]]
 
-:: TUCK AND ROLL [nobr]
+:: TUCK AND ROLL [nobr] {"position":"1050,2475"}
 Malachi tenses, shuts his eyes, curls into a ball.
 
 Tuck and roll. It's not a great plan, but it's all he's got. 
@@ -386,38 +310,21 @@ EXT. JUNGLE FLOOR
 
 Boughs break his fall--eight layers of thick-stretched canopy--but it's not enough. 
 
-HE SLAMS into the wet <<linkappend "DIRT.">> <<include "MALACHI SURVIVE">> <</linkappend>>
+HE SLAMS into the wet [[DIRT|MALACHI SURVIVE]]
 
-::MALACHI SURVIVE
-<br>
+:: MALACHI SURVIVE
 
-''CUT TO BLACK'' <br><br>
+''CUT TO BLACK''
 
-A long beat. 
-
-Is he dead?
-
-Slowly, morning jungle sounds. 
-
-Then, SNUFFLING.
+A long beat. Is he dead? Slowly, morning jungle sounds. Then, SNUFFLING.
 
 EXT. JUNGLE - THE NEXT MORNING.
 
 Malachi blinks awake and sees: A MUSTACHE. 
 
-An [[Emperor Tamarin|https://en.wikipedia.org/wiki/Emperor_tamarin]](aka the cutest monkey on earth) blinks at him, concerned. 
+An [[Emperor Tamarin|https://en.wikipedia.org/wiki/Emperor_tamarin]](aka the cutest monkey on earth) blinks at him, concerned. Malachi tries to move. He can't. He tries to talk. That doesn't work either. But then, a NOISE. 
 
-Malachi tries to move. He can't. He tries to talk. That doesn't work either. 
-
-But then, a NOISE. 
-
-The tamirin scurries away and Malachi sees before him:
-
-A GIANT STONE HEAD, snarling. An abstracted jaguar. This is AI AEPEC... THE FANGED DEITY.
-
-Malachi wheezes, tries to sit up. 
-
-But now there are PEOPLE WITH GUNS standing before him. Young looking. Revolutionaries. 
+The tamarin scurries away and Malachi sees before him: ''PEOPLE WITH GUNS.'' Young looking. Revolutionaries. 
 
 The leader, ''ATOC FLORES (28 - Che meets young Colonol Kurtz),'' bends down to him. 
 
@@ -426,102 +333,90 @@ You shouldn't keep secrets from your friends, pendejo. It's not very...
 (in english)
 ...collaborative. 
 
-He leans in closer, looks over Malachi's injuries. Indifferent. He lifts the GLOBAL REPEATER. 
-
-On the CRACKED SCREEN, a message. ''FILES UPLOADING.''
-
-He starts playing a VIDEO on the phone. As he watches, he shakes his head. Half awe, half rage. 
+He lifts the phone, then, his face darkens. 
 
 ATOC (IN SPANISH)
-Whoever you sent this to, I hope they are not someone you love, my friend. I hope they are not someone you cherish. 
+Whoever you sent this to, I hope they are not someone you love, my friend. 
 (then)
-Because you just gave them a f***ing death sentence.
+Because you just gave them a death sentence.
 
 CLOSE ON the GLOBAL REPEATER. As Atoc SMASHES IT - follow the signal up to:
 
 EXT. OUTER SPACE
 
-A SATELLITE pings. <<pickup '$storybeats' '01. (b) HOOK: Something crazy is happening in Peru'>>
+A SATELLITE pings.<<if $seequeen is 1>> <<pickup '$storybeats' '01. (b) HOOK: Something crazy is happening in Peru. Malachi sees the Golden Queen.'>><<elseif $crawldeath is 1>><<pickup '$storybeats' '01. (b) HOOK: Something crazy is happening in Peru. Malachi sees THE WAY IN.'>><<else>><<pickup '$storybeats' '01. (b) HOOK: Something crazy is happening in Peru. Malachi survives but sees no clues.'>><</if>> FOLLOW THE SIGNAL down to earth:
 
-FOLLOW THE SIGNAL down to earth...
-
-From fast gigabyte internet cables to small town routers (mice making nests in the boxes), worse and worse infrastructure, less and less data, through rural phone lines, [[all the way to:->CUT TO NORTHERN MONTANA]]
-
+From fast gigabyte internet cables to small town routers (mice making nests in the boxes), worse and worse infrastructure, less and less data, through increasingly rural phone lines, [[all the way to:->CUT TO NORTHERN MONTANA]]
 
 :: CUT TO NORTHERN MONTANA 
 
 EXT. NORTHERN MONTANA - WINTER
 
-AERIAL: A frozen river in a wide frozen valley.
+AERIAL: The shadow of an APPROACHING BLIZZARD darkens the teeth of the SAWTOOTH MOUNTAINS. 
 
-The shadow of an APPROACHING BLIZZARD darkens the teeth of the SAWTOOTH MOUNTAINS. 
-
-Howling wind, gusts of snow: this is as removed from the hot jungles of Peru as one could imagine.
-
-Below, ''ZAYNE'S HOUSE'', a humble '50s farmhouse half overtaken by plywood additions, sags under a two foot cap of snow. 
-
-Rings of rusting vehicles lay seige to the property: half-finished 4x4s, tarped boats, quads, snowmobiles, a fully-loaded LOGGING TRUCK. 
+In the foreground, rings of rusting 4x4s lay seige to an ''OLD FARM HOUSE''. It sags under a two foot cap of snow, a maze of split rail corrals collapsing at its feet. 
 
 From the looks of it, no one's home. 
 
 INT. Z's HOUSE - CONTINUOUS
 
-A DINING ROOM TABLE cluttered with bills, chainsaw parts, microwave dinners, old cans of RAINIER.
+A DINING ROOM TABLE cluttered with bills and chainsaw parts.
 
-IN THE BEDROOM, the dusty face of an early '00s Dell blinks awake. On the carpet below, the computer grumbles to life. ON SCREEN an ALERT POPS UP:
+IN THE BEDROOM, the dusty face of an early '00s Dell blinks awake. An ALERT POPS UP:
 
-New message from: <<linkappend "''//DUMBASS//''">> <<include "LOGGING SITE">> <</linkappend>>
+New message from: <<linkappend "''//DUMBASS//''">><<update>><<include "LOGGING SITE">> <</linkappend>>
 :: LOGGING SITE
-<<nobr>><<if $deaths is 0>><<pickup '$inventory' 'Beginners Luck'>><br><br>**''You didn't die yet! Achievment unlocked: //Beginner's Luck.//<br><br>''[img[media/images/beginnerluck_bw.jpg]]<</if>>
-CUT TO:<</nobr>>
+<<nobr>><<if $deaths is 0>><<set $totalLines to $totalLines - 30>><<pickup '$inventory' 'Beginners Luck'>>**''You didn't die yet! Achievment unlocked: //Beginner's Luck.//''[img[media/images/beginnerluck_bw.jpg]]<</if>><</nobr>>CUT TO:
 
 EXT. SNOWY LOGGING SITE - CONTINUOUS. 
 
-HUGE LOGGING DECKS stack in the mud below a STEEP mountainside. Chainsaws scream. Men in hardhats maneuver skidders, loaders, swing machines. 
+Chainsaws scream. Men in hardhats maneuver skidders, loaders, swing machines.
 
-A rusty HELICOPTER cuts through frame, a half dozen logs swinging from its timber hook. On the DOOR: ABEL & SONS FORESTRY, LLC. SINCE 1976.
+A rusty HELICOPTER cuts through frame, a half dozen logs swinging from its trailing hook. On the DOOR: ''ABEL & SONS FORESTRY, LLC. SINCE 1976.''
 
 INT. HELICOPTER 
 
 ZAYNE pilots duct-taped and zip-tied controls, pouring ranch corn nuts directly into his mouth, drumming his fingers to his headphones' beat. 
 
 ZAYNE
-(off key, passionate, corn dust flying)
 And I'm here... to //remind// you...
 
-He reaches down for his Diet Coke 2-LITER, lifts it to his lips. Then, at the last moment, stops. Sniffs. He laughs, swishing the contents inside: they're yellow. 
+He a 2-LITER of Diet Coke, but, at the last moment, SNIFFS.
 
 ZAYNE
-Nope. Nope, that's the toilet. 
+Nope. Not that one. 
 
-Undeterred, Z finds THE OTHER (identical looking) Diet Coke bottle amongst the grease rags and saw files on the helicopter floor, takes a big a swig. Ahhh... flat, warm aspartame. 
-
-As he LOWERS the logs on deck, Z lifts the radio. 
+As Z LOWERS the logs on deck, he takes a big swig from THE OTHER Diet Coke bottle, then lifts the radio. 
 
 ZAYNE (OVER THE RADIO)
-Now, I know what you boys're thinkin... it's the last load of the day, and you're just //terrified// yer ol pal Z forgot about the Friday Funk... 
-
-LOGGER DAN (OVER THE RADIO)
-It's less of a thinkin', more of a hopin'... prayin'... beggin' type situation...
-
-Zayne grins, plugs his late 90s DISCMAN into a hand wired BOX SPEAKER (think redneck FLIGHT OF THE VALKYRIES SEQUENCE).
-
-ZAYNE (OVER THE RADIO)
-Now, now there Dan. I'm a man of my word. When I tell you I got a little Friday funk for ya... a little Friday funk is what you're gonna goddamn get. 
+Now, I know... it's the last load of the day, and you're all just //terrified// yer ol pal Z forgot. BUT. Lucky for you, I'm a man of my word. And when I tell you I got a little Friday funk for ya... a little Friday funk is what you're gonna goddamn get. 
 
 He flips open his collection of old CDs, choosing the PERFECT SCORE:
 
-[[DEANNA CARTER|HOME SET UP][$tape to "Deanna"; $shirt to "Reba"]]
+[[DEANNA CARTER|HOME SET UP][$tape to "Deanna"; $shirt to "Reba"; $genre to "90s country"]] | [[OUTKAST|HOME SET UP][$tape to "OutKast"; $shirt to "DMX"; $genre to "90s hip-hop"]] | [[AC/DC|HOME SET UP][$tape to "ACDC"; $shirt to "Meatloaf"; $genre to "classic rock"]]
 
-[[OUTKAST|HOME SET UP][$tape to "OutKast"; $shirt to "DMX"]]
+:: HOME SET UP 
+As the $tape CD starts playing, Z holds the RADIO up to his LOUDSPEAKER. <<removeclass "#right-ui-bar" "stowed">><<liveblock>><<if $tape is "Deanna">>The ENTIRE GROUP of loggers gives him the middle finger. Zayne laughs, salutes them. <<elseif $tape is "OutKast">>As the beat hits, on DECK, the guys start laughing. COOPER (6'5", 50, big biker beard and bigger belly) rips of his SHIRT, starts dancing HARD. Z cover his eyes, laughing.<<elseif $tape is "ACDC">>COOPER (6'5", 50, big biker beard and bigger belly) slow raises a single fist: Devil Horns. Metalhead solemn. Zayne lifts his own horns in return.<</if>><</liveblock>><<pickup '$storybeats' '02. SET UP: Z is a simple, sacrificial family man who hates fancy things like pickles and loves //<<live $genre>>//.'>>
 
-[[AC/DC|HOME SET UP][$tape to "ACDC"; $shirt to "Meatloaf"]]
+ZAYNE
+(into the radio)
+<<liveblock>><<if $tape is "Deanna">>He was workin' through college... on my grampa's farm...<<elseif $tape is "OutKast">>GET IT COOP!.<<elseif $tape is "ACDC">>Thundah! Thundah!<</if>><</liveblock>>
 
+Z<<liveblock>><<if $tape is 'Deanna'>> blows them a kiss,<</if>><<if $tape is 'OutKast'>> laughs,<</if>>  pushes the helicopter toward town.<<if $tape is "Deanna">><<include "DEANNA CARTER">><<elseif $tape is "OutKast">><<include "OUTKAST">><<elseif $tape is "ACDC">><<include "ACDC">><</if>>As his kids find seats inside, Z throttles the helicopter into the air, pushes into the mountains.<</liveblock>>
+
+As the DOUBLE WIDE (logging decks and fully loaded logging truck outside) comes into view:
+
+INT. BLACK SUV - FOREST
+
+THROUGH BINOCULARS, someone watches the helicopter pass.
+
+VOICE
+Yeah, [[we got him.|AFTER GOT HIM]]
 
 :: DEANNA CARTER 
 EXT. SCHOOL - MINUTES LATER
 
-//Strawberry Wine// still blasting from the helicopter loudspeakers, Zayne TOUCHES DOWN in a field near THE SCHOOL where  <<audio "strawberry" play>>his KIDS (HARPER, //15, camo hat, no-nonsense// and FORD, //9, buzz-cut, wrestling singlet//) wait for him, nonplussed, holding bags of hamburgers. As they climb in, Z turns up the music, Harper rolls her eyes. 
+//Strawberry Wine// still blasting from the helicopter loudspeakers, Zayne approaches a field near THE SCHOOL where <<audio ":playing" pause>><<audio "strawberry" play>>his KIDS wait: HARPER (14, camo hat: dorky in a country girl way, but smart as hell. Top of her class and can gut a deer without blinking) and FORD, (7, buzz-cut, wrestling singlet, wants to be a UFC warrior but still has trouble with his //r's//). They're nonplussed, holding bags of hamburgers. As he touches down, Z turns up the music, Harper rolls her eyes. 
 
 ZAYNE
 Disrespecting Deanna //Carter//!? 
@@ -534,38 +429,34 @@ I'll have you know you owe your //existence...//
 
 HARPER
 (dead flat)
-Dad, if you think you can still embarrass me by telling this story... you are sorely mistaken. I am immune to your grossness. 
+Dad, if you think you can still embarrass me by telling this story... you are sorely mistaken.
 
 ZAYNE^
 Your LITERAL existence--
-//Ow, ah//
-to this woman... 
-//Ok, above the belt, bud.//
-to this VERY song...
+//Ah, above the belt, bud//
+--to this VERY song...
 
-Zayne laughs. 
+HARPER
+I am immune to your grossness. 
+
+Zayne laughs, grabs a burger. 
 
 ZAYNE
-I've created a monster. 
-(grabbing a burger)
-No pickles this time?
+I've created a monster. No pickles this time, right?
 
 FORD
-(still swinging)
-Dude, pickles aren't spicy. 
+(laughing but still swinging)
+Dad! Pickles awen't even spicy!
 
 ZAYNE
-They sting the tongue. It's a stinging sensation. What's wrong with beef and ketchup? Why does everything have to be so fancy?
+Yes they are! They sting the tongue. It's a stinging sensation. What's wrong with beef and ketchup? Why does everything have to be so fancy?
 
 :: OUTKAST 
 EXT. SCHOOL - MINUTES LATER
 
-//Bombs Over Baghdad// still blasting from the helicopter loudspeakers, Zayne approaches a field near THE SCHOOL where  <<audio "bob" play>>his KIDS (HARPER, //15, camo hat, no-nonsense// and FORD, //9, buzzcut, wrestling singlet//) wait for him, nonplussed, holding bags of hamburgers. As he touches down, Z turns up the music, Harper rolls her eyes. 
+Zayne lowers the chopper to a field near THE SCHOOL where  <<audio ":playing" pause>><<audio "bob" play>>his KIDS (HARPER, //15, camo hat, no-nonsense// and FORD, //9, buzzcut, wrestling singlet//) wait for him, nonplussed, holding bags of hamburgers. As he touches down, Z turns up the music, Harper rolls her eyes. 
 
 ZAYNE
-(rapping)
-In a silk suit, tryin' not to sweat
-Hit somersaults without the net
 But this'll be the year that we won't forget... One Niiiiiiine Niine Niiiiiiiine!
 
 HARPER
@@ -575,7 +466,7 @@ Well, you certainly are special, I'll give you that.
 Ford TACKLEs him, trying to take Z out at the knees. 
 
 ZAYNE
-(struggling)
+(struggling with the melee attack)
 Be nice, or next time it's AC/DC. 
 
 HARPER
@@ -587,25 +478,24 @@ ZAYNE
 You told them no pickles, right?
 
 FORD
-(still swinging)
-Dude, pickles aren't spicy. 
+(laughing but still swinging)
+Dad! Pickles awen't even spicy!
 
 ZAYNE
-They sting the tongue. It's a stinging sensation. What's wrong with beef and ketchup? Why does everything have to be so fancy?
+Yes they are! They sting the tongue. It's a stinging sensation. What's wrong with beef and ketchup? Why does everything have to be so fancy?
 
 :: ACDC 
 EXT. SCHOOL - MINUTES LATER
 
-//Thunderstruck// still blasting from the helicopter loudspeakers, Zayne approaches a field near THE SCHOOL where  <<audio "thunder" play>>his KIDS (HARPER, //15, camo hat, no-nonsense// and FORD, //9, buzzcut, wrestling singlet//) wait for him, nonplussed, holding bags of hamburgers. As he touches down, Z turns up the music, headbanging, devil-horned fist pumping.
+Zayne approaches a field near THE SCHOOL where <<audio ":playing" pause>><<audio "thunder" play>>his KIDS (HARPER, //15, camo hat, no-nonsense// and FORD, //9, buzzcut, wrestling singlet//) wait for him, nonplussed, holding bags of hamburgers. As he touches down, Z turns up the music, headbanging, devil-horned fist pumping.
 
 ZAYNE
-(high-pitched Brian Johnson impression)
 I was caught! In the middle of the railroad traaaack. 
 
-Harper sighs, but then can't help laughing. Her dad's insane. 
+Harper sighs.
 
 ZAYNE
-You know, if you can't handle the //raw power//, I could play some Savage Garden for you next time... maybe some Enya, some Kenny G? You know, it that's not too much for you... 
+You know, if you can't handle the //raw power//, I could play some Savage Garden for you next time... maybe some Enya? 
 
 HARPER
 Are those //real people// from the nineteen hundreds, father?
@@ -616,17 +506,16 @@ ZAYNE
 (struggling with the melee attack))
 Oh, ok. I see. 
 
-HARPER
-(Little House on the Prairie voice.)
-You lived such a rich life, Papa! You should tell me more of your stories...
+HARPER^
+You lived such a rich life, Papa! We should record these stories...
 
 Z laughs, whacks her with a newspaper. 
 
-HARPER
-...I could get a tape recorder so future generations can hear...
-
 ZAYNE
 I'M OLD! I GET IT, DAUGHTER!
+
+HARPER^
+...for future generations...
 
 He takes a bite of the burger, recoils. 
 
@@ -634,313 +523,270 @@ ZAYNE
 I said no pickles!
 
 FORD
-(still swinging)
-Dude, pickles aren't spicy! 
+Dad! Pickles awen't even spicy!
 
 ZAYNE
-They sting the tongue! It's a stinging sensation. What's wrong with beef and ketchup? Why does everything have to be so fancy?
-
-:: HOME SET UP 
-As the $tape CD starts playing, Z holds the RADIO up to his LOUDSPEAKER. <<removeclass "#right-ui-bar" "stowed">><<if $tape is "Deanna">>The ENTIRE GROUP of loggers gives him the middle finger. Zayne laughs, salutes them. <<elseif $tape is "OutKast">>As the beat hits, on DECK, the guys start laughing. COOPER (6'5", 50, big biker beard and bigger belly) rips of his SHIRT, starts dancing HARD. Z cover his eyes, laughing.<<elseif $tape is "ACDC">>COOPER (6'5", 50, big biker beard and bigger belly) slow raises a single fist: Devil Horns. Metalhead solemn. Zayne lifts his own horns in return.<</if>><<pickup '$storybeats' '02. SET UP: Z is a sacrificial family man.'>>
-
-ZAYNE
-(into the radio)
-<<if $tape is "Deanna">>He was workin' through college... on my grampa's farm...<<elseif $tape is "OutKast">>GET IT COOP!.<<elseif $tape is "ACDC">>Thundah! Thundah!<</if>>
-
-Z blows them a kiss, pushes the helicopter toward town.<<nobr>><<if $tape is "Deanna">><<include "DEANNA CARTER">><<elseif $tape is "OutKast">><<include "OUTKAST">><<elseif $tape is "ACDC">><<include "ACDC">><</if>>As his kids find seats inside, Z throttles the helicopter into the air, pushes into the mountains. <</nobr>>
-
-As the DOUBLE WIDE (logging decks and fully loaded logging truck outside) comes into view:
-
-INT. BLACK SUV - FOREST
-
-THROUGH BINOCULARS, someone watches the helicopter pass. 
-
-VOICE
-Yeah, [[we got him.|AFTER GOT HIM]]
+Yes they are! They sting the tongue! It's a stinging sensation. What's wrong with beef and ketchup? Why does everything have to be so fancy?
 
 :: AFTER GOT HIM
 <<audio ":playing" fadeoverto 10 0>><<addclass "#right-ui-bar" "stowed">>
 
 INT. DOUBLE WIDE TRAILER - LATER. 
 
-Ford fires a BARRAGE of foam bullets, huge automatic nerf guns in each hand as Z leans over the mess of a kitchen table, adding up bills. He sighs. The nerf darts ricochet off his back. <<pickup '$storybeats' '03. THEME STATED: "If life&#39;s only about sacrifice, what does that say to our kids about their future?"'>>
+Ford fires a BARRAGE of nerf bullets, pinging off Z's back. Resigned to the assault, he slumps over the mess of a kitchen table, adding up bills.<<pickup '$storybeats' '03. THEME STATED: If "Life&#39;s about sacrifice, about family," what does that say about our kid&#39;s hope for their future?' >>
 
-IN THE OTHER ROOM, Harper sits down at the dusty old PC. Tries to open a word document. It FREEZES, cursor spinning.
-
-HARPER
-Oh hey, remember when you said you were gonna get us a functional school computer six years ago?
-
-ZAYNE
-(not looking up)
-Pretty pricey...
+IN THE OTHER ROOM, Harper sits down at the dusty old PC. She tries to open a word document. It FREEZES, cursor spinning.
 
 HARPER
-Bet it costs less than gramma's hot tub--
+Oh hey, remember when you said you were gonna get us a functional school computer //round about six years ago?//
 
 ZAYNE
-Uh-huh...
+Everything adds up...
 
 HARPER
-Or aunt Cindy's down payment...
-
-ZAYNE
-Hey, look, you want Aunt Cindy stayin' here again, just say the word. 
-
-HARPER^
-Or the 'company truck' Uncle Randy's been drivin' the past three years.
-
-Zayne laughs, leans back to look at Harper through the doorway. 
-
-ZAYNE
-Hate to break it to ya sweetheart, but life ain't all about hotel vacations... and... "working computers" and fancy condiments... 
+Costs less than gramma's hot tub... 
 
 HARPER
-(sarcastic grandpa voice)
-It's about family. Sacrifice. Hard work. 
+Or the 'company truck' uncle Ryan's drivin... aunt Jo's down payment.
+
+ZAYNE^
+Well, when you're 96 I'll buy you---
+
+Zayne laughs, leans back to talk to her through the doorway.
 
 ZAYNE
-You forgot about the ungrateful children...
+Hey you want her staying here again? Hate to break it to ya sweetheart, but life ain't all about hotel vacations and "working computers"... 
 
 HARPER
-Ooh, nice...
+(//dad voice//, palm slaps)
+It's 'bout family. Work. Sacrifice.
 
 ZAYNE
-...and a helluva lot of bills...
+Amen. Well, that and helluvalotta bills. 
 
 HARPER
-(flat)
-Yay, can't wait to be old. 
+Welp... can't wait to grow up.
 
-IN THE KITCHEN, Zayne opens another RAINIER. He takes a long drink. Closes his eyes. Best part of his day. 
+But then, Harper NOTICES something on screen. Leans in. 
 
-ZAYNE
-Well, sometimes... if you're lucky... sometimes it's also about beer. 
-
-IN THE BEDROOM, as Harper waits for Word to load, she notices something. Leans in.
-
-EXT. ROADS - NIGHT
-
-In the darkness, a COLUMN OF BLACK CARS REVS down the highway. 
-
-They VEER onto a dirt road, barely slowing down, gravel SPRAYING. 
-
-It looks like Z's road. They're coming for him.
-
-INT. ZAYNE'S HOUSE - NIGHT
-
-In the DEN, the phone RINGS. Ford looks up from his nerf scope. 
-
-FORD
-Damn spammers got our number again...
-
-As he grabs the receiver, hangs up:
-
-IN THE OTHER ROOM, light from A VIDEO plays across Harper's face. She bites her lip. 
-
-HARPER (FROM THE OTHER ROOM)
-Hey dad? Who's //dumbass?//
-
-Zayne snorts. 
-
-ZAYNE
-That would be your uncle Malachi. He earned it, trust me. 
-
-A beat, then:
+In the kitchen, Zayne cracks another RAINIER, savoring the one enjoyable part of his day. Then:
 
 HARPER (O.S.)
-Ok, well he sent a video? 
-(then)
-Hey dad? I think... I think he's in trouble...
+Hey dad? Who's //dumbass?//
 
-But Zayne is already [[standing|VIDEO PLAY]] 
+Zayne snorts.
 
-:: VIDEO PLAY
+ZAYNE
+That would be your Uncle Malachi. He earned it.
+(then, with a hint of premonition)
+Why?
 
-INT. DOUBLE WIDE - BEDROOM - MOMENTS LATER. 
+BEAT.
 
-Zayne stands behind Harper, arms crossed, watching Malachi's HEAVILY GLITCHED video. <<pickup '$storybeats' '03. THEME STATED: "If life&#39;s only about sacrifice, what does that say to our kids about their future?"'>>
+HARPER 
+Well, I think... I think he's in trouble...
 
-ON SCREEN:
+But Zayne is already standing.
+
+EXT. ROADS - SOMEWHERE NEARBY
+
+A COLUMN OF BLACK SUVS speed down the highway. A tense tone BUILDS. They VEER onto a dirt road, SPRAYING [[GRAVEL|VIDEO PLAY]]
+
+:: VIDEO PLAY {"position":"1000,150"}
+
+INT. ZAYNE's HOUSE - BEDROOM - MOMENTS LATER. 
+
+Z stands behind Harper, watching Malachi's HEAVILY GLITCHED video. <<pickup '$storybeats' '04. INCITING INCIDENT: Malachi&#39;s Video. Same on all storylines.'>>
 
 MALACHI
 ...I found it... I found proof... 
-(then)
-Listen carefully, ok? I've been thinking that Christmas, when Uncle Joe brought that old crone he met with Sam and Carlos? And then Aunt Gwen went over to her ex's place?
+(then, as if memorized)
+And, listen... I've been thinking alot, about that Christmas, when Uncle Joe brought that crazy old crone he met in San Carlos? And then Aunt Gwen went over to her ex's place?
 
 HARPER
-Whose Aunt //Gwen?//
+Aunt //Gwen?//
 
-Z presses a finger to his lips, trying to listen. 
+Zayne presses a finger to his lips, listening intently. 
 
 MALACHI
-And we had to go looking for her dog? I've just been thinking back on what matters, and wanted to tell you... whatever you do. DO NOT come looking for me, ok? Everything is completely fine. You understand? Completely fine. 
+And we had to go looking for her dog? I've just been thinking back on what matters, and wanted to tell you... Everything is completely fine. You understand? Completely fine. 
 
-Then, the video GLITCHES BLANK. 
+Then, the video GLITCHES, freezes, and goes BLANK. 
 
-A stunned beat. Harper looks up at Z. Arms are crossed, breathing hard, he's pissed. 
-
-ZAYNE
-Frickin... typical. 
-
-He storms out of the room. Harper looks at Ford, confused. Ford shrugs. 
-
-INT. DOUBLE WIDE - BEDROOM - MOMENTS LATER.
-
-As Zayne tears through his room, looking for a suitcase. In the living room (OFF SCREEN) the phone RINGS again. 
+A stunned beat. Harper looks up at Z. Nostrils flared, breathing hard.  Pissed.
 
 ZAYNE
-Unplug that thing, wouldjya bud!?
+Get your bags packed. Your going back to your moms. 
 
-FORD (O.S.)
-I don't know how to work dinosaur phones, dad!
+INT. ZAYNE'S HOUSE - bedroom
 
-Ford hangs up as Harper walks into the bedroom, confused. 
+ZAYNE TEARS THROUGH his bedroom looking for anything remotely resembling clean clothes. 
 
 ZAYNE
-Have you seen my suitcase? Swear to God I had it right--
+(under his breath)
+Clasic... just //classic.//
+
+Harper walks in, arms crossed. Watching him.
 
 HARPER
-Dad... is uncle Malachi gonna be ok?
+Dad, is everything--
+
+But in the other room, the OLD PHONE RINGS (early 00s wireless), cutting her off.  
 
 ZAYNE
-He's gonna be ok once I bail him out. That's how it works, right? Leave everyone else to clean up your //goddang// mess. Must be nice. 
+(calling)
+Handle that for me, bud!?
 
-Zayne opens the closet, a MOUNTAIN of disorganized outdoor gears tumbles out. 
+IN THE LIVING ROOM, Ford looks up from his plastic scope. 
 
-Z picks opens an old SUITCASE, recoils. Then, for a second, lightens up. 
+FORD
+Got it!
+(then)
+//Fweaking wobocalls.//
+
+He lifts the phone, and as he SLAMS it back on the hook, we just GLIMPSE the Caller ID = INTERNATIONAL. 
+
+INT. CARS/EXT. GRAVEL ROADS - NIGHT
+
+Inside the column of SUVS, people in ALL BLACK thumb bullets into clips, shove clips into guns. 
+
+In the dim interior, a woman's GOLD FACE PLATES tink and glisten<<if $seequeen is 1>> (we //almost// recognize her)<</if>>: YARA.  
+
+INT. Z's House - bedroom. 
+
+Zayne opens a CLOSET unleashing a MOUNTAIN of gear cascading across the floor. Lawnchairs, life jackets, Tae Bo DVDs.
+
+HARPER
+Dad? Is uncle Malachi gonna be ok?
 
 ZAYNE
-Well, found out what happened to Mr. Gerby McGerbil. 
+Once I bail his ass out again? Sure. He'll be great. 
 
-He turns back to Harper. She's not laughing. She's worried.
+Z opens an old SUITCASE, then gags. 
 
-[[HELP HER UNDERSTAND|EXPLAIN WHAT'S GOING ON]]
+ZAYNE
+(coughing)
+Welp. Think I finally solved the disappearence of Mr. Guinea M. Pig.  
 
-[[TELL HER ON THE WAY]]
+HARPER
+Dad... 
+
+He turns to her. She's not laughing. Harper's not a dramatic girl, but she's clearly scared. 
+
+HARPER
+I don't understand... //anything// about what's happening. 
+(beat)
+Uncle Malachi just said a bunch of weird things about family I've never heard of and, now you're acting really weird and--and--
+(holding back her emotion)
+Can you please just... explain what's going on?
+
+[[HELP HER UNDERSTAND|EXPLAIN WHAT'S GOING ON]] | [[NO TIME|TELL HER ON THE WAY]]
 
 :: EXPLAIN WHAT'S GOING ON 
-<<set $codebook to "Harper">>
-
-Zayne sighs, heavy. 
+<<set $codebook to "Harper">><<pickup '$storybeats' '<strong>Butterfly Choice: Harper has the code book.</strong>'>>Zayne grabs her, looks her in the eye. 
 
 ZAYNE
-This is what Kai does. He gets some pie-in-the-sky idea of a better, more exciting life, bails on his all his responsibilities... joins greenpeace or marries a stripper or joins a cult in friggen... thailand. But then it all goes wrong and he gets arrested or gets robbed or goes broke and then... or course. He calls me. And then I bail him out. That's my brother. That's what we do.
+Harpergirl, listen. Your uncle? I love'm... he's smart as hell, but he's the stupidest person I ever met. 
+
+Zayne kneels down, digs for something under the bed. 
+
+ZAYNE
+Ever since he was a kid... he'll get these crazyass ideas... underwater UFO research, or turnin' bat shit into gasoline--he had those whole //grand plan// on how //worm mcnuggets// were gonna end climate change? Shit you not. 
+
+She smiles a little at this. Zayne reaches for something under the bed. Can't quite get it. 
+
+ZAYNE
+And once he's hooked, if you have any quesitons or doubts? Well you must be evil or dumb.  So. He'll run off, all cocky n' wild-eyed.. and then...  
+(grunting, reaching)
+When  all goes to shit, and he's broke and over his head... he calls me. And I bail him out. 
+
+Fnally he finds it: a dusty OLD NOTEBOOK from under the bed.
+
+ZAYNE
+Because... he's my brother. And I'm an even bigger dumbass than him. 
+
+He hands Harper the notebook. On the cover, in middleschool handwriting ''THE CODEX OF MAL AND Z.'' She flips it open: NatGeo clippings, Mayan alphabets, scrawled codices. 
+
+ZAYNE
+It's like a... secret language we had, just for me and him.
 
 HARPER
-But... if this is just what he always does... why do you seem... scared? 
-
-Z is taken back a little. Didn't realize he was that transparent. A beat, then he picks up a MASSIVE, TATTERED THREE RING BINDER, tosses it to her. It's stuffed full of magazine cut out clippings, nat geo pages, secret codices. Definitely compiled by kids, but incredibly elaborate. 
+After... grandpa and gramma... ?
 
 ZAYNE
-We built this stupid... codebook as kids? Like a secret language that only me and him could ever decode... 
+(dodging it)
+Yeah. Well. "Everything's completely fine?" That was the //rainy day code.// That's like... defcon 1.
+(beat)
+He's never actually used it before. 
+
+Z tries to shrug off the chills they both just got. 
+
+ZAYNE
+So, wherever he is, whatever bullshit he's got himself into now, I gotta go find him. That's what's going on.
+
+She nods, serious. 
 
 HARPER
-After Grandpa and Grandma...
+Ok. 
 
 ZAYNE
-Yeah but uh...
-(clearing his throat)
- "Everything's completely fine?" That's the //rainy day code.// That's like... defcon 1. And uh--he's never actually used it before. 
-
-HARPER
-(small)
-Oh. 
-
-ZAYNE
-But look, your uncle is //incredibly// dramatic. He's probably fine. I just... I have to go make sure. It's what I do.
-
-HARPER
-It's family, right?
-
-ZAYNE
-Yeah. Exactly.
-(then)
-Can you give me a hand and write down everything he said in that message? Every word. We'll work out what it all means on the way. First I gotta find out what part of Mexico's called //Peru.//
-
-HARPER
-Very funny, dad. You're hilarious. 
-
-She smiles, heads down the hall, Zayne turns back to his packing.
-
-ZAYNE
-(sotto)
-Dunno what's so hilarious about it...
-
-The amount of options in front of him is overwhelming. Hip-waders, snowshoes, dry rotted tents, a single cross country ski.  
-
-[[FIND EVERYTHING YOU NEED]]
-[[KEEP IT SIMPLE: GO MINIMAL|PACK MINIMAL]]
-
-:: TELL HER ON THE WAY 
-<<set $codebook to "Z">>
-
-ZAYNE
-Look, with your uncle it's just... complicated. 
-
-HARPER
-Ok...
-
-ZAYNE
-All you gotta know is that once again, I gotta save his ass, and once again, he'll be fine and I'll be a little more broke that last time. 
+That's my girl. Help Ford pack up... and you got some way to get that video of his on your phone?
 
 HARPER 
-What did all that mean, about... the dog and...
+Yup. On it.
+
+As she runs off, Z (misting a little, and proud) turns back to the overwhelming pile of GEAR: Hip-waders, snowshoes, dry rotted tents, a single cross-country ski. <<nobr>>
+<span id="choosename"><br><<link "PREPARE FOR THE WORST | ">> 
+    <<replace "#choosename">>  <<include "CLOTHES CHOICE">><<update>><</replace>> 
+<</link>><<link "PACK LIGHT">> 
+    <<replace "#choosename">><<goto "PACK MINIMAL">><</replace>> 
+<</link>></span><</nobr>>
+:: TELL HER ON THE WAY {"position":"1525,1250"}
+<<set $codebook to "Z">><<pickup '$storybeats' '<strong>Butterfly Choice: Zayne has the code book himself.</strong>'>>
+Zayne looks at her, not sure where to even start. 
 
 ZAYNE
-It's this stupid... code he made up when were kids. 
-(then, unable to hide his worry)
-It means his really in trouble. Really in trouble this time.  Write down everything he said in that vidoe, ok? Every word. I gotta pack. 
+Look, all you gotta know is that once again, I gotta save his ass, and once again, he'll be fine, and once again, I'll be a little more broke that last time he called.
 
-Harper nods, walks way, a little hurt. But Z doesn't have time to reflect. 
+She crumples a little. Shit.
 
-Z looks back at the pile of GEAR in the closet. The amount of options in front of him is overwhelming. Hip-waders, snowshoes, dry rotted tents, a single cross-country ski. 
-
-[[FIND EVERYTHING YOU NEED]]
-[[KEEP IT SIMPLE:GO MINIMAL|PACK MINIMAL]]
-
-:: FIND EVERYTHING YOU NEED 
-
-He Googles (awkward finger stabs at his phone):
-
-''"WEATHER TYPE CLOTHES IF TRAVEL PERU HOT OR COLD SURVIVE BEAR GRYLLS HOW NOT TO DIE THERE"''
-
- He squints at the results (too proud for reading glasses).
+HARPER
+...Ok...
 
 ZAYNE
-(reading slow)
-Peru is a nation of extremes... from 22,000 foot Andean peaks to the searing Atacama--the driest place on earth--to the humid tropical tangle of Amazonian jungles... 
+I'm sorry babygirl, I'll explain on the way. Promise.  
 (then)
-Fan-freakin-tastic. 
+Just... get that video onto your phone, ok? It's important. And get Ford goin. We gotta move.
 
-He looks at his ONE GOOD BACKPACK and the PILE OF GEAR. Can't fit everything. Decisions have to be made. 
+<<include "CLOTHES CHOICE">>
+:: CLOTHES CHOICE [nobr]
+Z looks at his ONE GOOD BACKPACK and the PILE OF GEAR. Can't fit everything. Decisions have to be made. 
 
-[[PACK FOR THE JUNGLE|INCITING INCIDENT][$clothes to "jungle"; $sharptool to 'machete'; $secondtool to 'rope']]
+<<nobr>><span id="choosename">Pack for the <<link "Jungle">>
+    <<replace "#choosename">><<set $clothes to 'jungle'>> <<set $sharptool to 'machete'>> <<set $secondtool to 'rope'>>  <<include "INCITING INCIDENT">><<update>><</replace>>
+<</link>> | <<link "MOUNTAINS">><<replace "#choosename">><<set $clothes to 'mountains'>><<set $sharptool to 'ice pick'>><<set $secondtool to 'parka'>><<include "INCITING INCIDENT">><<update>><</replace>>
+<</link>> | <<link "DESERT">>
+    <<replace "#choosename">><<set $clothes to 'desert'>><<set $sharptool to 'rainier'>><<set $secondtool to 'short shorts'>><<include "INCITING INCIDENT">><<update>><</replace>><</link>></span><</nobr>>
+:: INCITING INCIDENT [nobr]
+<<nobr>><<if $clothes is "mountains">>Zayne grabs ''winter boots, warm weather gear, a rope, a knife and an ICE AXE'' stuffs them into his sack.
+<<elseif $clothes is "desert">>Zayne grabs ''sandals, short shorts, a cowboy hat, a tube of sunscreen and a six-pack of Ranier,'' stuffs them into his sack. 
+<<elseif $clothes is "jungle">>Zayne grabs ''hiking boots, bugspray, a rope and a MASSIVE MACHETE,'' stuffs them into his sack. <</if>><</nobr>>
 
-[[PACK FOR THE MOUNTAINS|INCITING INCIDENT][$clothes to "mountains"; $sharptool to 'icepick'; $secondtool to 'rope']]
-
-[[PACK FOR THE DESERT|INCITING INCIDENT][$clothes to "desert"; $sharptool to 'rainier']]
-
-:: INCITING INCIDENT 
-<<if $clothes is "mountains">>
-Zayne grabs ''winter boots, warm weather gear, a rope, a knife and an ICE AXE'' stuffs them into his sack.
-<<elseif $clothes is "desert">>
-Zayne grabs ''sandals, short shorts, a cowboy hat, a tube of sunscreen and a six-pack of Ranier,'' stuffs them into his sack. 
-<<elseif $clothes is "jungle">>
-Zayne grabs ''hiking boots, bugspray, a rope and a MASSIVE MACHETE,'' stuffs them into his sack. <</if>> He pulls on his old logging boots and his tattered $shirt shirt. 
+He pulls on his old logging boots and tattered <<live $shirt>> shirt. 
 
 ZAYNE
 Still fits. 
 
-It really doesn't. But then, THROUGH THE WINDOW - Z sees something:
+It really doesn't. <<liveblock>><<if $codebook is "Harper">><<include "FIRST RING">><<update>><<else>><br><br>Zayne zips his bag, then remembers something. He dives down, clawing under the dusty bed, finally retrieving: a BEAT UP THREE RING BINDER. In middleschool handwriting: ''THE CODEX OF MAL AND Z. ''Something stops in his throat. Memories flood. <<include "FIRST RING">><<update>><</if>><</liveblock>>
 
-''In the far distance, barely visible through the drifting snow, a PHALANX of SUVS approach. All black. They're coming fast.'' 
+:: FIRST RING
+
+But then, THROUGH THE WINDOW - Z sees something: ''In the far distance, the PHALANX of SUVS approach.'' All black. They're coming fast.
 
 ZAYNE
 ...the hell?
 
-But then, the phone rings again. 
-
-Zayne and Harper look at each other. Ford's footsteps running toward it.
+But then, the phone rings again. Ford's footsteps running toward it. 
 
 ZAYNE
 FORD, don't!
@@ -950,26 +796,31 @@ INT. DOUBLE WIDE - DEN - MOMENTS LATER
 Zayne GRABS Ford just before he silences the phone. 
 
 FORD
-What? You told me 
+What? You told me--
 
 Z puts a hand over his mouth. 
 
 HARPER
-Do you think it's... him?
+Is it Uncle Malachi?
 
 ZAYNE
-He never calls that phone. Hell, //nobody// calls that phone. 
+He wouldn't call that phone.<<if $codebook is "Z">> When Uncle Malachi said "everything is fine?" That's code, ok? It means things are really really bad and we can't trust anyone.<<else>> Hell, //nobody// calls that phone.<</if>>
 
-The old caller ID (circa 2003) says INTERNATIONAL.
+HARPER
+Yeah, but what if someone...
+(beat)
+//has// him?
+
+Z looks at caller ID (circa 2003): INTERNATIONAL (PERU)
 
 Z looks back at the window. Those cars are getting closer.
 
-The phone rings [[AGAIN->PHONE DECISION]] <<set $seconds to 7>>
+The phone rings [[AGAIN->PHONE DECISION]] <<set $seconds to 9>>
 
 :: PHONE DECISION 
 <<include "PHONETIMER01">>Harper and Zayne both look at eachother. 
 
-Zayne bites his lip... is there time? The phone RATTLES in its hook, dust flaking off. 
+Zayne bites his lip... is there time? The phone RATTLES in its hook. 
 
 At the bottom of the hill, one of the cars BLOWS through the metal gate without even slowing down. 
 
@@ -991,7 +842,7 @@ Zayne has to decide.
             <<replace "#countdown">>Choice timer ''$seconds seconds.''<</replace>>
         <<else>>
             <<replace "#countdown">><</replace>>
-            <<goto "NO CHOICE CALL">>
+            <<goto "TIMEOUT CALL">>
 			<<set $indecision to $indecision + 1>>
             <<pickup '$inventory' Lost Harper's Respect Forever>>
             <<stop>>
@@ -999,7 +850,7 @@ Zayne has to decide.
     <</repeat>>
 <</silently>>
 
-:: TAKE THE CALL 
+:: TAKE THE CALL {"position":"1900,75"}
 <<set $callanswer to 1>>Zayne looks at the kids, serious. 
 
 ZAYNE
@@ -1043,11 +894,9 @@ ZAYNE
 Do I get to ask who the hell you are and why I should trust you, or am just supposed to take your word for it?
 
 MAN
-There's no time. 
+I'm sorry, I wish we had more time. 
 
-[[AGREE TO HIS TERMS]]
-
-[[TELL HIM TO GO TO HELL->NO CALL CHOICE]]
+[[AGREE TO HIS TERMS]] | [[TELL HIM TO GO TO HELL->NO CALL CHOICE]]
 
 :: IGNORE THE CALL 
 Zayne grabs the phone, pulls the cord out of the wall. Smashing the receiver against the faux-wood walls. 
@@ -1079,17 +928,17 @@ As they SPRINT out of the trailer, running toward the chopper, Z looks back and 
 ZAYNE
 (editing, even now)
 //Shoot.//
-
 :: AGREE TO HIS TERMS 
-<<set $agreetoterms to 1>>BULLETS puff up the dirt around Zayne. 
-
-He DIVES behind a log deck, panting hold his kids to his chest. 
-
-ZAYNE 
-What the hell is going on?
+<<set $agreetoterms to 1>>BULLETS puff up the dirt around Zayne. He DIVES behind a log deck, panting hold his kids to his chest. 
 
 MAN
-No time. Get in your truck pickup truck. You need to drive it into your house. 
+Zayne, can you hear me. 
+
+ZAYNE
+Oh yeah... 
+
+MAN
+Get in your truck pickup truck and drive it into your house. 
 
 ZAYNE
 Drive my truck... inside my house?
@@ -1098,7 +947,7 @@ MAN
 Now. Break through the back wall, park your pickup truck inside your house. Do not let them see you do it. 
 
 ZAYNE
-Ok, well, I'd rather not is the thing. I kinda like my truck, and I kinda like my house.
+Ok, thing is, I kinda like my house and I really like my truck.
 
 The cars are close now. 
 
@@ -1111,15 +960,12 @@ ZAYNE
 What do you mean, everyone? I'm here alone... 
 
 MAN 
-Do what I say, no questions. Drive through the wall. 
+Zayne. Drive through the wall. Now. 
 
 Zayne looks at the helicopter nearby, back to the approaching cars. Maybe he has time. 
 
-[[DRIVE THROUGH THE WALL]]
-
-[[TAKE THE CHOPPER]]
-
-:: TAKE THE CHOPPER
+[[DRIVE THROUGH THE WALL]] | [[TAKE THE CHOPPER]]
+:: TAKE THE CHOPPER {"position":"1675,175"}
 
 <<set $deaths to $deaths + 1>>Zayne SPRINTS for the chopper, sets Harper inside. 
 
@@ -1136,7 +982,7 @@ Zayne smiles: they're free.
 
 And then, just 40 feet above the ground, he looks back, sees fuel pouring from a bullet hole in the gas tank. Dammit. 
 
-And in one of the trucks, a WOMAN IN A BLACK VEIL lifts her pistol, fires. 
+From one of the trucks, a door opens. Yara steps out. She lifts a semi-automatic rifle lifts her pistol, fires. 
 
 THE CHOPPER EXPLODES 
 
@@ -1147,17 +993,46 @@ TEXT ON SCREEN: You died.
 <<if $deaths > 1>>Again. There have only been two chances to die in this story so far and you died both times. That's almost... Impressive?<</if>>
 <<nobr>>
 <<if visited ("AGREE TO HIS TERMS")>>
-[[I understand flying things and bullets don't mix->Drive Through The Wall]]
+[[I understand flying things and bullets don't mix->DRIVE THROUGH THE WALL]]
 <</if>>
 <<if visited ("NO CALL CHOICE")>>
 [[I understand flying things and bullets don't mix->TAKE THE TRUCK]] 
 <</if>>
 <</nobr>>
 
-:: NO CHOICE CALL 
+:: TIMEOUT CALL {"position":"1275,2200"}
+
 INDECISION!
 
-Zayne reaches out to grab it. Then freezes. <<set $deaths to $deaths + 1>><<set $callanswer to 0>>
+Too slow. <<audio ":all" pause>><<audio "crown" play>> <<include "FIRST FUNERAL">>
+
+:: FIRST FUNERAL
+
+OVER BLACK
+
+HARPER
+This is how my dad died. 
+
+EXT. CEMETARY - DAY
+
+Harper stands in front of her father's coffin, wearing in all black, speaking to a crowd. 
+
+HARPER
+Not as the man I thought he was... not as the super hero I wanted to believe he was when I was little...
+
+She looks out at the crowd. Tears, a little confusion at where she's going. 
+
+HARPER
+He died scared...
+
+FLASH TO:
+
+Int. House - a week earlier
+
+Zayne reaches for the phone... then... HESITATES. 
+
+HARPER (V.O.)
+He died because he froze.  <<set $deaths to $deaths + 1>><<set $callanswer to 0>>
 
 ZAYNE
 Should I answer it?
@@ -1165,14 +1040,12 @@ Should I answer it?
 HARPER
 I don't know! You're the grownup!
 
-ZAYNE
-Shoot. SHOOT!
+Zayne reaches for it... then hesitates again. 
 
-He hesitates. 
+HARPER (V.O.)
+He died, not because he couldn't save us...
 
-Then, PICKS IT UP. 
-
-But it's too late. The line is dead. 
+Then, PICKS IT UP. But it's too late. The line is dead. 
 
 ZAYNE
 Dammit. 
@@ -1180,28 +1053,29 @@ Dammit.
 He looks out the window. The cars are getting closer now. 
 
 HARPER
-Shouldn't we... run? Or or, get... guns or... knives or something?
+Dad... who is that?
 
-But before she can answer, Zayne sees something that makes his jaw drop. 
+But before she can answer, Zayne sees something that makes his jaw drop. From one of the cars, an RPG SPIRALS toward them. 
 
-In the sky above the cars, something HUGE  cuts out of the mist. 
+Time freezes. 
 
-A DRONE. US military grade. A REAPER. 
+BACK TO THE FUNERAL. 
 
-TWIN MISSILES spiral from the Reaper's wings. 
+Harper's tears stream down her face... 
 
-ZAYNE
-GET DOWN!
+HARPER
+This is how my dad died... not because it was impossible to save us... but because he was too afraid to make a choice. 
 
-The explosion DESTROYS the first three cars, flipping the MIDDLE SUV into the air. 
+The audience has grown very uncomfortable now. 
 
-Zayne looks up just in time to see--
+HARPER
+And I'm sorry, I know this isn't what I'm supposed to say. But, it's real, you know? My father wasn't the man I thought he was... and now... now [[HE'S GONE][$totalLines to $totalLines -30]] forever.
 
-In slow motion--
-
-The car tumbles toward him. 
-
-Next time, [[MOVE FASTER->NO CALL CHOICE]]
+:: HE'S GONE
+<<audio ":playing" fadeoverto 10 0>><<>>
+ACHIEVMENT: LOST HARPER'S RESPECT FOREVER
+ [img[media/images/lostrespect.jpg]]
+Next time, [[BE DECISIVE->NO CALL CHOICE]]
 
 :: NO CALL CHOICE 
 <<nobr>><<if $callanswer is 1>>
@@ -1298,7 +1172,7 @@ Not yet. On my <<nobr>><span id="talk"><<link "COUNT">>
 <</nobr>>
 
 
-:: TOO FAST 
+:: TOO FAST {"position":"1900,2100"}
 Before the man finishes counting, Zayne RUNS.
 
 Ext. house - moments later. 
@@ -1320,7 +1194,7 @@ Next time, [[TRUST THE COUNT->DRONE ESCAPE]]
 <br>
 <br>
 
-:: TRUCKCOUNT 
+:: TRUCKCOUNT {"position":"900,2325"}
 <span id="truckcount">Leave in ''$timer'' seconds.</span>
 <<silently>>
     <<repeat 1s>>
@@ -1480,23 +1354,23 @@ Zayne looks over at his helicopter.
 
 
 
-[[TAKE THEM SOMEWHERE SAFE->TAMI HOUSE
+[[TAKE THEM SOMEWHERE SAFE->KIM HOUSE
 
 
 
-:: TAMI HOUSE 
-Ext. Gun Range - day
+:: KIM HOUSE 
+Ext. KIM'S GUN RANGE
 
-8 women, ranging from 23 to 73, fire handguns. Tami, blonde hair showing its roots, tough, is helping one of them, Demi, fire a PINK hand gun. 
+8 women, ranging from 23 to 73, fire handguns. Kim, blonde hair showing its roots, tough, is helping one of them, Demi, fire a PINK hand gun. 
 
-TAMI
+KIM
 Now just take a deep breath...exhale, and then as the sight falls...squeeze. 
 
 Demi is shaking a little. She follows orders though...BLAM. 
 
 Demi shrieks. 
 
-TAMI
+KIM
 You got it! Hell yeah. How did it feel?
 
 Int. gun range - later
@@ -1509,7 +1383,7 @@ I feel...awesome. Strong. And like...if he...
 GROUP
 Yes! Yes. 
 
-TAMI
+KIM
 You don't have to--
 
 DEMI
@@ -1520,17 +1394,17 @@ Let's go! Way to go Dem!
 
 The group breaks into clumps. Z and his kids enter. 
 
-TAMI
+KIM
 Z? What's going on?
 
 Z
 Can I talk to you in private?
 
-Int. Gun Range - Tami's Office
+Int. Gun Range - Kim's Office
 
-Tami nods. Behind her, racks and racks of handguns. 
+Kim nods. Behind her, racks and racks of handguns. 
 
-TAMI
+KIM
 Okay. I get it. The kids will be ok. In fact I kinda hope some of those...whatcha say show up. 
 
 Z
@@ -1547,7 +1421,7 @@ She whirls and leaves.
 
 Z follows. 
 
-Ext. Tami's Gun Range - Parking Lot 
+Ext. Kim's Gun Range - Parking Lot 
 
 Harper whirls. 
 
@@ -1566,15 +1440,15 @@ Emotional intelligence choice:
 
 [[CARAL]]
 
-:: TRY TO CRY 
+:: TRY TO CRY {"position":"1650,2350"}
 Z tries to cry, it doens't have the desired effect. 
 
-[[TAMI'S PLANE]]
+[[KIM'S PLANE]]
 
 :: EMPATHIZE 
-[[TAMI'S PLANE]]
+[[KIM'S PLANE]]
 
-:: WHITE FANG HER 
+:: WHITE FANG HER {"position":"725,1425"}
 Making the wrong choice can have interesting outcomes later with Anna.
 
-[[TAMI'S PLANE]]
+[[KIM'S PLANE]]

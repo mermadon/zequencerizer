@@ -1,4 +1,4 @@
-:: Shoot out the window 
+:: Shoot out the window {"position":"2000,1125"}
 
 Zayne stares down the body of the plane. Shooting out the window sucked all the oxygen out, killing the fire...but lack of oxygen also happens to kill humans. Anna stares back. 
 
@@ -163,7 +163,7 @@ But they realize...hypthermia is setting in from the water (this happens. Even i
 
 As night falls, and temperature drops, things go from funny-bad to bad-bad. 
 
-:: SPOON FOR WARMTH 
+:: SPOON FOR WARMTH {"position":"2025,900"}
 
 Zayne and Anna huddle together at one end of the raft. Contrary to popular belief, there is literally nothing less sexy than hypthermic shivers combined with hallucinatory dreams and cold salt water. 
 
@@ -190,7 +190,7 @@ ROLL CREDITS
 
 <<set $deaths to $deaths + 1>>
 
-:: SKIN THE BEAR
+:: SKIN THE BEAR {"position":"2075,1000"}
 
 Zayne uses the emergency knife to skin the bear, and puts it underneath them, protecting them from the cold water. 
 

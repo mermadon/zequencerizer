@@ -1,32 +1,42 @@
-:: Code Fragments {"position":"1350,1350"}
+:: Code Fragments {"position":"1725,2350"}
 
-
+Add storybeats 
+<<pickup '$storybeats' '03. THEME STATED: "If life&#39;s only about sacrifice, what does that say to our kids about their future?"'>>
 Open and close side bar automatically:
 
+make ui bar pop out:
 <<removeclass "#right-ui-bar" "stowed">>
+
+make ui bar stow
 <<addclass "#right-ui-bar" "stowed">>
 
-ctp stuff
+Liveblock: 
 
-<<ctp "testID">>
-  This is the first string.
-<<ctpNext clear>>
-  Second! It cleared the first one out!
-<<ctpNext nobr>>
-  Third, but with nobr...
-<<ctpNext 2s>>
-  The fourth shows up 2 seconds late.
-<<ctpNext t8n>>
-  And the final one. With a transition!
-<</ctp>>
+<<set $testVar to 0, $testVar2 to 0>>
 
-<<link "Next">>
-  <<ctpAdvance "testID">>
-<</link>>
+<<button "Add 1">>
+	<<set $testVar++>>
+	<<update>>
+<</button>>
 
-<<link "Back">>
-  <<ctpBack "testID">>
-<</link>>
+$testVar : this is potato - no updates
+
+<<button "Add 1">>
+	<<set $testVar2++>>
+	<<update>>
+<</button>>
+
+<<live $testVar2>> : this is live
+
+<!-- block level -->
+<<button "Add 1 to both">>
+	<<set $testVar++, $testVar2++>>
+	<<update>>
+<</button>>
+
+<<liveblock>>
+	$testVar, $testVar2
+<</liveblock>> : both are live!
 
 Audio controls
 
@@ -91,11 +101,11 @@ Click Replace to make choices within passage:
     <<replace "#choosename">>
         <<include "Fake Passage 1">>
     <</replace>>
-<</link>><br><br><<link "Choice 2">>
+<</link>> | <<link "Choice 2">>
     <<replace "#choosename">>
        <<include "Fake Passage 2">>
     <</replace>>
-<</link>><br><br><<link "Choice 3">>
+<</link>> | <<link "Choice 3">>
     <<replace "#choosename">>
        <<include "Fake Passage 3">>
     <</replace>>
@@ -120,3 +130,50 @@ Timer: Make a NEW TIMER PASSAGE and use the <<include macro>> to nest it into th
 <</silently>>
 
 silently is dumb 
+
+Page Count code:
+
+<<timed 0s>>
+	<<capture $totalLines>>
+	<<set $oldLines to $totalLines>>
+	<</capture>>
+<</timed>>
+
+<<liveblock>>
+	<<timed 500ms>>
+		<<set $currentLines = setup.countLines()>>
+		<<set $totalLines to $oldLines + $currentLines>>
+		<<set $pageCount = Number(($totalLines / 47).toFixed(1))>>
+		current lines: <<print $currentLines>>
+		old lines: <<print $oldLines>>
+		total lines: <<print $totalLines>>
+		page count: <<print $pageCount>>
+	<</timed>>
+<</liveblock>>
+
+
+
+TRIAL STUFF
+
+
+(link-reveal-goto: "Go back", (history:)'s last)[
+  <!-- Do stuff when clicked before going back -->
+]
+
+<!--  Java stuff for history --> 
+$('#history-backward').ariaClick(Engine.backward);
+$('#history-forward').ariaClick(Engine.forward);
+
+jQuery('#history-backward')
+	.prop('disabled', State.length < 2)
+	.ariaClick({
+		label : L10n.get('uiBarBackward')
+	}, function () {
+		Engine.backward()
+    }, function () {
+		SimpleAudio.select(":playing").pause();
+	});
+
+
+
+SimpleAudio.select(":ui")

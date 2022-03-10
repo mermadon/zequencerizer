@@ -25,6 +25,40 @@
   	
 }
 
+.message-text a:hover {
+	color: pink;
+}
+
+button.link-internal {
+	float: none;
+	text-transform: none;
+	font-weight: bold;
+	color: lightgray;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+#music button {
+	color: lightgray;
+}
+
+#music button:hover {
+	color: lightsalmon;
+
+}
+
+#rightHider button {
+	color: lightgray;
+	font-family: courier;
+	float: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#rightHider button:hover {
+	color: lightsalmon;
+}
+
 a.link-internal: hover {
   	color: orange;
 	line-height: 1 !important;
@@ -48,10 +82,6 @@ a {
 }
 
 
-a.linkinternal:hover {
-	color: pink;
-
-}
 a:hover {
   	color: lightblue !important;
 	line-height: 1 !important;
@@ -91,6 +121,7 @@ body {
 	font-family: courier new;
 	background-color: white;
 	font-size: 14pt;
+	line-height: 1;
 	width: 100%;
 	font-weight: normal;
 	padding-top: 20px;
@@ -114,7 +145,7 @@ body {
 
 .passage h1, h2, h3, h4, h5, h6 {
   	font-weight: normal;
-  	font-size: inherit;
+  	font-size: 14px;
   	float: center;
 }
 
@@ -156,6 +187,7 @@ span.marked {
 
 .passage h2 { 
   	text-align: right;
+	text-size: 14px;
 }
 
 .passage h2.left-aligned { 
@@ -243,6 +275,7 @@ button:disabled {
 	border-color: transparent;
   	background-color: transparent;
 }
+
 
 #ui-bar {
   	font-family: courier new;
@@ -487,7 +520,7 @@ how to remove the virtical space around the range input in IE*/
 	right: 0;
 	text-align: left;
 	width: 17.5em;
-	height: 200%;
+	height: 80%;
 	margin: 0;
 	padding: 0;
 	-webkit-transition: right .4s ease-in;
@@ -513,7 +546,7 @@ how to remove the virtical space around the range input in IE*/
 	content: "\e81e";
 }
 #right-ui-bar-body {
-	height: 90%;
+	height: 80%;
 	height: calc(100% - 2.5em);
 	margin: 2.5em 0;
 	padding: 0 1.5em;
@@ -546,4 +579,15 @@ how to remove the virtical space around the range input in IE*/
 
 #right-ui-bar.stowed~#story {
 	margin-right: 4.5em;
+}
+
+.hide {
+	display: none;
+}
+
+.slowfade .macro-repeat-insert,
+.slowfade .macro-timed-insert {
+	-webkit-transition-duration: 3000ms;
+	-o-transition-duration: 3000ms;
+	transition-duration: 3000ms;
 }

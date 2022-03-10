@@ -1,4 +1,4 @@
-:: TAKE THE TRUCK 
+:: TAKE THE TRUCK {"position":"800,125"}
 Zayne picks up Ford, shouts at Harper: 
 
 ZAYNE
@@ -165,7 +165,7 @@ Harper is holding strong, but there are tears in her eyes. Zayne turns to her. H
 [[ASK HARPER TO DRIVE]]
 [[IF YOU WANT SOMETHING DONE RIGHT...->TRY TO OUTRUN THEM]]
 
-:: TRY TO OUTRUN THEM [death]
+:: TRY TO OUTRUN THEM [death] {"position":"1225,2400"}
 Zayne looks over at Harper. She's still a kid. 
 
 He has to do this himself. 
@@ -278,7 +278,7 @@ TEXT ON SCREEN: YOU'RE DEAD BECAUSE YOU DIDN'T LISTEN
 (set: $deaths to it + 1)\
 Total Deaths: (print:$deaths)
 
-:: WAIT 
+:: WAIT {"position":"1225,2325"}
 
 HARPER
 NOT YET! 

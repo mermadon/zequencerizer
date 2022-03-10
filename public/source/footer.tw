@@ -1,30 +1,17 @@
 :: PassageFooter [footer] {"position":"2875,1350"}
-<br>
-<hr>
-<br><br><br><br>
-''Achievements:''
-<<inventory '$inventory' '<br> '>>
+<hr><<silently>>
+<<timed 0s>>
+	<<capture $totalLines>>
+		<<set $oldLines to $totalLines>>
+	<</capture>>	
+<</timed>>
+<</silently>>
+<<liveblock>><<timed 500ms>><<set $currentLines = setup.countLines()>><<set $totalLines to $oldLines + $currentLines>><<set $pageCount = Number(($totalLines / 47).toFixed(1))>>@@float: right; pg. <<print $pageCount>>@@<</timed>>
+<</liveblock>>
 
-<<if $deaths > 0>>
-		''Deaths: <<print $deaths>>''
-<<else>>
-Deaths: NONE. Wow, such surviving!
-<</if>>
-<br><br><br><br>
-©Stay Gold Features, 2021 
-Based on Choose Your Own Adventure book series, ©Chooseco
+<br><br><br>
+©Stay Gold Features, 2022
+With much help from ©Chooseco
 Written by Samm Hodges
 
-//Internal review only! If you share we will find out where you live, we will come to your house, and we will make you help us figure this out, because frankly, it's a lot of work. //
-
-<form action="postFeedback.php" method="POST">
-<textarea id="feedbackBox" name="feedback" rows="4" cols="50"></textarea>
-<br><br>
-<input type="submit" value="Submit" id="staticSubmit">
-</form>
-	
-<form action="postFeedback.php" method="GET">
-<label for="userName">Name:</label>
-<input type="text" id="userName" name="userName">
-<input type="submit" value="That's my name" id="nameSubmit">
-</form>
+//Internal review only!//

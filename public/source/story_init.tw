@@ -1,8 +1,24 @@
 
-:: StoryInit {"position":"1350,1550"}
+:: StoryInit {"position":"1725,2550"}
 <<set $deaths to 0>>
+<<set $goodDriving to 0>>
+<<set $showfeedback to 0>>
+<<set $showaudio to 1>>
+<<set $statshide to 0>>
+<<set $showgenre to 0>>
+<<set $showbeats to 0>>
+<<set $pageCount to 0>>
+<<set $totalLines to 0>>
+<<set $currentlines to 0>>
+<<set $oldLines to 0>>
 <<set $crawldeath to 0>>
+<<set $testVar to 0>>
+<<set $testVar2 to 0>>
+<<set $song2 to "Ride the Lightning">>
+<<set $band2 to "Metallica">>
+<<set $genre to "none">>
 <<set $introchoice to 0>>
+<<set $showgenre to 1>>
 <<set $sandwich to 0>>
 <<set $ketchup to 0>>
 <<set $codebook to "none">>
@@ -26,11 +42,12 @@
 <<set $callanswer to 0>>
 <<set $alptrust to "none">>
 <<set $seconds to 5>>
-<<set $seequeen to "false">>
+<<set $seequeen to 0>>
 <<set $teamatoc to "false">>
 <<set $firstdeath to 0>>
 <<set $scareloc1 to "none">>
 <<set $var to "gold">>
+<<set $snowphone to 0>>
 <<newinventory '$inventory'>>
 <<newinventory '$storybeats'>>
 
@@ -40,7 +57,19 @@
 <<cacheaudio "standup" media/sounds/hiphop/standup.mp3>>
 <<cacheaudio "manofmine" media/sounds/country/manofmine.mp3>>
 <<cacheaudio "lightning" media/sounds/rock/lightning.mp3>>
+<<cacheaudio "crown" media/sounds/score/crown.mp3>>
+<<cacheaudio "duneforever" media/sounds/score/duneforever2.mp3>>
+<<cacheaudio "queenforever" media/sounds/score/queenforever.mp3>>
 
 <<if def $SkipIntro>>
 	<<set Config.passages.start = "OPENING PERU">>
 <</if>>
+
+
+Badges
+See The Queen
+Cannot Wait to Be Dead
+Paw Patrol
+Beginner's Luck
+Drive Slow
+Ride the Lightning
