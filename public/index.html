@@ -4517,7 +4517,19 @@ Deaths: NONE. Wow, such surviving!
 Based on Choose Your Own Adventure book series, ©Chooseco
 Written by Samm Hodges
 
-//Internal review only! If you share we will find out where you live, we will come to your house, and we will make you help us figure this out, because frankly, it&#39;s a lot of work. //</tw-passagedata><tw-passagedata pid="95" name="TAKE THE TRUCK" tags="" position="600,1225" size="100,100">Zayne picks up Ford, shouts at Harper: 
+//Internal review only! If you share we will find out where you live, we will come to your house, and we will make you help us figure this out, because frankly, it&#39;s a lot of work. //
+
+&lt;form action=&quot;postFeedback.php&quot; method=&quot;POST&quot;&gt;
+&lt;textarea id=&quot;feedbackBox&quot; name=&quot;feedback&quot; rows=&quot;4&quot; cols=&quot;50&quot;&gt;&lt;/textarea&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Submit&quot; id=&quot;staticSubmit&quot;&gt;
+&lt;/form&gt;
+	
+&lt;form action=&quot;postFeedback.php&quot; method=&quot;GET&quot;&gt;
+&lt;label for=&quot;userName&quot;&gt;Name:&lt;/label&gt;
+&lt;input type=&quot;text&quot; id=&quot;userName&quot; name=&quot;userName&quot;&gt;
+&lt;input type=&quot;submit&quot; value=&quot;That&#39;s my name&quot; id=&quot;nameSubmit&quot;&gt;
+&lt;/form&gt;</tw-passagedata><tw-passagedata pid="95" name="TAKE THE TRUCK" tags="" position="600,1225" size="100,100">Zayne picks up Ford, shouts at Harper: 
 
 ZAYNE
 COME ON!
@@ -6591,7 +6603,103 @@ You guys worried? You look a little worried.</tw-passagedata><tw-passagedata pid
 &lt;/div&gt;
 
 
-&lt;br&gt;&lt;div id=&quot;passages&quot;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="194" name="StoryRightSidebar" tags="nobr" position="475,2475" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;br&gt;&lt;div id=&quot;passages&quot;&gt;&lt;/div&gt;
+&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+
+	var passageTitle = &quot;hm doesn&#39;t work&quot;;
+	var un = &quot;Drangles&quot;;
+
+	$(document).on(&#39;:passageend&#39;, function (ev) {
+		
+		passageTitle = ev.passage.title;
+		if(un != &quot;Drangles&quot;)
+		{
+			$(&quot;#userName&quot;).val(un);
+			$(&quot;#userName&quot;).attr(&#39;value&#39;, un);
+			
+			document.getElementById(&#39;userName&#39;).value = un;
+			AjaxCallWithPromise();
+		}
+	});
+
+	$( document ).ready(function() {
+		$(&quot;.internal-link&quot;).click(function(){
+			alert(&quot;You clicked a nut&quot;);
+		});
+	});
+
+	function myFunction(){
+		$(&quot;#userName&quot;).val(un);
+		$(&quot;#userName&quot;).attr(&#39;value&#39;, un);
+		document.getElementById(&#39;userName&#39;).value = &quot;dicks&quot;;
+	}
+
+	document.addEventListener(&quot;submit&quot;, (e) =&gt; {
+			
+			
+		const form = e.target;
+		
+		if(form[&quot;method&quot;] == &quot;post&quot;)
+		{
+			AjaxPost();
+		}else if(form[&quot;method&quot;] == &quot;get&quot;)
+		{		
+			un = $(&quot;#userName&quot;).val();
+			AjaxCallWithPromise();
+		}
+		
+
+		// Prevent the default form submit 
+		e.preventDefault();
+		
+	});
+
+	function AjaxPost() {
+
+		var dat = $(&quot;#feedbackBox&quot;).serializeArray();
+		dat.push({name: &#39;passage&#39;, value: passageTitle});
+
+		dat.push({name: &#39;userName&#39;, value: $(&quot;#userName&quot;).val()});
+
+		//console.log($(&quot;#userName&quot;).val());
+
+		$.ajax({
+			url:&#39;postFeedback.php&#39;,
+			data:dat,
+			type:&#39;POST&#39;,
+			success:function(data){
+
+				console.log(data);
+				$(&#39;#what-you-searched&#39;).html(data);
+			},
+			error:function(){
+				console.log(&quot;Error&quot;);
+			}
+		});
+	}
+
+	function AjaxCallWithPromise() {
+		var dat = $(&quot;#userName&quot;).serializeArray();
+		dat.push({name: &#39;passage&#39;, value: passageTitle});
+
+		$.ajax({
+			url:&#39;postFeedback.php&#39;,
+			data:dat,
+			type:&#39;GET&#39;,
+			success:function(data){
+
+				$(&#39;#what-you-searched&#39;).html(data);
+				
+				$(&quot;#feedbackBox&quot;).val(data);
+			},
+			error:function(){
+				console.log(&quot;Error&quot;);
+			}
+		});
+	}
+	
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="194" name="StoryRightSidebar" tags="nobr" position="475,2475" size="100,100">&lt;&lt;nobr&gt;&gt;
 @@line-height: 1;
 &#39;&#39;Audio Controls:&#39;&#39;  &lt;&lt;click &quot;PAUSE&quot;&gt;&gt;&lt;&lt;audio &quot;:playing&quot; pause&gt;&gt;&lt;&lt;/click&gt;&gt; | &lt;&lt;click &quot;PLAY&quot;&gt;&gt;&lt;&lt;audio &quot;:paused&quot; play&gt;&gt;&lt;&lt;/click&gt;&gt;
 &#39;&#39;^^Vol:^^&#39;&#39; &lt;&lt;volume&gt;&gt;@@
