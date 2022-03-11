@@ -1,0 +1,78 @@
+
+
+
+
+<div id="main">
+    
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    
+
+	$( document ).ready(function() {
+		
+        AjaxCallWithPromise();
+	});
+
+	
+	function AddFeedback(divID, name, feedback) {
+		
+		var passageDiv = document.getElementById(divID);
+		
+		var nameDiv = document.createElement("p");
+		var feedbackDiv = document.createElement("p");
+		
+		nameDiv.innerText = name;
+		feedbackDiv.innerText = feedback;
+		
+		passageDiv.appendChild(nameDiv);
+		passageDiv.appendChild(feedbackDiv);
+	}
+	
+	function AjaxCallWithPromise() {
+		$.ajax({
+			url:'getFeedback.php',
+			type:'GET',
+			success:function(data){
+				
+				var jdat = JSON.parse(data);
+				var passages = [];
+				const mainDiv = document.getElementById("main");
+				
+				for (let i = 0; i < jdat.length; i++)
+					{
+						
+						var passage = jdat[i][2];
+						
+						if(passages.includes(passage))
+						{
+							
+						}
+						else
+						{
+							const newDiv = document.createElement("div");
+							
+							newDiv.id = passage;
+							newDiv.innerText = passage;
+							
+							mainDiv.appendChild(newDiv);
+							
+							passages.push(passage);
+						}
+						
+						AddFeedback(passage, jdat[i][1], jdat[i][3]);
+						
+					}
+				
+				
+				
+			},
+			error:function(){
+				console.log("Error");
+			}
+		});
+	}
+	
+</script>
