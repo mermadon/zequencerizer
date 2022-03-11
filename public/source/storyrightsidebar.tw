@@ -10,16 +10,16 @@
 Send <<link 'FEEDBACK'>>\
     <<dialog 'Feedback for Current Passage' >>\
 
-        <form action="postFeedback.php" method="POST">
-        <textarea id="feedbackBox" name="feedback" rows="4" cols="50"></textarea>
-        <br><br>
-        <input type="submit" value="Submit" id="staticSubmit">
-        </form>
-            
         <form action="postFeedback.php" method="GET">
         <label for="userName">Name:</label>
         <input type="text" id="userName" name="userName">
         <input type="submit" value="That's my name" id="nameSubmit">
+        </form>
+
+        <form action="postFeedback.php" method="POST">
+        <textarea id="feedbackBox" name="feedback" rows="4" cols="50"></textarea>
+        <br><br>
+        <input type="submit" value="Submit" id="staticSubmit">
         </form>
         
      <</dialog>>
